@@ -1,3 +1,9 @@
+---
+title: use_1panel_bash
+date: 2025-10-27 15:44:35
+tags:
+---
+
 # 1Panel 命令行工具可用命令
 
 ```bash

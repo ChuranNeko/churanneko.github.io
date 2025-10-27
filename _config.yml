@@ -4,9 +4,9 @@
 ## This is a HEXO blog, NOT a Jekyll site
 
 # Site
-title: ChuranNeko's Blog
+title: 
 subtitle: '个人博客'
-description: 'ChuranNeko的个人技术博客'
+description: '初然的博客'
 keywords: 技术,博客,编程,开发
 author: ChuranNeko
 language: zh-CN
@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://churanneko.github.io
+url: https://blog.crneko.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

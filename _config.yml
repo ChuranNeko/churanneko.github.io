@@ -6,9 +6,9 @@
 # Site
 title: 
 subtitle: '个人博客'
-description: '初然的博客'
+description: '初然Neko的博客'
 keywords: 技术,博客,编程,开发
-author: ChuranNeko
+author: 初然Neko
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -44,7 +44,6 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
 highlight:
   line_number: true
   auto_detect: false
@@ -97,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: anzhiyu
+theme: neko
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

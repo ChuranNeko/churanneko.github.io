@@ -14,7 +14,7 @@ site:
   nick: ChuranNeko
   description:
   link: '/'
-  language: en
+  language: cn
   multi_language: false
   logo: 'asset/favicon.ico'
   avatar: 'asset/favicon.ico'
@@ -74,10 +74,11 @@ theme:
 #! Social Configs
 #! @docs https://aurora.tridiamond.tech/guide/social.html
 #! ---------------------------------------------------------------
-socials:
+
+  customs:socials:
   github: 'https://github.com/ChuranNeko'
   csdn: 'https://blog.csdn.net/churanrana'
-  customs:
+  
   ##! Example:
   ##! --- Using SVG
   # bilibili:

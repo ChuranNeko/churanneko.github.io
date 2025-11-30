@@ -1,0 +1,52 @@
+---
+import { siteConfig } from "../config";
+
+const { analytics } = siteConfig;
+---
+
+{analytics?.enable && analytics?.type === "umami" && analytics?.url && analytics?.siteId && (
+    <>
+        <script 
+            is:inline
+            defer
+            src={`${analytics.url}/script.js`}
+            data-website-id={analytics.siteId}
+        ></script>
+        <script is:inline>
+            // Load visitor stats from Umami API if available
+            async function loadVisitorStats() {
+                try {
+                    const siteId = document.currentScript?.dataset.websiteId;
+                    if (!siteId) return;
+                    
+                    // This is a placeholder - Umami's actual API may differ
+                    // You would need to configure Umami with public stats sharing to get this data
+                    const response = await fetch(
+                        `${import.meta.env.PUBLIC_UMAMI_URL || 'https://cloud.umami.is'}/api/websites/${siteId}/stats?startAt=0&endAt=${Date.now()}`
+                    );
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        const visitorCount = document.getElementById('visitor-count');
+                        if (visitorCount) {
+                            visitorCount.textContent = `访客: ${data.pageviews?.value || '加载中...'}`;
+                        }
+                    }
+                } catch (error) {
+                    console.log('Unable to load visitor stats:', error);
+                }
+            }
+            
+            // Attempt to load stats after a delay
+            setTimeout(loadVisitorStats, 1000);
+        </script>
+    </>
+)}
+
+{analytics?.enable && analytics?.type === "google" && analytics?.trackingId && (
+    <script 
+        is:inline
+        async 
+        src={`https://www.googletagmanager.com/gtag/js?id=${analytics.trackingId}`}
+    ></script>
+)}

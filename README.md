@@ -10,7 +10,7 @@
 
 ## 博客
 
-该博客基于 [Fuwari](https://github.com/saicaca/fuwari) 进行构建，以下是该博客[仓库](https://github.com/ChuranNeko/churanneko.github.io)。
+该博客基于 [Fuwari](https://github.com/saicaca/fuwari) 进行构建。
 
 ## 友情链接
 

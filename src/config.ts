@@ -47,6 +47,11 @@ export const siteConfig: SiteConfig = {
 		   // sizes: '30x30',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		}
 	],
+	officialSites: [
+		{ url: "https://blog.crneko.top", alias: "主站(GitHub Page)" },
+		{ url: "https://blog-vercel.crneko.top", alias: "Vercel" },
+		{ url: "https://blog-cloudflare.crneko.top", alias: "CloudFlare Page" }
+	],
 	analytics: {
 		enable: true, // Enable analytics tracking
 		type: "umami", // Type of analytics: 'umami', 'google', or 'custom'

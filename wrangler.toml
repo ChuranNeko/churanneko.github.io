@@ -1,0 +1,8 @@
+name = "初然の博客"
+compatibility_date = "2025-11-30"
+
+type = "javascript"
+
+[site]
+bucket = "./dist"       # 你的静态站目录
+entry-point = "workers-site"  # 告诉 Wrangler 这是静态站

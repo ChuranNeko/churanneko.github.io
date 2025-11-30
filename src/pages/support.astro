@@ -26,8 +26,58 @@ const { support } = supportData as supportData;
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 max-w-4xl mx-auto">
-            <!-- 支持方式 -->
-                 
+            <!-- 支付宝 -->
+            <div class="donate-card">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="h-10 w-10 rounded-lg bg-blue-500 flex items-center justify-center">
+                        <Icon name="fa6-brands:alipay" class="text-[1.5rem] text-white">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-black dark:text-white">支付宝</h3>
+                        <p class="text-sm text-black/60 dark:text-white/60">扫码支付</p>
+                    </div>
+                </div>
+                <div class="qr-code-placeholder">
+                    <img src="/support/alipaycode.png" alt="支付宝二维码" class="w-48 h-48 mx-auto rounded-lg" />
+                </div>
+            </div>
+
+            <!-- 微信支付 -->
+            <div class="donate-card">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="h-10 w-10 rounded-lg bg-green-500 flex items-center justify-center">
+                        <Icon name="fa6-brands:weixin" class="text-[1.5rem] text-white">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-black dark:text-white">微信支付</h3>
+                        <p class="text-sm text-black/60 dark:text-white/60">扫码支付</p>
+                    </div>
+                </div>
+                <div class="qr-code-placeholder">
+                    <img src="/support/wxpaycode.png" alt="微信支付二维码" class="w-48 h-48 mx-auto rounded-lg" />
+                </div>
+            </div>
+
+            <!-- 爱发电 -->
+            <div class="donate-card lg:col-span-2">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="h-10 w-10 rounded-lg bg-purple-500 flex items-center justify-center">
+                        <Icon name="material-symbols:favorite" class="text-[1.5rem] text-white">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-black dark:text-white">爱发电</h3>
+                        <p class="text-sm text-black/60 dark:text-white/60">定期赞助支持</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="https://afdian.com/a/churanneko" target="_blank" class="btn-regular inline-flex items-center gap-2 px-6 py-3 bg-[var(--primary)] text-white rounded-lg hover:bg-[var(--primary-hover)] transition-colors">
+                        <Icon name="material-symbols:favorite" class="text-[1.2rem]">
+                        <span>前往爱发电赞助</span>
+                    </a>
+                    <p class="text-sm text-black/60 dark:text-white/60 mt-3">
+                        通过爱发电可以设置月度赞助，为我的持续创作提供稳定支持
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -74,7 +124,7 @@ const { support } = supportData as supportData;
                 <span>已赞助的小伙伴</span>
             </h2>
             <p class="text-sm text-black/60 dark:text-white/60 mb-4">
-            如果您已赞助，并且想加入赞助名单，请自行提交PR <a target="_blank" href="https://github.com/churanneko.github.io/edit/main/src/data/support.json" class="transition link text-[var(--primary)] font-medium underline">点击这里提交</a>
+            如果您已赞助，并且想加入赞助名单，请自行提交PR <a target="_blank" href="https://github.com/ChuranNeko/churanneko.github.io/edit/main/src/data/support.json" class="transition link text-[var(--primary)] font-medium underline">点击这里提交</a>
             </p>
             <div class="support-grid">
                 {support.map((support) => (

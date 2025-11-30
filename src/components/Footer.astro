@@ -16,7 +16,7 @@ const currentYear = new Date().getFullYear();
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('sitemap-index.xml')}>Sitemap</a><br>
         {siteConfig.analytics?.enable && (
             <div class="mt-2 text-xs text-black/50 dark:text-white/50">
-                <span id="visitor-count">访客中...</span>
+                <span id="site-stats-footer">统计加载中...</span>
             </div>
         )}
         <br>
@@ -28,9 +28,14 @@ const currentYear = new Date().getFullYear();
 <!-- 引入 umami-share.js -->
 <script is:inline type="module" src="/js/umami-share.js"></script>
 
-<script define:vars={{ umamiConfig, unavailableText: statsConfig.unavailableText, visitsText: statsConfig.visitsText }}>
-    // 获取全站访客统计
-    async function loadVisitorCount() {
+<script define:vars={{ umamiConfig, unavailableText: statsConfig.unavailableText, viewsText: statsConfig.viewsText, visitsText: statsConfig.visitsText }}>
+    // 客户端统计文案生成函数
+    function generateStatsText(pageViews, visits) {
+        return `${viewsText} ${pageViews} · ${visitsText} ${visits}`;
+    }
+    
+    // 获取全站访问量统计
+    async function loadSiteStats() {
         if (!umamiConfig.enable) {
             return;
         }
@@ -52,7 +57,7 @@ const currentYear = new Date().getFullYear();
             if (statsResponse.status === 401) {
                 // token 失效，清理缓存后重新获取一次
                 clearUmamiShareCache();
-                return await loadVisitorCount();
+                return await loadSiteStats();
             }
             
             if (!statsResponse.ok) {
@@ -60,21 +65,22 @@ const currentYear = new Date().getFullYear();
             }
             
             const statsData = await statsResponse.json();
+            const pageviews = statsData.pageviews || 0;
             const visitors = statsData.visitors || 0;
             
-            const visitorElement = document.getElementById('visitor-count');
-            if (visitorElement) {
-                visitorElement.textContent = `${visitsText} ${visitors.toLocaleString()}`;
+            const statsElement = document.getElementById('site-stats-footer');
+            if (statsElement) {
+                statsElement.textContent = generateStatsText(pageviews, visitors);
             }
         } catch (error) {
-            console.error('获取全站访客统计失败:', error);
-            const visitorElement = document.getElementById('visitor-count');
-            if (visitorElement) {
-                visitorElement.textContent = unavailableText;
+            console.error('获取全站统计失败:', error);
+            const statsElement = document.getElementById('site-stats-footer');
+            if (statsElement) {
+                statsElement.textContent = unavailableText;
             }
         }
     }
 
     // 页面加载完成后获取统计数据
-    document.addEventListener('DOMContentLoaded', loadVisitorCount);
+    document.addEventListener('DOMContentLoaded', loadSiteStats);
 </script>

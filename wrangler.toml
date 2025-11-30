@@ -1,8 +1,8 @@
-name = 'blog'
+name = "blog"
+type = "javascript"
+account_id = "c008d3c97391b6c980ff4ed3962948f4"
 compatibility_date = "2025-11-30"
 
-type = "javascript"
-
 [site]
-bucket = "./dist"       # 你的静态站目录
-entry-point = "workers-site"  # 告诉 Wrangler 这是静态站
+bucket = "./dist"
+entry-point = "workers-site"

@@ -18,4 +18,4 @@
 
 ## 许可
 
-该仓库使用[MIT LICENSE](LICENSE),这代表着您可以自由修改和分发此仓库。
+该仓库使用[MIT LICENSE](LICENSE)许可,这代表着您可以自由修改和分发此仓库。

@@ -45,6 +45,7 @@ export type SiteConfig = {
 		type: "umami" | "google" | "custom";
 		url?: string;
 		siteId?: string;
+		shareUrl?: string;
 		trackingId?: string;
 	};
 };

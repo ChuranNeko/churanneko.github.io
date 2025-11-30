@@ -52,6 +52,7 @@ export const siteConfig: SiteConfig = {
 		type: "umami", // Type of analytics: 'umami', 'google', or 'custom'
 		url: "https://cloud.umami.is", // Umami或自定义分析服务的URL
 		siteId: "fb5e3c6e-e56a-4082-a231-5dd736010208", // Umami site ID
+		shareUrl: "https://cloud.umami.is/share/rjAmkgZnqnW6Ixb4", // Umami分享链接
 		// trackingId: "", // Google Analytics tracking ID (if using Google)
 	},
 };
@@ -119,6 +120,36 @@ export const licenseConfig: LicenseConfig = {
 	enable: true,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+};
+
+export const umamiConfig = {
+	enable: true,
+	baseUrl: "https://cloud.umami.is",
+	shareId: "rjAmkgZnqnW6Ixb4",
+	timezone: "Asia/Shanghai",
+};
+
+export const statsConfig = {
+	viewsText: "浏览",
+	visitsText: "访客",
+	loadingText: "统计加载中...",
+	unavailableText: "统计不可用。请检查是否屏蔽了Umami域名，如AdGuard和AdBlock等插件",
+	getStatsText: (pageViews: number, visits: number) => `${statsConfig.viewsText} ${pageViews} · ${statsConfig.visitsText} ${visits}`,
+};
+
+export const giscusConfig = {
+	enable: true,
+	repo: "ChuranNeko/churanneko.github.io",
+	repoId: "R_kgDOPsGxcg",
+	category: "Announcements",
+	categoryId: "DIC_kwDOPsGxc84CckJx",
+	mapping: "pathname",
+	strict: "0",
+	reactionsEnabled: "1",
+	emitMetadata: "0",
+	inputPosition: "bottom",
+	theme: "preferred_color_scheme",
+	lang: "zh-CN",
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {

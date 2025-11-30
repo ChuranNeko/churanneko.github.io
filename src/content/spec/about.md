@@ -20,6 +20,8 @@
 >   - [Github Page](https://docs.github.com/en/pages)
 > - 图床
 >   - [举个栗子](https://t.alcy.cc/)
+> - 引用
+>   - 部分页面使用了修改由[二树叉叉](https://github.com/afoim)修改的[魔改版Fuwari](https://github.com/afoim/fuwari) 为此博客提供了页面以及UI参考,在此感谢。
 
 ## 友情链接
 

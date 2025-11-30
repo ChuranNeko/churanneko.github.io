@@ -1,6 +1,6 @@
 ---
 
-import { profileConfig, siteConfig } from "../config";
+import { profileConfig, siteConfig, umamiConfig, statsConfig } from "../config";
 import { url } from "../utils/url-utils";
 
 const currentYear = new Date().getFullYear();
@@ -25,3 +25,56 @@ const currentYear = new Date().getFullYear();
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
     </div>
 </div>
+<!-- 引入 umami-share.js -->
+<script is:inline type="module" src="/js/umami-share.js"></script>
+
+<script define:vars={{ umamiConfig, unavailableText: statsConfig.unavailableText, visitsText: statsConfig.visitsText }}>
+    // 获取全站访客统计
+    async function loadVisitorCount() {
+        if (!umamiConfig.enable) {
+            return;
+        }
+        
+        try {
+            // 调用全局工具获取 Umami 分享数据
+            const { websiteId, token } = await getUmamiShareData(umamiConfig.baseUrl, umamiConfig.shareId);
+            
+            // 第二步：获取全站统计数据
+            const currentTimestamp = Date.now();
+            const statsUrl = `${umamiConfig.baseUrl}/analytics/us/api/websites/${websiteId}/stats?startAt=0&endAt=${currentTimestamp}&unit=hour&timezone=${encodeURIComponent(umamiConfig.timezone)}&compare=false`;
+            
+            const statsResponse = await fetch(statsUrl, {
+                 headers: {
+                     'x-umami-share-token': token
+                 }
+             });
+            
+            if (statsResponse.status === 401) {
+                // token 失效，清理缓存后重新获取一次
+                clearUmamiShareCache();
+                return await loadVisitorCount();
+            }
+            
+            if (!statsResponse.ok) {
+                throw new Error('获取统计数据失败');
+            }
+            
+            const statsData = await statsResponse.json();
+            const visitors = statsData.visitors || 0;
+            
+            const visitorElement = document.getElementById('visitor-count');
+            if (visitorElement) {
+                visitorElement.textContent = `${visitsText} ${visitors.toLocaleString()}`;
+            }
+        } catch (error) {
+            console.error('获取全站访客统计失败:', error);
+            const visitorElement = document.getElementById('visitor-count');
+            if (visitorElement) {
+                visitorElement.textContent = unavailableText;
+            }
+        }
+    }
+
+    // 页面加载完成后获取统计数据
+    document.addEventListener('DOMContentLoaded', loadVisitorCount);
+</script>

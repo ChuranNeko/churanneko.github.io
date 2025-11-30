@@ -117,6 +117,34 @@ const jsonLd = {
 
             {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
 
+            <!-- 分割线 -->
+            <div class="border-t border-[var(--line-divider)] border-dashed my-8"></div>
+
+            <!-- 评论标题 -->
+            <div class="flex items-center gap-2 mb-6 onload-animation">
+                <div class="h-6 w-6 rounded-md bg-[var(--primary)] flex items-center justify-center">
+                    <Icon name="material-symbols:chat-outline" class="text-[0.875rem] text-white dark:text-black/70"></Icon>
+                </div>
+                <h3 class="text-xl font-bold text-black/90 dark:text-white/90">评论</h3>
+            </div>
+
+            <!-- Giscus 评论区 -->
+            <script src="https://giscus.app/client.js"
+                    data-repo="ChuranNeko/churanneko.github.io"
+                    data-repo-id="R_kgDOPsGxcg"
+                    data-category="Announcements"
+                    data-category-id="DIC_kwDOPsGxc84CckJx"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="preferred_color_scheme"
+                    data-lang="zh-CN"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+
         </div>
     </div>
 

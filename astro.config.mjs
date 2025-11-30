@@ -30,6 +30,7 @@ export default defineConfig({
 	site: "https://blog.crneko.top",
 	base: "/",
 	trailingSlash: "always",
+	output: "server",
 	integrations: [
 		cloudflare(),
 		tailwind({

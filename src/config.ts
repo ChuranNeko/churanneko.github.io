@@ -78,7 +78,7 @@ export const navBarConfig: NavBarConfig = {
 			external: false, // Show an external link icon and will open in a new tab
 		},
 		{
-			name: "浏览统计",
+			name: "统计",
 			url: "https://cloud.umami.is/share/rjAmkgZnqnW6Ixb4", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},

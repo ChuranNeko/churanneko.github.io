@@ -1,8 +1,0 @@
-name = "blog"
-compatibility_date = "2025-08-11"
-
-main = "./worker.js"   # 指向你的模块入口
-type = "javascript"
-
-[build.upload]
-format = "modules"

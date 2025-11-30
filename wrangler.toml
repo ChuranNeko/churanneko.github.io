@@ -1,8 +1,8 @@
 name = "blog"
-type = "javascript"
-account_id = "c008d3c97391b6c980ff4ed3962948f4"
-compatibility_date = "2025-11-30"
+compatibility_date = "2025-08-11"
 
-[site]
-bucket = "./dist"
-entry-point = "workers-site"
+main = "./worker.js"   # 指向你的模块入口
+type = "javascript"
+
+[build.upload]
+format = "modules"

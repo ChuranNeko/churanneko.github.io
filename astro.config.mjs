@@ -31,8 +31,10 @@ export default defineConfig({
 	base: "/",
 	trailingSlash: "always",
 	output: "server",
+	adapter: cloudflare({
+		imageService: "compile",
+	}),
 	integrations: [
-		cloudflare(),
 		tailwind({
 			nesting: true,
 		}),

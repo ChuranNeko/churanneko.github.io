@@ -42,14 +42,14 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave this array empty to use the default favicon
 		{
-		   src: '/favicon/favicon.svg',    // Path of the favicon, relative to the /public directory
-		   theme: 'dark',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		   // sizes: '30x30',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
-		}
+			src: "/favicon/favicon.svg", // Path of the favicon, relative to the /public directory
+			theme: "dark", // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
+			// sizes: '30x30',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		},
 	],
 	officialSites: [
 		{ url: "https://blog.crneko.top", alias: "主站(GitHub Page)" },
-		{ url: "https://blog-vercel.crneko.top", alias: "Vercel" }
+		{ url: "https://blog-vercel.crneko.top", alias: "Vercel" },
 	],
 	analytics: {
 		enable: true, // Enable analytics tracking
@@ -91,7 +91,6 @@ export const navBarConfig: NavBarConfig = {
 			url: "https://github.com/ChuranNeko", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
-		
 	],
 };
 
@@ -101,11 +100,11 @@ export const profileConfig: ProfileConfig = {
 	bio: "什么都想学一点,但又什么都不精通。",
 	links: [
 		//	{
-			//	name: "Twitter",
-			//	icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-			//	You will need to install the corresponding icon set if it's not already included
-			//	`pnpm add @iconify-json/<icon-set-name>`
-			//	url: "https://twitter.com",
+		//	name: "Twitter",
+		//	icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+		//	You will need to install the corresponding icon set if it's not already included
+		//	`pnpm add @iconify-json/<icon-set-name>`
+		//	url: "https://twitter.com",
 		// },
 		{
 			name: "Steam",
@@ -137,8 +136,10 @@ export const statsConfig = {
 	viewsText: "浏览",
 	visitsText: "访客",
 	loadingText: "统计加载中...",
-	unavailableText: "统计不可用。请检查是否屏蔽了Umami域名，如AdGuard和AdBlock等插件",
-	getStatsText: (pageViews: number, visits: number) => `${statsConfig.viewsText} ${pageViews} · ${statsConfig.visitsText} ${visits}`,
+	unavailableText:
+		"统计不可用。请检查是否屏蔽了Umami域名，如AdGuard和AdBlock等插件",
+	getStatsText: (pageViews: number, visits: number) =>
+		`${statsConfig.viewsText} ${pageViews} · ${statsConfig.visitsText} ${visits}`,
 };
 
 export const giscusConfig = {

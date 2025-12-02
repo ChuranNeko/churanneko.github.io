@@ -197,7 +197,7 @@ const { support } = supportData as SupportData;
 </style>
 
 <script>
-function copyToClipboard(text) {
+function copyToClipboard(text: string) {
     navigator.clipboard.writeText(text).then(function() {
         // 可以添加复制成功的提示
         alert('已复制到剪贴板');

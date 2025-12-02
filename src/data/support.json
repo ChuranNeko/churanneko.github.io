@@ -1,10 +1,10 @@
 {
-  "support": [
-    {
-      "name": "名字",
-      "avatar": "", 
-      "date": "2025.1.1",
-      "amount": "0 CNY"
-    }
-  ]
+	"support": [
+		{
+			"name": "名字",
+			"avatar": "",
+			"date": "2025.1.1",
+			"amount": "0 CNY"
+		}
+	]
 }

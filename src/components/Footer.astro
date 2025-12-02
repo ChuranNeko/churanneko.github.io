@@ -28,7 +28,7 @@ const currentYear = new Date().getFullYear();
 <!-- 引入 umami-share.js -->
 <script is:inline type="module" src="/js/umami-share.js"></script>
 
-<script define:vars={{ umamiConfig, unavailableText: statsConfig.unavailableText, viewsText: statsConfig.viewsText, visitsText: statsConfig.visitsText }}>
+<script is:inline define:vars={{ umamiConfig, unavailableText: statsConfig.unavailableText, viewsText: statsConfig.viewsText, visitsText: statsConfig.visitsText }}>
     // 客户端统计文案生成函数
     function generateStatsText(pageViews, visits) {
         return `${viewsText} ${pageViews} · ${visitsText} ${visits}`;

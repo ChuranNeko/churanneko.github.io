@@ -49,8 +49,7 @@ export const siteConfig: SiteConfig = {
 	],
 	officialSites: [
 		{ url: "https://blog.crneko.top", alias: "主站(GitHub Page)" },
-		{ url: "https://blog-vercel.crneko.top", alias: "Vercel" },
-		{ url: "https://blog-cloudflare.crneko.top", alias: "CloudFlare Page" }
+		{ url: "https://blog-vercel.crneko.top", alias: "Vercel" }
 	],
 	analytics: {
 		enable: true, // Enable analytics tracking

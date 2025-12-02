@@ -7,7 +7,6 @@ import swup from "@swup/astro";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
-import cloudflare from "@astrojs/cloudflare";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeComponents from "rehype-components"; /* Render the custom directive content */
 import rehypeKatex from "rehype-katex";
@@ -30,10 +29,7 @@ export default defineConfig({
 	site: "https://blog.crneko.top",
 	base: "/",
 	trailingSlash: "always",
-	output: "server",
-	adapter: cloudflare({
-		imageService: "compile",
-	}),
+	output: "static",
 	integrations: [
 		tailwind({
 			nesting: true,

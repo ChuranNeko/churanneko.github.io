@@ -13,12 +13,10 @@
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
-    "preinstall": "npx only-allow pnpm",
-    "deploy": "cp ./.assetsignore dist/. && npx wrangler deploy"
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/svelte": "7.2.0",
@@ -72,8 +70,7 @@
     "@types/mdast": "^4.0.4",
     "@types/sanitize-html": "^2.16.0",
     "postcss-import": "^16.1.1",
-    "postcss-nesting": "^13.0.2",
-    "wrangler": "^4.51.0"
+    "postcss-nesting": "^13.0.2"
   },
   "packageManager": "pnpm@9.14.4"
 }

@@ -15,6 +15,416 @@
 &lt;ul&gt;
 &lt;li&gt;📫 邮箱：&lt;a href=&quot;mailto:churanneko@qq.com&quot;&gt;churanneko@qq.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded></item><item><title>AMap-Weather-MCP</title><link>https://blog.crneko.top/posts/amap-weather-mcp/</link><guid isPermaLink="true">https://blog.crneko.top/posts/amap-weather-mcp/</guid><description>基于高德地图API的MCP天气服务器</description><pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;AMap-Weather-MCP: 基于高德地图API的MCP天气服务器&lt;/h1&gt;
+&lt;h2&gt;项目初衷&lt;/h2&gt;
+&lt;p&gt;在开发 AI 应用时，我发现获取准确的天气信息是一个常见需求。虽然有许多天气 API 可用，但它们往往需要复杂的配置和认证流程，而且大多数都没有针对 MCP（Model Context Protocol）生态系统进行优化。&lt;/p&gt;
+&lt;p&gt;AMap Weather MCP 的诞生是为了解决这些问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;简化集成&lt;/strong&gt;：提供开箱即用的 MCP 服务器，无需复杂的配置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高精度数据&lt;/strong&gt;：利用高德地图的权威天气数据，提供准确的天气信息&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MCP 原生支持&lt;/strong&gt;：完全符合 MCP 协议规范，与 MCP Router 等工具无缝集成&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;灵活配置&lt;/strong&gt;：支持多种天气查询方式，包括实时天气、预报和空气质量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;易于部署&lt;/strong&gt;：提供简单的安装和配置流程，支持多种部署方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个项目旨在为 MCP 生态系统提供一个可靠、易用的天气数据源，让开发者能够轻松地在 AI 应用中集成天气功能，无论是构建智能助手、自动化系统还是其他需要天气信息的应用。&lt;/p&gt;
+&lt;h2&gt;简介&lt;/h2&gt;
+&lt;p&gt;AMap Weather MCP 是一个基于高德地图 API 的 MCP（Model Context Protocol）服务器，提供实时天气查询和城市代码搜索功能。通过 MCP 协议，可以让 AI 助手获取准确的天气信息。&lt;/p&gt;
+&lt;p&gt;:::tip
+需要高德地图 API 密钥才能使用，支持中国所有城市的天气查询
+:::&lt;/p&gt;
+&lt;h2&gt;功能特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🌤️ &lt;strong&gt;实时天气查询&lt;/strong&gt; - 支持按城市名称或城市代码查询天气信息&lt;/li&gt;
+&lt;li&gt;📍 &lt;strong&gt;城市搜索&lt;/strong&gt; - 支持精确匹配和模糊搜索中国所有城市&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;4日天气预报&lt;/strong&gt; - 获取详细的天气预报数据&lt;/li&gt;
+&lt;li&gt;🔄 &lt;strong&gt;多种查询方式&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;按城市名称查询（如：杭州市、北京市）&lt;/li&gt;
+&lt;li&gt;按行政代码（adcode）查询&lt;/li&gt;
+&lt;li&gt;列出所有可用城市&lt;/li&gt;
+&lt;li&gt;按 adcode 获取城市信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;系统需求&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python 3.8+&lt;/li&gt;
+&lt;li&gt;高德地图 API 密钥（&lt;a href=&quot;https://amap.apifox.cn/doc-7445538&quot;&gt;申请教程&lt;/a&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;h3&gt;1. 克隆或下载项目&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/ChuranNeko/amap-weather-mcp.git
+cd amap-weather-mcp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;2. 安装依赖&lt;/h3&gt;
+&lt;p&gt;使用 &lt;code&gt;uv&lt;/code&gt; 包管理器（推荐）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;uv sync
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或使用 pip：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install -r requirements.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;配置&lt;/h2&gt;
+&lt;h3&gt;环境变量&lt;/h3&gt;
+&lt;p&gt;需要配置以下环境变量：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;环境变量&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;th&gt;必需&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;AMAP_API_KEY&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;高德地图 API 密钥&lt;/td&gt;
+&lt;td&gt;✅ 必需&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;使用 Claude Desktop 集成&lt;/h3&gt;
+&lt;p&gt;将以下配置添加到 Claude Desktop 的 &lt;code&gt;claude_desktop_config.json&lt;/code&gt;：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+    &quot;mcpServers&quot;: {
+        &quot;amap-weather-mcp&quot;: {
+            &quot;name&quot;: &quot;amap-weather-mcp&quot;,
+            &quot;type&quot;: &quot;stdio&quot;,
+            &quot;isActive&quot;: true,
+            &quot;command&quot;: &quot;uv&quot;,
+            &quot;args&quot;: [
+                &quot;--directory&quot;,
+                &quot;/path/to/amap-weather-mcp&quot;,
+                &quot;run&quot;,
+                &quot;main.py&quot;
+            ],
+            &quot;env&quot;: {
+                &quot;AMAP_API_KEY&quot;: &quot;your-api-key-here&quot;
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;使用方式&lt;/h2&gt;
+&lt;h3&gt;可用工具&lt;/h3&gt;
+&lt;h4&gt;1. &lt;code&gt;get_weather_by_city_name&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;按城市名称获取天气信息&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;city_name&lt;/code&gt; (string): 城市名称，如 &quot;杭州市&quot;、&quot;北京市&quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 实时天气和 4 天预报数据&lt;/p&gt;
+&lt;h4&gt;2. &lt;code&gt;get_weather_by_city_code&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;按城市行政代码获取天气信息&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;city_code&lt;/code&gt; (string): 城市行政代码，如 &quot;110100&quot;（北京市朝阳区）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 实时天气和 4 天预报数据&lt;/p&gt;
+&lt;h4&gt;3. &lt;code&gt;search_city&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;搜索城市（支持精确和模糊匹配）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;city_name&lt;/code&gt; (string): 要搜索的城市名称&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 匹配的城市列表及其代码&lt;/p&gt;
+&lt;h4&gt;4. &lt;code&gt;get_city_by_adcode&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;按 adcode 获取城市信息&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adcode&lt;/code&gt; (string): 行政代码，如 &quot;110000&quot;（北京市）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 城市信息对象&lt;/p&gt;
+&lt;h4&gt;5. &lt;code&gt;list_all_cities&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;列出所有可用城市&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;limit&lt;/code&gt; (integer): 返回结果数量限制，默认 50，最大 200&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 城市列表，包括总数量&lt;/p&gt;
+&lt;h2&gt;项目结构&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;amap-weather-mcp/
+├── main.py                 # 主程序文件
+├── city_codes.json        # 城市代码数据库
+├── requirements.txt       # 项目依赖
+├── .gitignore            # Git 忽略规则
+└── README.md             # 本文件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;依赖包&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;httpx&lt;/code&gt; - 异步 HTTP 客户端&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;requests&lt;/code&gt; - HTTP 库&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcp&lt;/code&gt; - Model Context Protocol 实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;开发说明&lt;/h2&gt;
+&lt;h3&gt;项目特点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 Python &lt;code&gt;asyncio&lt;/code&gt; 实现异步操作&lt;/li&gt;
+&lt;li&gt;集成 MCP 标准，支持与 Claude AI 无缝集成&lt;/li&gt;
+&lt;li&gt;高效的城市代码索引，支持快速查询&lt;/li&gt;
+&lt;li&gt;完善的错误处理和日志记录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;日志&lt;/h3&gt;
+&lt;p&gt;程序使用 Python 的 &lt;code&gt;logging&lt;/code&gt; 模块记录信息，日志级别为 INFO。&lt;/p&gt;
+&lt;h2&gt;使用示例&lt;/h2&gt;
+&lt;h3&gt;查询天气&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# 通过城市名称查询
+result = await get_weather_by_city_name(&quot;杭州市&quot;)
+
+# 通过城市代码查询
+result = await get_weather_by_city_code(&quot;330100&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;搜索城市&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# 搜索包含&quot;杭州&quot;的城市
+cities = await search_city(&quot;杭州&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;常见问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Q: 如何获取高德地图 API 密钥？&lt;/strong&gt;
+A: 访问 &lt;a href=&quot;https://lbs.amap.com/&quot;&gt;高德开放平台&lt;/a&gt; 注册账号并创建应用获取 API Key。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: 支持哪些城市？&lt;/strong&gt;
+A: 支持中国所有地级市和县级市，数据包含在 &lt;code&gt;city_codes.json&lt;/code&gt; 文件中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q: 天气数据多久更新一次？&lt;/strong&gt;
+A: 高德地图天气数据通常每小时更新一次，具体频率以高德地图为准。&lt;/p&gt;
+&lt;h2&gt;许可证&lt;/h2&gt;
+&lt;p&gt;MIT License&lt;/p&gt;
+&lt;h2&gt;支持&lt;/h2&gt;
+&lt;p&gt;如有问题或建议，欢迎提交 Issue 或 Pull Request。&lt;/p&gt;
+&lt;p&gt;:::github{repo=&quot;ChuranNeko/amap-weather-mcp&quot;}&lt;/p&gt;
+</content:encoded></item><item><title>MCP-Router</title><link>https://blog.crneko.top/posts/mcp-router/</link><guid isPermaLink="true">https://blog.crneko.top/posts/mcp-router/</guid><description>一个模型上下文协议（MCP）路由/代理系统</description><pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;MCP-Router: 模型上下文协议路由系统&lt;/h1&gt;
+&lt;h2&gt;项目初衷&lt;/h2&gt;
+&lt;p&gt;在使用多个 MCP（Model Context Protocol）服务器时，我发现了一个常见问题：当不同的 MCP 服务器提供同名工具时，LLM 无法有效区分它们，导致工具调用混乱。此外，管理多个 MCP 服务器的配置和连接也变得复杂。&lt;/p&gt;
+&lt;p&gt;MCP Router 的诞生就是为了解决这些问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;工具命名冲突&lt;/strong&gt;：通过实例名称前缀区分同名工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;配置管理复杂性&lt;/strong&gt;：提供统一的配置管理和热加载&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;连接管理&lt;/strong&gt;：支持多种传输协议，适应不同使用场景&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态扩展&lt;/strong&gt;：允许运行时添加、删除和管理 MCP 实例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个项目旨在为 MCP 生态系统提供一个强大而灵活的路由层，让开发者能够更轻松地构建复杂的 AI 应用。&lt;/p&gt;
+&lt;h2&gt;简介&lt;/h2&gt;
+&lt;p&gt;MCP Router 是一个模型上下文协议（MCP）路由/代理系统，作为MCP服务端和客户端，支持动态管理MCP工具配置，解决LLM无法区分同名工具的问题。&lt;/p&gt;
+&lt;p&gt;:::tip
+适用于需要管理多个MCP服务器的场景，支持多种传输协议
+:::&lt;/p&gt;
+&lt;h2&gt;特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;动态路由&lt;/strong&gt;: 文件系统路由，使用 &lt;code&gt;mcp_settings.json&lt;/code&gt; 配置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快速启动&lt;/strong&gt;: 后台加载客户端，启动时间&amp;lt;0.1秒&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;热加载&lt;/strong&gt;: 自动检测配置变化并重新加载&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多传输支持&lt;/strong&gt;: Stdio、SSE、HTTP 传输协议&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实时日志&lt;/strong&gt;: WebSocket实时日志流（可选）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;权限控制&lt;/strong&gt;: 可配置的LLM实例管理权限&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智能端口&lt;/strong&gt;: 端口占用时自动查找可用端口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安全认证&lt;/strong&gt;: Bearer Token认证，输入验证&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REST API&lt;/strong&gt;: 完整的HTTP API用于配置管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;h3&gt;从 PyPI 安装（推荐）&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;pip install mcp-router
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;从源码安装&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# 使用 uv (推荐)
+uv venv .venv
+uv pip install -e &quot;.[dev]&quot;
+
+# 或使用 pip
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+source .venv/bin/activate  # Linux/Mac
+pip install -e &quot;.[dev]&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;配置&lt;/h2&gt;
+&lt;p&gt;编辑 &lt;code&gt;config.json&lt;/code&gt; 文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &quot;api&quot;: {
+    &quot;enabled&quot;: false,
+    &quot;port&quot;: 8001,
+    &quot;host&quot;: &quot;0.0.0.0&quot;
+  },
+  &quot;server&quot;: {
+    &quot;host&quot;: &quot;0.0.0.0&quot;,
+    &quot;http&quot;: { &quot;enabled&quot;: true, &quot;port&quot;: 3000 },
+    &quot;sse&quot;: { &quot;enabled&quot;: true, &quot;port&quot;: 3001 }
+  },
+  &quot;security&quot;: {
+    &quot;bearer_token&quot;: &quot;&quot;,
+    &quot;enable_validation&quot;: true
+  },
+  &quot;logging&quot;: {
+    &quot;level&quot;: &quot;INFO&quot;,
+    &quot;directory&quot;: &quot;logs&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;添加MCP配置&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;data/{provider}/mcp_settings.json&lt;/code&gt; 中添加MCP服务器配置：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &quot;provider&quot;: &quot;example&quot;,
+  &quot;isActive&quot;: true,
+  &quot;name&quot;: &quot;example_instance&quot;,
+  &quot;type&quot;: &quot;stdio&quot;,
+  &quot;command&quot;: &quot;python&quot;,
+  &quot;args&quot;: [&quot;-m&quot;, &quot;example_mcp&quot;],
+  &quot;env&quot;: {}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;运行&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;# 直接指定传输模式
+python main.py              # Stdio模式（默认）
+python main.py stdio        # Stdio模式
+python main.py http         # HTTP模式
+python main.py sse          # SSE模式
+python main.py api          # API服务器模式
+
+# 查看帮助
+python main.py help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;MCP 工具&lt;/h2&gt;
+&lt;p&gt;MCP Router 提供以下工具给 LLM 使用：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;基础工具&lt;/strong&gt; (总是可用):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mcp.router.list()&lt;/code&gt; - 列出所有已注册的MCP客户端实例&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcp.router.help()&lt;/code&gt; - 返回所有实例的工具列表和使用说明&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcp.router.use(instance_name)&lt;/code&gt; - 使用指定的MCP实例&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcp.router.call(instance_name, tool_name, **kwargs)&lt;/code&gt; - 调用指定实例的指定工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;管理工具&lt;/strong&gt; (需启用 &lt;code&gt;allow_instance_management&lt;/code&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mcp.router.add(provider_name, config)&lt;/code&gt; - 动态添加新的MCP配置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcp.router.remove(instance_name)&lt;/code&gt; - 移除MCP配置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcp.router.enable(instance_name)&lt;/code&gt; - 启用MCP实例&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcp.router.disable(instance_name)&lt;/code&gt; - 禁用MCP实例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;与 LLM 集成&lt;/h2&gt;
+&lt;h3&gt;Stdio 模式（推荐）&lt;/h3&gt;
+&lt;p&gt;适用于单个LLM客户端（如Claude Desktop、Cursor）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &quot;mcpServers&quot;: {
+    &quot;mcp_router&quot;: {
+      &quot;command&quot;: &quot;uv&quot;,
+      &quot;args&quot;: [
+        &quot;--directory&quot;,
+        &quot;C:/path/to/mcp_router&quot;,
+        &quot;run&quot;,
+        &quot;python&quot;,
+        &quot;main.py&quot;
+      ],
+      &quot;transport&quot;: &quot;stdio&quot;
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;HTTP 模式&lt;/h3&gt;
+&lt;p&gt;适用于多客户端并发连接（端口 3000）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &quot;mcpServers&quot;: {
+    &quot;mcp_router_http&quot;: {
+      &quot;url&quot;: &quot;http://localhost:3000/mcp&quot;,
+      &quot;transport&quot;: &quot;streamableHttp&quot;
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;SSE 模式&lt;/h3&gt;
+&lt;p&gt;适用于实时推送场景（端口 3001）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &quot;mcpServers&quot;: {
+    &quot;mcp_router_sse&quot;: {
+      &quot;url&quot;: &quot;http://localhost:3001/sse&quot;,
+      &quot;transport&quot;: &quot;sse&quot;
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;REST API 端点&lt;/h2&gt;
+&lt;p&gt;当 API 模式启用时，可通过以下端点管理 MCP Router：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实例管理&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GET /api/instances&lt;/code&gt; - 列出所有实例&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GET /api/instances/{name}&lt;/code&gt; - 获取实例详情&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST /api/instances&lt;/code&gt; - 添加新实例&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PATCH /api/instances/{name}&lt;/code&gt; - 更新实例配置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DELETE /api/instances/{name}&lt;/code&gt; - 删除实例&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST /api/instances/{name}/enable&lt;/code&gt; - 启用实例&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST /api/instances/{name}/disable&lt;/code&gt; - 禁用实例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;工具管理&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GET /api/tools&lt;/code&gt; - 列出所有工具&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GET /api/tools/{instance_name}&lt;/code&gt; - 获取实例的工具列表&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST /api/call&lt;/code&gt; - 调用工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;项目结构&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;mcp_router/
+├── main.py                 # 项目入口
+├── config.json            # 全局配置文件
+├── requirements.txt       # 依赖文件
+├── pyproject.toml         # uv项目配置
+│
+├── src/
+│   ├── core/              # 核心模块
+│   │   ├── logger.py      # 日志系统
+│   │   ├── config.py      # 配置管理器
+│   │   └── exceptions.py  # 自定义异常
+│   │
+│   ├── mcp/               # MCP模块
+│   │   ├── client.py      # MCP客户端管理
+│   │   ├── server.py      # MCP服务端
+│   │   ├── router.py      # 路由核心逻辑
+│   │   └── transport.py   # 传输层
+│   │
+│   ├── api/               # API模块
+│   │   ├── app.py         # FastAPI应用
+│   │   └── routes.py      # API路由处理
+│   │
+│   └── utils/             # 工具模块
+│       ├── validator.py   # 输入验证
+│       ├── watcher.py     # 文件监视器
+│       └── security.py    # 安全工具
+│
+├── data/                  # MCP配置目录
+│   ├── example/
+│   │   └── mcp_settings.json
+│   └── ...
+│
+└── test/                  # 测试文件
+    ├── test_router.py
+    ├── test_api.py
+    └── test_security.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;开发&lt;/h2&gt;
+&lt;h3&gt;代码风格&lt;/h3&gt;
+&lt;p&gt;本项目使用 &lt;a href=&quot;https://github.com/astral-sh/ruff&quot;&gt;Ruff&lt;/a&gt; 进行代码格式化和 linting：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 格式化代码
+ruff format .
+
+# 检查代码
+ruff check .
+
+# 自动修复
+ruff check --fix .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;运行测试&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# 运行所有测试
+pytest
+
+# 运行特定测试
+pytest test/test_router.py
+
+# 带覆盖率
+pytest --cov=src --cov-report=html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;安全性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;输入验证&lt;/strong&gt;: 防止SQL注入、XSS攻击、路径遍历&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bearer Token&lt;/strong&gt;: 可选的API认证&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CORS配置&lt;/strong&gt;: 灵活的跨域请求控制&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文件大小限制&lt;/strong&gt;: 防止DOS攻击&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTP安全头&lt;/strong&gt;: X-Frame-Options, CSP, HSTS等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::github{repo=&quot;ChuranNeko/mcp_router&quot;}&lt;/p&gt;
 </content:encoded></item><item><title>Quick_Napcat_Docker_Compose</title><link>https://blog.crneko.top/posts/quick-napcat-docker-compose/</link><guid isPermaLink="true">https://blog.crneko.top/posts/quick-napcat-docker-compose/</guid><description>使用Docker Compose快速部署NapCat</description><pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;使用Docker Compose快速部署NapCat&lt;/h1&gt;
 &lt;h2&gt;文章目录&lt;/h2&gt;
 &lt;ul&gt;

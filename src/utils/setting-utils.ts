@@ -44,6 +44,11 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 			break;
 	}
 
+	// 重新应用卡片透明度（根据当前主题）
+	if (typeof (window as any).applyCardOpacity === "function") {
+		(window as any).applyCardOpacity();
+	}
+
 	// Set the theme for Expressive Code
 	document.documentElement.setAttribute(
 		"data-theme",

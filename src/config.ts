@@ -32,7 +32,7 @@ export const siteConfig: SiteConfig = {
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
 		attachment: "fixed", // Background attachment: 'fixed', 'scroll', 'local'
-		opacity: 0.3, // Background opacity (0-1)
+		opacity: 0.8, // Background opacity (0-1)
 		cardOpacity: 0.85, // Card transparency when background is enabled (0-1)
 	},
 	toc: {

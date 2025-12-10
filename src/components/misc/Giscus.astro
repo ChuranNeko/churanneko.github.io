@@ -18,7 +18,7 @@ const {
 ---
 
 {enable && (
-    <div class="giscus-container mt-8 mb-8">
+    <div class="giscus-container mt-8 mb-8 loading" id="giscus-container">
         <script src="https://giscus.app/client.js"
                 data-repo={repo}
                 data-repo-id={repoId}
@@ -35,6 +35,17 @@ const {
                 crossorigin="anonymous"
                 async>
         </script>
+        <script is:inline>
+            // 移除加载状态
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    const container = document.getElementById('giscus-container');
+                    if (container) {
+                        container.classList.remove('loading');
+                    }
+                }, 1000);
+            });
+        </script>
     </div>
 )}
 
@@ -42,14 +53,75 @@ const {
     .giscus-container {
         border-radius: var(--radius-large);
         overflow: hidden;
+        transition: all 0.3s ease;
+        position: relative;
+        /* 移除背景、边框和阴影 */
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+    
+    /* 悬停效果 - 移除阴影和变换 */
+    .giscus-container:hover {
+        /* 移除所有悬停效果 */
     }
     
     /* Giscus 主题适配 */
     :global(html.dark) .giscus-container {
-        background-color: var(--card-bg);
+        background: transparent;
+        border: none;
+        box-shadow: none;
     }
     
+    /* Giscus 框架样式 */
     :global(.giscus-frame) {
         border-radius: var(--radius-large);
+        border: none;
+    }
+    
+    /* 加载状态样式 - 只在浅色模式下显示白色渐变 */
+    .giscus-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.1) 50%,
+            rgba(255, 255, 255, 0) 100%);
+        animation: shimmer 2s infinite;
+        border-radius: var(--radius-large);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .giscus-container.loading::before {
+        opacity: 1;
+    }
+    
+    /* 深色模式下不显示加载动画 */
+    :global(html.dark) .giscus-container::before {
+        display: none;
+    }
+    
+    /* 亮色模式字体颜色调整 */
+    :global(html:not(.dark)) .giscus-container {
+        color: #6b7280;
+    }
+    
+    @keyframes shimmer {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+    
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+        .giscus-container {
+            border-radius: var(--radius-medium);
+            margin: 0 -1rem;
+        }
     }
 </style>

@@ -72,7 +72,6 @@ const bannerOffsetByPosition = {
 const bannerOffset =
 	bannerOffsetByPosition[siteConfig.banner.position || "center"];
 ---
-
 <!DOCTYPE html>
 <html lang={siteLang} class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]"
 	  data-overlayscrollbars-initialize
@@ -173,6 +172,7 @@ const bannerOffset =
 				--card-opacity: var(--card-opacity);
 			}
 			
+			/* 背景图片层：在纯色背景前，卡片后 */
 			body::before {
 				content: '' !important;
 				position: fixed !important;
@@ -429,14 +429,18 @@ function applyBackground() {
 		const urlMatch = bgUrl.match(/url\(["']?([^"')]+)["']?\)/);
 		if (urlMatch) {
 			img.onload = function() {
-				// 背景图片完全加载后，显示背景并启用卡片透明效果
+				// 背景图片完全加载后，显示背景
 				document.body.classList.add('bg-loaded');
-				const cardOpacity = siteConfig.background.cardOpacity || 0.85;
-				document.documentElement.style.setProperty('--card-bg', `rgba(17, 24, 39, ${cardOpacity})`);
-				document.documentElement.style.setProperty('--float-panel-bg', `rgba(17, 24, 39, ${cardOpacity})`);
+				
+				// 只在暗色模式下应用卡片透明效果
+				if (document.documentElement.classList.contains('dark')) {
+					const cardOpacity = siteConfig.background.cardOpacity || 0.85;
+					document.documentElement.style.setProperty('--card-bg', `rgba(17, 24, 39, ${cardOpacity})`);
+					document.documentElement.style.setProperty('--float-panel-bg', `rgba(17, 24, 39, ${cardOpacity})`);
+				}
+				// 亮色模式下不做额外处理，使用 CSS 变量中定义的纯色背景
 			};
 			img.onerror = function() {
-				// Keep cards opaque if background image fails to load
 				console.warn('Background image failed to load, keeping cards opaque');
 			};
 			img.src = urlMatch[1];

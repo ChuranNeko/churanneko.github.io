@@ -15,6 +15,139 @@
 &lt;ul&gt;
 &lt;li&gt;📫 邮箱：&lt;a href=&quot;mailto:churanneko@qq.com&quot;&gt;churanneko@qq.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded></item><item><title>Docker-Compose-Mirror-Setup</title><link>https://blog.crneko.top/posts/docker-compose-mirror-setup/</link><guid isPermaLink="true">https://blog.crneko.top/posts/docker-compose-mirror-setup/</guid><description>配置 Docker Compose镜像源</description><pubDate>Fri, 26 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;配置Docker Compose源&lt;/h1&gt;
+&lt;p&gt;:::tip
+可直接点击文字跳转至对应章节
+:::&lt;/p&gt;
+&lt;h2&gt;目录&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E7%AE%80%E4%BB%8B&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E5%AE%89%E8%A3%85-docker&quot;&gt;安装 Docker&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E4%BD%BF%E7%94%A8-linuxmirror-%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85&quot;&gt;使用 LinuxMirror 脚本安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E4%BD%BF%E7%94%A8%E5%AE%98%E6%96%B9%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85&quot;&gt;使用官方脚本安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E6%8C%87%E5%AE%9A%E9%95%9C%E5%83%8F%E6%BA%90%E5%AE%89%E8%A3%85&quot;&gt;指定镜像源安装&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E9%85%8D%E7%BD%AE-docker&quot;&gt;配置 Docker&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E4%BD%BF%E7%94%A8%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9&quot;&gt;使用脚本修改&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E8%87%AA%E8%A1%8C%E4%BF%AE%E6%94%B9&quot;&gt;自行修改&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E7%BC%96%E8%BE%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6&quot;&gt;编辑配置文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E6%96%87%E4%BB%B6%E7%A4%BA%E4%BE%8B&quot;&gt;文件示例&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E9%87%8D%E8%BD%BD%E6%9C%8D%E5%8A%A1&quot;&gt;重载服务&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#docker-%E9%95%9C%E5%83%8F%E6%BA%90%E5%88%97%E8%A1%A8&quot;&gt;Docker 镜像源列表&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;简介&lt;/h2&gt;
+&lt;p&gt;在国内，由于部分运营商可能对国外网站或镜像源进行 &lt;code&gt;SNI&lt;/code&gt; 拦截 或 &lt;code&gt;DNS&lt;/code&gt; 污染，直接访问官方 &lt;code&gt;Docker&lt;/code&gt; 镜像源可能会较慢甚至失败。因此，建议使用 &lt;code&gt;国内加速源&lt;/code&gt; 来拉取 &lt;code&gt;Docker&lt;/code&gt; 安装包和镜像，从而提升下载速度和稳定性。&lt;/p&gt;
+&lt;h2&gt;安装 Docker&lt;/h2&gt;
+&lt;h3&gt;使用 LinuxMirror 脚本安装&lt;/h3&gt;
+&lt;p&gt;使用 &lt;code&gt;LinuxMirror&lt;/code&gt; 提供的脚本进行安装(推荐)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -sSL https://linuxmirrors.cn/docker.sh)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;使用官方脚本安装&lt;/h3&gt;
+&lt;p&gt;或者使用 &lt;code&gt;Docker Hub&lt;/code&gt; 官方提供的脚本进行安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -fsSL https://get.docker.com)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;指定镜像源安装&lt;/h3&gt;
+&lt;p&gt;再或者使用 &lt;code&gt;Docker Hub&lt;/code&gt; 官方提供的脚本进行安装 再指定镜像源(--mirror 后的参数为镜像源)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -fsSL https://get.docker.com) --mirror Aliyun
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;:::tip
+如已经安装，只需要修改 Docker 部分请跳转至 &lt;a href=&quot;#%E9%85%8D%E7%BD%AE-docker&quot;&gt;配置docker&lt;/a&gt;
+:::&lt;/p&gt;
+&lt;h2&gt;配置 Docker&lt;/h2&gt;
+&lt;p&gt;一般针对于小白,我比较推荐直接使用 &lt;code&gt;Docker Compose&lt;/code&gt; 来完成部署项目，因为部署只需要写好 &lt;code&gt;docker-compose.yaml&lt;/code&gt; 文件，随后在 &lt;code&gt;docker-compose.yaml&lt;/code&gt; 的同级目录运行 &lt;code&gt;docker compose up -d&lt;/code&gt; 即可完成部署。&lt;/p&gt;
+&lt;p&gt;好了，我们开始配置 &lt;code&gt;Docker Registry&lt;/code&gt; 源的配置。&lt;/p&gt;
+&lt;h3&gt;使用脚本修改&lt;/h3&gt;
+&lt;p&gt;上方我们有提到使用安装脚本,那么这里也可以使用直接脚本来完成修改。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -sSL https://linuxmirrors.cn/docker.sh)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;自行修改&lt;/h3&gt;
+&lt;p&gt;自行修改 &lt;code&gt;Docker&lt;/code&gt; 源,这也是一种备选方式,也是我个人比较推荐的方式。&lt;/p&gt;
+&lt;h4&gt;编辑配置文件&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;# 可选备份
+cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
+
+# 使用nano 编辑器(推荐)
+nano /etc/docker/daemon.json
+
+# 或使用vim编辑器
+vim /etc/docker/daemon.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;:::tip
+如果没有安装 &lt;code&gt;nano&lt;/code&gt; 编辑器，请自行使用 &lt;code&gt;apt&lt;/code&gt; 安装。&lt;/p&gt;
+&lt;p&gt;如果显示没有权限修改，请在命令前加上 &lt;code&gt;sudo&lt;/code&gt; ，打比方：&lt;code&gt;sudo nano&apos; /etc/...&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Vim&lt;/code&gt; 退出时需要按下 &lt;code&gt;ESC&lt;/code&gt; 后,输入 &lt;code&gt;:wq&lt;/code&gt; 命令后回车来进行写入并退出。
+:::&lt;/p&gt;
+&lt;h4&gt;文件示例&lt;/h4&gt;
+&lt;p&gt;这里给个示例,且使用的 &lt;code&gt;毫秒镜像&lt;/code&gt; 源。你可以直接复制并它。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &quot;registry-mirrors&quot;: [&quot;https://docker.1ms.run&quot;]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;重载服务&lt;/h4&gt;
+&lt;p&gt;:::warning
+注意重载 &apos;Docker&apos; 服务时,所有的 &apos;Docker&apos; 容器及服务会重启。
+:::&lt;/p&gt;
+&lt;p&gt;修改 daemon.json 后需要重载服务，才能让新配置生效。&lt;/p&gt;
+&lt;p&gt;重载服务&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;systemctl daemon-reexec
+systemctl restart docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果无法执行此命令 请在命令前添加 &lt;code&gt;sudo&lt;/code&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Docker镜像源列表&lt;/h2&gt;
+&lt;p&gt;这里是 &lt;code&gt;Docker Registry&lt;/code&gt; 列表&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 毫秒镜像
+http://docker.1ms.run
+
+# DockerProxy
+http://dockerproxy.net
+
+# DaoCloud                  
+http://docker.m.daocloud.io
+
+# 阿里云
+http://registry.cn-hangzhou.aliyuncs.com     # 阿里云-杭州
+http://registry.cn-shanghai.aliyuncs.com    # 阿里云-上海
+http://registry.cn-qingdao.aliyuncs.com    # 阿里云-青岛
+http://registry.cn-beijing.aliyuncs.com     # 阿里云-北京
+http://registry.cn-zhangjiakou.aliyuncs.com # 阿里云-张家口
+http://registry.cn-huhehaote.aliyuncs.com   # 阿里云-呼和浩特
+http://registry.cn-wulanchabu.aliyuncs.com  # 阿里云-乌兰察布
+http://registry.cn-shenzhen.aliyuncs.com   # 阿里云-深圳
+http://registry.cn-heyuan.aliyuncs.com      # 阿里云-河源
+http://registry.cn-guangzhou.aliyuncs.com   # 阿里云-广州
+http://registry.cn-chengdu.aliyuncs.com    # 阿里云-成都
+http://registry.cn-hongkong.aliyuncs.com    # 阿里云-香港
+http://registry.ap-northeast-1.aliyuncs.com  # 阿里云-日本
+http://registry.ap-southeast-1.aliyuncs.com # 阿里云-新加坡
+http://registry.ap-southeast-3.aliyuncs.com # 阿里云-马来西亚
+http://registry.ap-southeast-5.aliyuncs.com # 阿里云-印尼
+http://registry.eu-central-1.aliyuncs.com   # 阿里云-德国
+http://registry.eu-west-1.aliyuncs.com      # 阿里云-英国
+http://registry.us-west-1.aliyuncs.com      # 阿里云-美国西部
+http://registry.us-east-1.aliyuncs.com       # 阿里云-美国东部
+http://registry.me-east-1.aliyuncs.com      # 阿里云-中东
+
+# 腾讯云镜像
+http://mirror.ccs.tencentyun.com
+
+# Google 镜像
+https://gcr.io
+https://asia.gcr.io
+https://eu.gcr.io
+
+# Docker Hub 官方镜像
+https://registry.hub.docker.com
+&lt;/code&gt;&lt;/pre&gt;
 </content:encoded></item><item><title>AMap-Weather-MCP</title><link>https://blog.crneko.top/posts/amap-weather-mcp/</link><guid isPermaLink="true">https://blog.crneko.top/posts/amap-weather-mcp/</guid><description>基于高德地图API的MCP天气服务器</description><pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;AMap-Weather-MCP: 基于高德地图API的MCP天气服务器&lt;/h1&gt;
 &lt;h2&gt;项目初衷&lt;/h2&gt;
 &lt;p&gt;在开发 AI 应用时，我发现获取准确的天气信息是一个常见需求。虽然有许多天气 API 可用，但它们往往需要复杂的配置和认证流程，而且大多数都没有针对 MCP（Model Context Protocol）生态系统进行优化。&lt;/p&gt;
@@ -426,7 +559,10 @@ pytest --cov=src --cov-report=html
 &lt;/ul&gt;
 &lt;p&gt;:::github{repo=&quot;ChuranNeko/mcp_router&quot;}&lt;/p&gt;
 </content:encoded></item><item><title>Quick_Napcat_Docker_Compose</title><link>https://blog.crneko.top/posts/quick-napcat-docker-compose/</link><guid isPermaLink="true">https://blog.crneko.top/posts/quick-napcat-docker-compose/</guid><description>使用Docker Compose快速部署NapCat</description><pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;使用Docker Compose快速部署NapCat&lt;/h1&gt;
-&lt;h2&gt;文章目录&lt;/h2&gt;
+&lt;h2&gt;目录&lt;/h2&gt;
+&lt;p&gt;:::tip
+可直接点击文字跳转至对应章节
+:::&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#%E7%AE%80%E4%BB%8B&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E4%BB%80%E4%B9%88%E6%98%AFNapCat&quot;&gt;什么是NapCat?&lt;/a&gt;&lt;/li&gt;
@@ -515,7 +651,10 @@ NapCat 支持多种对接方式，您可以参考官方文档进行配置：
 &lt;code&gt;./data/qq&lt;/code&gt; 目录存储QQ账号的数据。
 :::&lt;/p&gt;
 </content:encoded></item><item><title>Unity-CN-to-International</title><link>https://blog.crneko.top/posts/unity-cn-to-international/</link><guid isPermaLink="true">https://blog.crneko.top/posts/unity-cn-to-international/</guid><description>Unity中国特供转国际版本</description><pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Unity中国特供转国际版本&lt;/h1&gt;
-&lt;h2&gt;文章目录&lt;/h2&gt;
+&lt;h2&gt;目录&lt;/h2&gt;
+&lt;p&gt;:::tip
+可直接点击文字跳转至对应章节
+:::&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#%E7%AE%80%E4%BB%8B&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%88%A4%E6%96%AD&quot;&gt;判断&lt;/a&gt;&lt;/li&gt;

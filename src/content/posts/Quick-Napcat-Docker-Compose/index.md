@@ -10,7 +10,11 @@ lg: zh_CH
 
 # 使用Docker Compose快速部署NapCat
 
-## 文章目录
+## 目录
+
+:::tip
+可直接点击文字跳转至对应章节
+:::
 
 - [简介](#简介)
 - [什么是NapCat?](#什么是NapCat)

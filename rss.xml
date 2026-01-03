@@ -569,7 +569,7 @@ pytest --cov=src --cov-report=html
 &lt;li&gt;&lt;a href=&quot;#%E5%BC%80%E5%A7%8B&quot;&gt;开始&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%AE%89%E8%A3%85Docker&quot;&gt;安装Docker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#%E4%B8%8B%E8%BD%BDNapCat-Docker-Compose%E6%96%87%E4%BB%B6&quot;&gt;下载NapCat Docker Compose文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E4%B8%8B%E8%BD%BDnapcat-docker-compose%E6%96%87%E4%BB%B6&quot;&gt;下载NapCat Docker Compose文件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1&quot;&gt;启动服务&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97&quot;&gt;查看日志&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%81%9C%E6%AD%A2%E6%9C%8D%E5%8A%A1&quot;&gt;停止服务&lt;/a&gt;&lt;/li&gt;

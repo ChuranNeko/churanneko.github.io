@@ -20,7 +20,7 @@ lg: zh_CH
 - [什么是NapCat?](#什么是NapCat)
 - [开始](#开始)
   - [安装Docker](#安装Docker)
-  - [下载NapCat Docker Compose文件](#下载NapCat-Docker-Compose文件)
+  - [下载NapCat Docker Compose文件](#下载napcat-docker-compose文件)
   - [启动服务](#启动服务)
   - [查看日志](#查看日志)
   - [停止服务](#停止服务)

@@ -5,6 +5,18 @@
 			"avatar": "https://api.iowen.cn/favicon/blog.crneko.top.png",
 			"description": "Ciallo～(∠・ω< )⌒☆",
 			"url": "https://blog.crneko.top"
+		},
+		{
+			"name": "LeonXieの小窝",
+			"avatar": "https://www.leonxie.cn/upload/avatar.jpg",
+			"description": "保持热爱，奔赴山海！",
+			"url": "https://www.leonxie.cn"
+		},
+		{
+			"name": "里世界",
+			"avatar": "https://leenet.xyz/avatar.png",
+			"description": "Welcome To The World Of Lee",
+			"url": "https://leenet.xyz"
 		}
 	]
 }

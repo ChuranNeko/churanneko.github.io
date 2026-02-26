@@ -3,7 +3,6 @@
   "outputDirectory": "dist",
   "installCommand": "pnpm install --frozen-lockfile=false",
   "framework": "astro",
-  "nodeVersion": "22.x",
   "headers": [
     {
       "source": "/(.*)",

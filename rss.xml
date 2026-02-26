@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>初然の博客</title><description>初然</description><link>https://blog.crneko.top/</link><language>zh_CN</language><item><title>加群向导</title><link>https://blog.crneko.top/posts/pin/</link><guid isPermaLink="true">https://blog.crneko.top/posts/pin/</guid><pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;📬小群体&lt;/h2&gt;
-&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>初然の博客</title><description>Firefly 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。</description><link>https://blog.crneko.top/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.6.5</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>Thu, 26 Feb 2026 17:48:02 GMT</lastBuildDate><item><title>加群向导</title><link>https://blog.crneko.top/posts/pin/</link><guid isPermaLink="true">https://blog.crneko.top/posts/pin/</guid><pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;📬小群体&lt;a href=&quot;#小群体&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;QQ
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://qm.qq.com/q/MS6J5wEOOY&quot;&gt;点击链接加入群聊[初然的猫猫头窝]&lt;/a&gt;&lt;/li&gt;
@@ -10,17 +9,10 @@
 &lt;li&gt;&lt;a href=&quot;https://t.me/+SE9fsiS1YHJhM2Y1&quot;&gt;点击链接加入群聊[然泽茶馆]&lt;/a&gt; (闲置)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;📬 联系方式&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;📫 邮箱：&lt;a href=&quot;mailto:churanneko@qq.com&quot;&gt;churanneko@qq.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded></item><item><title>Docker-Compose-Mirror-Setup</title><link>https://blog.crneko.top/posts/docker-compose-mirror-setup/</link><guid isPermaLink="true">https://blog.crneko.top/posts/docker-compose-mirror-setup/</guid><description>配置 Docker Compose镜像源</description><pubDate>Fri, 26 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;配置Docker Compose源&lt;/h1&gt;
-&lt;p&gt;:::tip
-可直接点击文字跳转至对应章节
-:::&lt;/p&gt;
-&lt;h2&gt;目录&lt;/h2&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;📬 联系方式&lt;a href=&quot;#-联系方式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;📫 邮箱：&lt;a href=&quot;#&quot;&gt;churanneko@qq.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;</content:encoded></item><item><title>Docker-Compose-Mirror-Setup</title><link>https://blog.crneko.top/posts/docker-compose-mirror-setup/</link><guid isPermaLink="true">https://blog.crneko.top/posts/docker-compose-mirror-setup/</guid><description>配置 Docker Compose镜像源</description><pubDate>Fri, 26 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;配置Docker Compose源&lt;a href=&quot;#配置docker-compose源&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;可直接点击文字跳转至对应章节&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;section&gt;&lt;h2&gt;目录&lt;a href=&quot;#目录&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#%E7%AE%80%E4%BB%8B&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%AE%89%E8%A3%85-docker&quot;&gt;安装 Docker&lt;/a&gt;
 &lt;ul&gt;
@@ -42,131 +34,21 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#docker-%E9%95%9C%E5%83%8F%E6%BA%90%E5%88%97%E8%A1%A8&quot;&gt;Docker 镜像源列表&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;简介&lt;/h2&gt;
-&lt;p&gt;在国内，由于部分运营商可能对国外网站或镜像源进行 &lt;code&gt;SNI&lt;/code&gt; 拦截 或 &lt;code&gt;DNS&lt;/code&gt; 污染，直接访问官方 &lt;code&gt;Docker&lt;/code&gt; 镜像源可能会较慢甚至失败。因此，建议使用 &lt;code&gt;国内加速源&lt;/code&gt; 来拉取 &lt;code&gt;Docker&lt;/code&gt; 安装包和镜像，从而提升下载速度和稳定性。&lt;/p&gt;
-&lt;h2&gt;安装 Docker&lt;/h2&gt;
-&lt;h3&gt;使用 LinuxMirror 脚本安装&lt;/h3&gt;
-&lt;p&gt;使用 &lt;code&gt;LinuxMirror&lt;/code&gt; 提供的脚本进行安装(推荐)&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -sSL https://linuxmirrors.cn/docker.sh)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;使用官方脚本安装&lt;/h3&gt;
-&lt;p&gt;或者使用 &lt;code&gt;Docker Hub&lt;/code&gt; 官方提供的脚本进行安装&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -fsSL https://get.docker.com)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;指定镜像源安装&lt;/h3&gt;
-&lt;p&gt;再或者使用 &lt;code&gt;Docker Hub&lt;/code&gt; 官方提供的脚本进行安装 再指定镜像源(--mirror 后的参数为镜像源)&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -fsSL https://get.docker.com) --mirror Aliyun
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;:::tip
-如已经安装，只需要修改 Docker 部分请跳转至 &lt;a href=&quot;#%E9%85%8D%E7%BD%AE-docker&quot;&gt;配置docker&lt;/a&gt;
-:::&lt;/p&gt;
-&lt;h2&gt;配置 Docker&lt;/h2&gt;
-&lt;p&gt;一般针对于小白,我比较推荐直接使用 &lt;code&gt;Docker Compose&lt;/code&gt; 来完成部署项目，因为部署只需要写好 &lt;code&gt;docker-compose.yaml&lt;/code&gt; 文件，随后在 &lt;code&gt;docker-compose.yaml&lt;/code&gt; 的同级目录运行 &lt;code&gt;docker compose up -d&lt;/code&gt; 即可完成部署。&lt;/p&gt;
-&lt;p&gt;好了，我们开始配置 &lt;code&gt;Docker Registry&lt;/code&gt; 源的配置。&lt;/p&gt;
-&lt;h3&gt;使用脚本修改&lt;/h3&gt;
-&lt;p&gt;上方我们有提到使用安装脚本,那么这里也可以使用直接脚本来完成修改。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -sSL https://linuxmirrors.cn/docker.sh)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;自行修改&lt;/h3&gt;
-&lt;p&gt;自行修改 &lt;code&gt;Docker&lt;/code&gt; 源,这也是一种备选方式,也是我个人比较推荐的方式。&lt;/p&gt;
-&lt;h4&gt;编辑配置文件&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;# 可选备份
-cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
-
-# 使用nano 编辑器(推荐)
-nano /etc/docker/daemon.json
-
-# 或使用vim编辑器
-vim /etc/docker/daemon.json
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;:::tip
-如果没有安装 &lt;code&gt;nano&lt;/code&gt; 编辑器，请自行使用 &lt;code&gt;apt&lt;/code&gt; 安装。&lt;/p&gt;
-&lt;p&gt;如果显示没有权限修改，请在命令前加上 &lt;code&gt;sudo&lt;/code&gt; ，打比方：&lt;code&gt;sudo nano&apos; /etc/...&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Vim&lt;/code&gt; 退出时需要按下 &lt;code&gt;ESC&lt;/code&gt; 后,输入 &lt;code&gt;:wq&lt;/code&gt; 命令后回车来进行写入并退出。
-:::&lt;/p&gt;
-&lt;h4&gt;文件示例&lt;/h4&gt;
-&lt;p&gt;这里给个示例,且使用的 &lt;code&gt;毫秒镜像&lt;/code&gt; 源。你可以直接复制并它。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;registry-mirrors&quot;: [&quot;https://docker.1ms.run&quot;]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;重载服务&lt;/h4&gt;
-&lt;p&gt;:::warning
-注意重载 &apos;Docker&apos; 服务时,所有的 &apos;Docker&apos; 容器及服务会重启。
-:::&lt;/p&gt;
-&lt;p&gt;修改 daemon.json 后需要重载服务，才能让新配置生效。&lt;/p&gt;
-&lt;p&gt;重载服务&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;systemctl daemon-reexec
-systemctl restart docker
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果无法执行此命令 请在命令前添加 &lt;code&gt;sudo&lt;/code&gt; 。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;Docker镜像源列表&lt;/h2&gt;
-&lt;p&gt;这里是 &lt;code&gt;Docker Registry&lt;/code&gt; 列表&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# 毫秒镜像
-http://docker.1ms.run
-
-# DockerProxy
-http://dockerproxy.net
-
-# DaoCloud                  
-http://docker.m.daocloud.io
-
-# 阿里云
-http://registry.cn-hangzhou.aliyuncs.com     # 阿里云-杭州
-http://registry.cn-shanghai.aliyuncs.com    # 阿里云-上海
-http://registry.cn-qingdao.aliyuncs.com    # 阿里云-青岛
-http://registry.cn-beijing.aliyuncs.com     # 阿里云-北京
-http://registry.cn-zhangjiakou.aliyuncs.com # 阿里云-张家口
-http://registry.cn-huhehaote.aliyuncs.com   # 阿里云-呼和浩特
-http://registry.cn-wulanchabu.aliyuncs.com  # 阿里云-乌兰察布
-http://registry.cn-shenzhen.aliyuncs.com   # 阿里云-深圳
-http://registry.cn-heyuan.aliyuncs.com      # 阿里云-河源
-http://registry.cn-guangzhou.aliyuncs.com   # 阿里云-广州
-http://registry.cn-chengdu.aliyuncs.com    # 阿里云-成都
-http://registry.cn-hongkong.aliyuncs.com    # 阿里云-香港
-http://registry.ap-northeast-1.aliyuncs.com  # 阿里云-日本
-http://registry.ap-southeast-1.aliyuncs.com # 阿里云-新加坡
-http://registry.ap-southeast-3.aliyuncs.com # 阿里云-马来西亚
-http://registry.ap-southeast-5.aliyuncs.com # 阿里云-印尼
-http://registry.eu-central-1.aliyuncs.com   # 阿里云-德国
-http://registry.eu-west-1.aliyuncs.com      # 阿里云-英国
-http://registry.us-west-1.aliyuncs.com      # 阿里云-美国西部
-http://registry.us-east-1.aliyuncs.com       # 阿里云-美国东部
-http://registry.me-east-1.aliyuncs.com      # 阿里云-中东
-
-# 腾讯云镜像
-http://mirror.ccs.tencentyun.com
-
-# Google 镜像
-https://gcr.io
-https://asia.gcr.io
-https://eu.gcr.io
-
-# Docker Hub 官方镜像
-https://registry.hub.docker.com
-&lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>AMap-Weather-MCP</title><link>https://blog.crneko.top/posts/amap-weather-mcp/</link><guid isPermaLink="true">https://blog.crneko.top/posts/amap-weather-mcp/</guid><description>基于高德地图API的MCP天气服务器</description><pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;AMap-Weather-MCP: 基于高德地图API的MCP天气服务器&lt;/h1&gt;
-&lt;h2&gt;项目初衷&lt;/h2&gt;
-&lt;p&gt;在开发 AI 应用时，我发现获取准确的天气信息是一个常见需求。虽然有许多天气 API 可用，但它们往往需要复杂的配置和认证流程，而且大多数都没有针对 MCP（Model Context Protocol）生态系统进行优化。&lt;/p&gt;
-&lt;p&gt;AMap Weather MCP 的诞生是为了解决这些问题：&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;简介&lt;a href=&quot;#简介&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在国内，由于部分运营商可能对国外网站或镜像源进行 &lt;code&gt;SNI&lt;/code&gt; 拦截 或 &lt;code&gt;DNS&lt;/code&gt; 污染，直接访问官方 &lt;code&gt;Docker&lt;/code&gt; 镜像源可能会较慢甚至失败。因此，建议使用 &lt;code&gt;国内加速源&lt;/code&gt; 来拉取 &lt;code&gt;Docker&lt;/code&gt; 安装包和镜像，从而提升下载速度和稳定性。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;安装 Docker&lt;a href=&quot;#安装-docker&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;使用 LinuxMirror 脚本安装&lt;a href=&quot;#使用-linuxmirror-脚本安装&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;LinuxMirror&lt;/code&gt; 提供的脚本进行安装(推荐)&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;bash&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&amp;lt;(&lt;/span&gt;&lt;span&gt;curl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-sSL&lt;/span&gt;&lt;span&gt; https://linuxmirrors.cn/docker.sh)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;使用官方脚本安装&lt;a href=&quot;#使用官方脚本安装&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;或者使用 &lt;code&gt;Docker Hub&lt;/code&gt; 官方提供的脚本进行安装&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;bash&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&amp;lt;(&lt;/span&gt;&lt;span&gt;curl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-fsSL&lt;/span&gt;&lt;span&gt; https://get.docker.com)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;指定镜像源安装&lt;a href=&quot;#指定镜像源安装&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;再或者使用 &lt;code&gt;Docker Hub&lt;/code&gt; 官方提供的脚本进行安装 再指定镜像源(—mirror 后的参数为镜像源)&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;bash&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&amp;lt;(&lt;/span&gt;&lt;span&gt;curl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-fsSL&lt;/span&gt;&lt;span&gt; https://get.docker.com)&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;--mirror&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;Aliyun&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;如已经安装，只需要修改 Docker 部分请跳转至 &lt;a href=&quot;#%E9%85%8D%E7%BD%AE-docker&quot;&gt;配置docker&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;配置 Docker&lt;a href=&quot;#配置-docker&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;一般针对于小白,我比较推荐直接使用 &lt;code&gt;Docker Compose&lt;/code&gt; 来完成部署项目，因为部署只需要写好 &lt;code&gt;docker-compose.yaml&lt;/code&gt; 文件，随后在 &lt;code&gt;docker-compose.yaml&lt;/code&gt; 的同级目录运行 &lt;code&gt;docker compose up -d&lt;/code&gt; 即可完成部署。&lt;/p&gt;&lt;p&gt;好了，我们开始配置 &lt;code&gt;Docker Registry&lt;/code&gt; 源的配置。&lt;/p&gt;&lt;section&gt;&lt;h3&gt;使用脚本修改&lt;a href=&quot;#使用脚本修改&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;上方我们有提到使用安装脚本,那么这里也可以使用直接脚本来完成修改。&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;bash&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&amp;lt;(&lt;/span&gt;&lt;span&gt;curl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-sSL&lt;/span&gt;&lt;span&gt; https://linuxmirrors.cn/docker.sh)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;自行修改&lt;a href=&quot;#自行修改&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;自行修改 &lt;code&gt;Docker&lt;/code&gt; 源,这也是一种备选方式,也是我个人比较推荐的方式。&lt;/p&gt;&lt;section&gt;&lt;h4&gt;编辑配置文件&lt;a href=&quot;#编辑配置文件&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 可选备份&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;cp&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/etc/docker/daemon.json&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/etc/docker/daemon.json.bak&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 使用nano 编辑器(推荐)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;nano&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/etc/docker/daemon.json&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 或使用vim编辑器&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;vim&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/etc/docker/daemon.json&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;如果没有安装 &lt;code&gt;nano&lt;/code&gt; 编辑器，请自行使用 &lt;code&gt;apt&lt;/code&gt; 安装。&lt;/p&gt;&lt;p&gt;如果显示没有权限修改，请在命令前加上 &lt;code&gt;sudo&lt;/code&gt; ，打比方：&lt;code&gt;sudo nano&apos; /etc/...&lt;/code&gt; 。&lt;/p&gt;&lt;p&gt;&lt;code&gt;Vim&lt;/code&gt; 退出时需要按下 &lt;code&gt;ESC&lt;/code&gt; 后,输入 &lt;code&gt;:wq&lt;/code&gt; 命令后回车来进行写入并退出。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h4&gt;文件示例&lt;a href=&quot;#文件示例&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;这里给个示例,且使用的 &lt;code&gt;毫秒镜像&lt;/code&gt; 源。你可以直接复制并它。&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;registry-mirrors&quot;&lt;/span&gt;&lt;span&gt;: [&lt;/span&gt;&lt;span&gt;&quot;https://docker.1ms.run&quot;&lt;/span&gt;&lt;span&gt;]&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h4&gt;重载服务&lt;a href=&quot;#重载服务&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Warning&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;注意重载 ‘Docker’ 服务时,所有的 ‘Docker’ 容器及服务会重启。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;修改 daemon.json 后需要重载服务，才能让新配置生效。&lt;/p&gt;&lt;p&gt;重载服务&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;systemctl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;daemon-reexec&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;systemctl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;restart&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;docker&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;如果无法执行此命令 请在命令前添加 &lt;code&gt;sudo&lt;/code&gt; 。&lt;/p&gt;&lt;/blockquote&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;Docker镜像源列表&lt;a href=&quot;#docker镜像源列表&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;这里是 &lt;code&gt;Docker Registry&lt;/code&gt; 列表&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 毫秒镜像&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://docker.1ms.run&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# DockerProxy&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://dockerproxy.net&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# DaoCloud&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://docker.m.daocloud.io&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;10&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 阿里云&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;11&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-hangzhou.aliyuncs.com     # 阿里云-杭州&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;12&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-shanghai.aliyuncs.com    # 阿里云-上海&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;13&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-qingdao.aliyuncs.com    # 阿里云-青岛&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;14&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-beijing.aliyuncs.com     # 阿里云-北京&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;15&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-zhangjiakou.aliyuncs.com # 阿里云-张家口&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;16&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-huhehaote.aliyuncs.com   # 阿里云-呼和浩特&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;17&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-wulanchabu.aliyuncs.com  # 阿里云-乌兰察布&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;18&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-shenzhen.aliyuncs.com   # 阿里云-深圳&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;19&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-heyuan.aliyuncs.com      # 阿里云-河源&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;20&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-guangzhou.aliyuncs.com   # 阿里云-广州&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;21&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-chengdu.aliyuncs.com    # 阿里云-成都&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;22&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.cn-hongkong.aliyuncs.com    # 阿里云-香港&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;23&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.ap-northeast-1.aliyuncs.com  # 阿里云-日本&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;24&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.ap-southeast-1.aliyuncs.com # 阿里云-新加坡&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;25&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.ap-southeast-3.aliyuncs.com # 阿里云-马来西亚&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;26&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.ap-southeast-5.aliyuncs.com # 阿里云-印尼&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;27&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.eu-central-1.aliyuncs.com   # 阿里云-德国&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;28&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.eu-west-1.aliyuncs.com      # 阿里云-英国&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;29&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.us-west-1.aliyuncs.com      # 阿里云-美国西部&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;30&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.us-east-1.aliyuncs.com       # 阿里云-美国东部&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;31&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://registry.me-east-1.aliyuncs.com      # 阿里云-中东&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;32&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;33&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 腾讯云镜像&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;34&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;http://mirror.ccs.tencentyun.com&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;35&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;36&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# Google 镜像&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;37&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;https://gcr.io&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;38&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;https://asia.gcr.io&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;39&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;https://eu.gcr.io&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;40&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;41&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# Docker Hub 官方镜像&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;42&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;https://registry.hub.docker.com&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;显示更多&lt;/span&gt;&lt;span&gt;显示更少&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>AMap-Weather-MCP</title><link>https://blog.crneko.top/posts/amap-weather-mcp/</link><guid isPermaLink="true">https://blog.crneko.top/posts/amap-weather-mcp/</guid><description>基于高德地图API的MCP天气服务器</description><pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;AMap-Weather-MCP: 基于高德地图API的MCP天气服务器&lt;a href=&quot;#amap-weather-mcp-基于高德地图api的mcp天气服务器&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;section&gt;&lt;h2&gt;项目初衷&lt;a href=&quot;#项目初衷&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在开发 AI 应用时，我发现获取准确的天气信息是一个常见需求。虽然有许多天气 API 可用，但它们往往需要复杂的配置和认证流程，而且大多数都没有针对 MCP（Model Context Protocol）生态系统进行优化。&lt;/p&gt;&lt;p&gt;AMap Weather MCP 的诞生是为了解决这些问题：&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;简化集成&lt;/strong&gt;：提供开箱即用的 MCP 服务器，无需复杂的配置&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;高精度数据&lt;/strong&gt;：利用高德地图的权威天气数据，提供准确的天气信息&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;MCP 原生支持&lt;/strong&gt;：完全符合 MCP 协议规范，与 MCP Router 等工具无缝集成&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;灵活配置&lt;/strong&gt;：支持多种天气查询方式，包括实时天气、预报和空气质量&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;易于部署&lt;/strong&gt;：提供简单的安装和配置流程，支持多种部署方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个项目旨在为 MCP 生态系统提供一个可靠、易用的天气数据源，让开发者能够轻松地在 AI 应用中集成天气功能，无论是构建智能助手、自动化系统还是其他需要天气信息的应用。&lt;/p&gt;
-&lt;h2&gt;简介&lt;/h2&gt;
-&lt;p&gt;AMap Weather MCP 是一个基于高德地图 API 的 MCP（Model Context Protocol）服务器，提供实时天气查询和城市代码搜索功能。通过 MCP 协议，可以让 AI 助手获取准确的天气信息。&lt;/p&gt;
-&lt;p&gt;:::tip
-需要高德地图 API 密钥才能使用，支持中国所有城市的天气查询
-:::&lt;/p&gt;
-&lt;h2&gt;功能特性&lt;/h2&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;这个项目旨在为 MCP 生态系统提供一个可靠、易用的天气数据源，让开发者能够轻松地在 AI 应用中集成天气功能，无论是构建智能助手、自动化系统还是其他需要天气信息的应用。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;简介&lt;a href=&quot;#简介&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;AMap Weather MCP 是一个基于高德地图 API 的 MCP（Model Context Protocol）服务器，提供实时天气查询和城市代码搜索功能。通过 MCP 协议，可以让 AI 助手获取准确的天气信息。&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;需要高德地图 API 密钥才能使用，支持中国所有城市的天气查询&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;功能特性&lt;a href=&quot;#功能特性&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;🌤️ &lt;strong&gt;实时天气查询&lt;/strong&gt; - 支持按城市名称或城市代码查询天气信息&lt;/li&gt;
 &lt;li&gt;📍 &lt;strong&gt;城市搜索&lt;/strong&gt; - 支持精确匹配和模糊搜索中国所有城市&lt;/li&gt;
 &lt;li&gt;📊 &lt;strong&gt;4日天气预报&lt;/strong&gt; - 获取详细的天气预报数据&lt;/li&gt;
@@ -178,168 +60,53 @@ https://registry.hub.docker.com
 &lt;li&gt;按 adcode 获取城市信息&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;系统需求&lt;/h2&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;系统需求&lt;a href=&quot;#系统需求&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Python 3.8+&lt;/li&gt;
 &lt;li&gt;高德地图 API 密钥（&lt;a href=&quot;https://amap.apifox.cn/doc-7445538&quot;&gt;申请教程&lt;/a&gt;）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;安装&lt;/h2&gt;
-&lt;h3&gt;1. 克隆或下载项目&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/ChuranNeko/amap-weather-mcp.git
-cd amap-weather-mcp
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;2. 安装依赖&lt;/h3&gt;
-&lt;p&gt;使用 &lt;code&gt;uv&lt;/code&gt; 包管理器（推荐）：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;uv sync
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;或使用 pip：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pip install -r requirements.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;配置&lt;/h2&gt;
-&lt;h3&gt;环境变量&lt;/h3&gt;
-&lt;p&gt;需要配置以下环境变量：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;环境变量&lt;/th&gt;
-&lt;th&gt;说明&lt;/th&gt;
-&lt;th&gt;必需&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;AMAP_API_KEY&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;高德地图 API 密钥&lt;/td&gt;
-&lt;td&gt;✅ 必需&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3&gt;使用 Claude Desktop 集成&lt;/h3&gt;
-&lt;p&gt;将以下配置添加到 Claude Desktop 的 &lt;code&gt;claude_desktop_config.json&lt;/code&gt;：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-    &quot;mcpServers&quot;: {
-        &quot;amap-weather-mcp&quot;: {
-            &quot;name&quot;: &quot;amap-weather-mcp&quot;,
-            &quot;type&quot;: &quot;stdio&quot;,
-            &quot;isActive&quot;: true,
-            &quot;command&quot;: &quot;uv&quot;,
-            &quot;args&quot;: [
-                &quot;--directory&quot;,
-                &quot;/path/to/amap-weather-mcp&quot;,
-                &quot;run&quot;,
-                &quot;main.py&quot;
-            ],
-            &quot;env&quot;: {
-                &quot;AMAP_API_KEY&quot;: &quot;your-api-key-here&quot;
-            }
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;使用方式&lt;/h2&gt;
-&lt;h3&gt;可用工具&lt;/h3&gt;
-&lt;h4&gt;1. &lt;code&gt;get_weather_by_city_name&lt;/code&gt;&lt;/h4&gt;
-&lt;p&gt;按城市名称获取天气信息&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;city_name&lt;/code&gt; (string): 城市名称，如 &quot;杭州市&quot;、&quot;北京市&quot;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 实时天气和 4 天预报数据&lt;/p&gt;
-&lt;h4&gt;2. &lt;code&gt;get_weather_by_city_code&lt;/code&gt;&lt;/h4&gt;
-&lt;p&gt;按城市行政代码获取天气信息&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;city_code&lt;/code&gt; (string): 城市行政代码，如 &quot;110100&quot;（北京市朝阳区）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 实时天气和 4 天预报数据&lt;/p&gt;
-&lt;h4&gt;3. &lt;code&gt;search_city&lt;/code&gt;&lt;/h4&gt;
-&lt;p&gt;搜索城市（支持精确和模糊匹配）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;安装&lt;a href=&quot;#安装&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;1. 克隆或下载项目&lt;a href=&quot;#1-克隆或下载项目&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;git&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;clone&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;https://github.com/ChuranNeko/amap-weather-mcp.git&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;cd&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;amap-weather-mcp&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;2. 安装依赖&lt;a href=&quot;#2-安装依赖&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;uv&lt;/code&gt; 包管理器（推荐）：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;uv&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;sync&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;或使用 pip：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pip&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;install&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-r&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;requirements.txt&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;配置&lt;a href=&quot;#配置&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;环境变量&lt;a href=&quot;#环境变量&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;需要配置以下环境变量：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;环境变量&lt;/th&gt;&lt;th&gt;说明&lt;/th&gt;&lt;th&gt;必需&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;code&gt;AMAP_API_KEY&lt;/code&gt;&lt;/td&gt;&lt;td&gt;高德地图 API 密钥&lt;/td&gt;&lt;td&gt;✅ 必需&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;使用 Claude Desktop 集成&lt;a href=&quot;#使用-claude-desktop-集成&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;将以下配置添加到 Claude Desktop 的 &lt;code&gt;claude_desktop_config.json&lt;/code&gt;：&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;mcpServers&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        &lt;/span&gt;&lt;span&gt;&quot;amap-weather-mcp&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            &lt;/span&gt;&lt;span&gt;&quot;name&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;amap-weather-mcp&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            &lt;/span&gt;&lt;span&gt;&quot;type&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;stdio&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            &lt;/span&gt;&lt;span&gt;&quot;isActive&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;true&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            &lt;/span&gt;&lt;span&gt;&quot;command&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;uv&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            &lt;/span&gt;&lt;span&gt;&quot;args&quot;&lt;/span&gt;&lt;span&gt;: [&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;                &lt;/span&gt;&lt;span&gt;&quot;--directory&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;10&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;                &lt;/span&gt;&lt;span&gt;&quot;/path/to/amap-weather-mcp&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;11&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;                &lt;/span&gt;&lt;span&gt;&quot;run&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;12&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;                &lt;/span&gt;&lt;span&gt;&quot;main.py&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;13&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;            &lt;/span&gt;&lt;/span&gt;&lt;span&gt;],&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;14&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            &lt;/span&gt;&lt;span&gt;&quot;env&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;15&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;                &lt;/span&gt;&lt;span&gt;&quot;AMAP_API_KEY&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;your-api-key-here&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;16&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;            &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;17&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;        &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;18&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;19&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;显示更多&lt;/span&gt;&lt;span&gt;显示更少&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;使用方式&lt;a href=&quot;#使用方式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;可用工具&lt;a href=&quot;#可用工具&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;section&gt;&lt;h4&gt;1. &lt;code&gt;get_weather_by_city_name&lt;/code&gt;&lt;a href=&quot;#1-get_weather_by_city_name&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;按城市名称获取天气信息&lt;/p&gt;&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;city_name&lt;/code&gt; (string): 城市名称，如 “杭州市”、“北京市”&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 实时天气和 4 天预报数据&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h4&gt;2. &lt;code&gt;get_weather_by_city_code&lt;/code&gt;&lt;a href=&quot;#2-get_weather_by_city_code&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;按城市行政代码获取天气信息&lt;/p&gt;&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;city_code&lt;/code&gt; (string): 城市行政代码，如 “110100”（北京市朝阳区）&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 实时天气和 4 天预报数据&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h4&gt;3. &lt;code&gt;search_city&lt;/code&gt;&lt;a href=&quot;#3-search_city&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;搜索城市（支持精确和模糊匹配）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;city_name&lt;/code&gt; (string): 要搜索的城市名称&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 匹配的城市列表及其代码&lt;/p&gt;
-&lt;h4&gt;4. &lt;code&gt;get_city_by_adcode&lt;/code&gt;&lt;/h4&gt;
-&lt;p&gt;按 adcode 获取城市信息&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;adcode&lt;/code&gt; (string): 行政代码，如 &quot;110000&quot;（北京市）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 城市信息对象&lt;/p&gt;
-&lt;h4&gt;5. &lt;code&gt;list_all_cities&lt;/code&gt;&lt;/h4&gt;
-&lt;p&gt;列出所有可用城市&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 匹配的城市列表及其代码&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h4&gt;4. &lt;code&gt;get_city_by_adcode&lt;/code&gt;&lt;a href=&quot;#4-get_city_by_adcode&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;按 adcode 获取城市信息&lt;/p&gt;&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adcode&lt;/code&gt; (string): 行政代码，如 “110000”（北京市）&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 城市信息对象&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h4&gt;5. &lt;code&gt;list_all_cities&lt;/code&gt;&lt;a href=&quot;#5-list_all_cities&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;列出所有可用城市&lt;/p&gt;&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;limit&lt;/code&gt; (integer): 返回结果数量限制，默认 50，最大 200&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 城市列表，包括总数量&lt;/p&gt;
-&lt;h2&gt;项目结构&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;amap-weather-mcp/
-├── main.py                 # 主程序文件
-├── city_codes.json        # 城市代码数据库
-├── requirements.txt       # 项目依赖
-├── .gitignore            # Git 忽略规则
-└── README.md             # 本文件
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;依赖包&lt;/h2&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;返回：&lt;/strong&gt; 城市列表，包括总数量&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;项目结构&lt;a href=&quot;#项目结构&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;amap-weather-mcp/&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── main.py                 # 主程序文件&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── city_codes.json        # 城市代码数据库&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── requirements.txt       # 项目依赖&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── .gitignore            # Git 忽略规则&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;└── README.md             # 本文件&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;依赖包&lt;a href=&quot;#依赖包&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;httpx&lt;/code&gt; - 异步 HTTP 客户端&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;requests&lt;/code&gt; - HTTP 库&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mcp&lt;/code&gt; - Model Context Protocol 实现&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;开发说明&lt;/h2&gt;
-&lt;h3&gt;项目特点&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;开发说明&lt;a href=&quot;#开发说明&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;项目特点&lt;a href=&quot;#项目特点&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;使用 Python &lt;code&gt;asyncio&lt;/code&gt; 实现异步操作&lt;/li&gt;
 &lt;li&gt;集成 MCP 标准，支持与 Claude AI 无缝集成&lt;/li&gt;
 &lt;li&gt;高效的城市代码索引，支持快速查询&lt;/li&gt;
 &lt;li&gt;完善的错误处理和日志记录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;日志&lt;/h3&gt;
-&lt;p&gt;程序使用 Python 的 &lt;code&gt;logging&lt;/code&gt; 模块记录信息，日志级别为 INFO。&lt;/p&gt;
-&lt;h2&gt;使用示例&lt;/h2&gt;
-&lt;h3&gt;查询天气&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;# 通过城市名称查询
-result = await get_weather_by_city_name(&quot;杭州市&quot;)
-
-# 通过城市代码查询
-result = await get_weather_by_city_code(&quot;330100&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;搜索城市&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;# 搜索包含&quot;杭州&quot;的城市
-cities = await search_city(&quot;杭州&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;常见问题&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Q: 如何获取高德地图 API 密钥？&lt;/strong&gt;
-A: 访问 &lt;a href=&quot;https://lbs.amap.com/&quot;&gt;高德开放平台&lt;/a&gt; 注册账号并创建应用获取 API Key。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q: 支持哪些城市？&lt;/strong&gt;
-A: 支持中国所有地级市和县级市，数据包含在 &lt;code&gt;city_codes.json&lt;/code&gt; 文件中。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q: 天气数据多久更新一次？&lt;/strong&gt;
-A: 高德地图天气数据通常每小时更新一次，具体频率以高德地图为准。&lt;/p&gt;
-&lt;h2&gt;许可证&lt;/h2&gt;
-&lt;p&gt;MIT License&lt;/p&gt;
-&lt;h2&gt;支持&lt;/h2&gt;
-&lt;p&gt;如有问题或建议，欢迎提交 Issue 或 Pull Request。&lt;/p&gt;
-&lt;p&gt;:::github{repo=&quot;ChuranNeko/amap-weather-mcp&quot;}&lt;/p&gt;
-</content:encoded></item><item><title>MCP-Router</title><link>https://blog.crneko.top/posts/mcp-router/</link><guid isPermaLink="true">https://blog.crneko.top/posts/mcp-router/</guid><description>一个模型上下文协议（MCP）路由/代理系统</description><pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;MCP-Router: 模型上下文协议路由系统&lt;/h1&gt;
-&lt;h2&gt;项目初衷&lt;/h2&gt;
-&lt;p&gt;在使用多个 MCP（Model Context Protocol）服务器时，我发现了一个常见问题：当不同的 MCP 服务器提供同名工具时，LLM 无法有效区分它们，导致工具调用混乱。此外，管理多个 MCP 服务器的配置和连接也变得复杂。&lt;/p&gt;
-&lt;p&gt;MCP Router 的诞生就是为了解决这些问题：&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;日志&lt;a href=&quot;#日志&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;程序使用 Python 的 &lt;code&gt;logging&lt;/code&gt; 模块记录信息，日志级别为 INFO。&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;使用示例&lt;a href=&quot;#使用示例&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;查询天气&lt;a href=&quot;#查询天气&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 通过城市名称查询&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;result &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;span&gt;await&lt;/span&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;get_weather_by_city_name&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&quot;杭州市&quot;&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 通过城市代码查询&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;result &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;span&gt;await&lt;/span&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;get_weather_by_city_code&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&quot;330100&quot;&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;搜索城市&lt;a href=&quot;#搜索城市&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 搜索包含&quot;杭州&quot;的城市&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;cities &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;span&gt;await&lt;/span&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;search_city&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&quot;杭州&quot;&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;常见问题&lt;a href=&quot;#常见问题&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Q: 如何获取高德地图 API 密钥？&lt;/strong&gt;
+A: 访问 &lt;a href=&quot;https://lbs.amap.com/&quot;&gt;高德开放平台&lt;/a&gt; 注册账号并创建应用获取 API Key。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Q: 支持哪些城市？&lt;/strong&gt;
+A: 支持中国所有地级市和县级市，数据包含在 &lt;code&gt;city_codes.json&lt;/code&gt; 文件中。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Q: 天气数据多久更新一次？&lt;/strong&gt;
+A: 高德地图天气数据通常每小时更新一次，具体频率以高德地图为准。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;许可证&lt;a href=&quot;#许可证&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MIT License&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;支持&lt;a href=&quot;#支持&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;如有问题或建议，欢迎提交 Issue 或 Pull Request。&lt;/p&gt;&lt;a href=&quot;https://github.com/ChuranNeko/amap-weather-mcp&quot; target=&quot;_blank&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;ChuranNeko&lt;/div&gt;&lt;/div&gt;&lt;div&gt;/&lt;/div&gt;&lt;div&gt;amap-weather-mcp&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Waiting for api.github.com...&lt;/div&gt;&lt;div&gt;&lt;div&gt;00K&lt;/div&gt;&lt;div&gt;0K&lt;/div&gt;&lt;div&gt;0K&lt;/div&gt;&lt;span&gt;Waiting...&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>MCP-Router</title><link>https://blog.crneko.top/posts/mcp-router/</link><guid isPermaLink="true">https://blog.crneko.top/posts/mcp-router/</guid><description>一个模型上下文协议（MCP）路由/代理系统</description><pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;MCP-Router: 模型上下文协议路由系统&lt;a href=&quot;#mcp-router-模型上下文协议路由系统&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;section&gt;&lt;h2&gt;项目初衷&lt;a href=&quot;#项目初衷&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在使用多个 MCP（Model Context Protocol）服务器时，我发现了一个常见问题：当不同的 MCP 服务器提供同名工具时，LLM 无法有效区分它们，导致工具调用混乱。此外，管理多个 MCP 服务器的配置和连接也变得复杂。&lt;/p&gt;&lt;p&gt;MCP Router 的诞生就是为了解决这些问题：&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;工具命名冲突&lt;/strong&gt;：通过实例名称前缀区分同名工具&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;配置管理复杂性&lt;/strong&gt;：提供统一的配置管理和热加载&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;连接管理&lt;/strong&gt;：支持多种传输协议，适应不同使用场景&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;动态扩展&lt;/strong&gt;：允许运行时添加、删除和管理 MCP 实例&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个项目旨在为 MCP 生态系统提供一个强大而灵活的路由层，让开发者能够更轻松地构建复杂的 AI 应用。&lt;/p&gt;
-&lt;h2&gt;简介&lt;/h2&gt;
-&lt;p&gt;MCP Router 是一个模型上下文协议（MCP）路由/代理系统，作为MCP服务端和客户端，支持动态管理MCP工具配置，解决LLM无法区分同名工具的问题。&lt;/p&gt;
-&lt;p&gt;:::tip
-适用于需要管理多个MCP服务器的场景，支持多种传输协议
-:::&lt;/p&gt;
-&lt;h2&gt;特性&lt;/h2&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;这个项目旨在为 MCP 生态系统提供一个强大而灵活的路由层，让开发者能够更轻松地构建复杂的 AI 应用。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;简介&lt;a href=&quot;#简介&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MCP Router 是一个模型上下文协议（MCP）路由/代理系统，作为MCP服务端和客户端，支持动态管理MCP工具配置，解决LLM无法区分同名工具的问题。&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;适用于需要管理多个MCP服务器的场景，支持多种传输协议&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;特性&lt;a href=&quot;#特性&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;动态路由&lt;/strong&gt;: 文件系统路由，使用 &lt;code&gt;mcp_settings.json&lt;/code&gt; 配置&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;快速启动&lt;/strong&gt;: 后台加载客户端，启动时间&amp;lt;0.1秒&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;热加载&lt;/strong&gt;: 自动检测配置变化并重新加载&lt;/li&gt;
@@ -349,132 +116,19 @@ A: 高德地图天气数据通常每小时更新一次，具体频率以高德�
 &lt;li&gt;&lt;strong&gt;智能端口&lt;/strong&gt;: 端口占用时自动查找可用端口&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;安全认证&lt;/strong&gt;: Bearer Token认证，输入验证&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;REST API&lt;/strong&gt;: 完整的HTTP API用于配置管理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;安装&lt;/h2&gt;
-&lt;h3&gt;从 PyPI 安装（推荐）&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;pip install mcp-router
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;从源码安装&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;# 使用 uv (推荐)
-uv venv .venv
-uv pip install -e &quot;.[dev]&quot;
-
-# 或使用 pip
-python -m venv .venv
-.venv\Scripts\activate  # Windows
-source .venv/bin/activate  # Linux/Mac
-pip install -e &quot;.[dev]&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;配置&lt;/h2&gt;
-&lt;p&gt;编辑 &lt;code&gt;config.json&lt;/code&gt; 文件：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;api&quot;: {
-    &quot;enabled&quot;: false,
-    &quot;port&quot;: 8001,
-    &quot;host&quot;: &quot;0.0.0.0&quot;
-  },
-  &quot;server&quot;: {
-    &quot;host&quot;: &quot;0.0.0.0&quot;,
-    &quot;http&quot;: { &quot;enabled&quot;: true, &quot;port&quot;: 3000 },
-    &quot;sse&quot;: { &quot;enabled&quot;: true, &quot;port&quot;: 3001 }
-  },
-  &quot;security&quot;: {
-    &quot;bearer_token&quot;: &quot;&quot;,
-    &quot;enable_validation&quot;: true
-  },
-  &quot;logging&quot;: {
-    &quot;level&quot;: &quot;INFO&quot;,
-    &quot;directory&quot;: &quot;logs&quot;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;添加MCP配置&lt;/h2&gt;
-&lt;p&gt;在 &lt;code&gt;data/{provider}/mcp_settings.json&lt;/code&gt; 中添加MCP服务器配置：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;provider&quot;: &quot;example&quot;,
-  &quot;isActive&quot;: true,
-  &quot;name&quot;: &quot;example_instance&quot;,
-  &quot;type&quot;: &quot;stdio&quot;,
-  &quot;command&quot;: &quot;python&quot;,
-  &quot;args&quot;: [&quot;-m&quot;, &quot;example_mcp&quot;],
-  &quot;env&quot;: {}
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;运行&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;# 直接指定传输模式
-python main.py              # Stdio模式（默认）
-python main.py stdio        # Stdio模式
-python main.py http         # HTTP模式
-python main.py sse          # SSE模式
-python main.py api          # API服务器模式
-
-# 查看帮助
-python main.py help
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;MCP 工具&lt;/h2&gt;
-&lt;p&gt;MCP Router 提供以下工具给 LLM 使用：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;基础工具&lt;/strong&gt; (总是可用):&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;安装&lt;a href=&quot;#安装&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;从 PyPI 安装（推荐）&lt;a href=&quot;#从-pypi-安装推荐&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pip&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;install&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;mcp-router&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;从源码安装&lt;a href=&quot;#从源码安装&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 使用 uv (推荐)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;uv&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;venv&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;.venv&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;uv&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;pip&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;install&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-e&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;.[dev]&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 或使用 pip&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;python&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-m&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;venv&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;.venv&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;.venv\Scripts\activate&lt;/span&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;# Windows&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;source&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;.venv/bin/activate&lt;/span&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;# Linux/Mac&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pip&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;install&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-e&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;.[dev]&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;配置&lt;a href=&quot;#配置&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;编辑 &lt;code&gt;config.json&lt;/code&gt; 文件：&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;api&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;enabled&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;false&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;port&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;8001&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;host&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;0.0.0.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;span&gt;},&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;server&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;host&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;0.0.0.0&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;http&quot;&lt;/span&gt;&lt;span&gt;: { &lt;/span&gt;&lt;span&gt;&quot;enabled&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;true&lt;/span&gt;&lt;span&gt;, &lt;/span&gt;&lt;span&gt;&quot;port&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;3000&lt;/span&gt;&lt;span&gt; },&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;10&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;sse&quot;&lt;/span&gt;&lt;span&gt;: { &lt;/span&gt;&lt;span&gt;&quot;enabled&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;true&lt;/span&gt;&lt;span&gt;, &lt;/span&gt;&lt;span&gt;&quot;port&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;3001&lt;/span&gt;&lt;span&gt; }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;11&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;span&gt;},&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;12&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;security&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;13&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;bearer_token&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;14&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;enable_validation&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;true&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;15&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;span&gt;},&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;16&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;logging&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;17&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;level&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;INFO&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;18&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;directory&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;logs&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;19&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;20&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;显示更多&lt;/span&gt;&lt;span&gt;显示更少&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;添加MCP配置&lt;a href=&quot;#添加mcp配置&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;data/{provider}/mcp_settings.json&lt;/code&gt; 中添加MCP服务器配置：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;provider&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;example&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;isActive&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;true&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;name&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;example_instance&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;type&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;stdio&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;command&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;python&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;args&quot;&lt;/span&gt;&lt;span&gt;: [&lt;/span&gt;&lt;span&gt;&quot;-m&quot;&lt;/span&gt;&lt;span&gt;, &lt;/span&gt;&lt;span&gt;&quot;example_mcp&quot;&lt;/span&gt;&lt;span&gt;],&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;env&quot;&lt;/span&gt;&lt;span&gt;: {}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;运行&lt;a href=&quot;#运行&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 直接指定传输模式&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;python&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;main.py&lt;/span&gt;&lt;span&gt;              &lt;/span&gt;&lt;span&gt;# Stdio模式（默认）&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;python&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;main.py&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;stdio&lt;/span&gt;&lt;span&gt;        &lt;/span&gt;&lt;span&gt;# Stdio模式&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;python&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;main.py&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;http&lt;/span&gt;&lt;span&gt;         &lt;/span&gt;&lt;span&gt;# HTTP模式&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;python&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;main.py&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;sse&lt;/span&gt;&lt;span&gt;          &lt;/span&gt;&lt;span&gt;# SSE模式&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;python&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;main.py&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;api&lt;/span&gt;&lt;span&gt;          &lt;/span&gt;&lt;span&gt;# API服务器模式&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 查看帮助&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;python&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;main.py&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;help&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;MCP 工具&lt;a href=&quot;#mcp-工具&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MCP Router 提供以下工具给 LLM 使用：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;基础工具&lt;/strong&gt; (总是可用):&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;mcp.router.list()&lt;/code&gt; - 列出所有已注册的MCP客户端实例&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mcp.router.help()&lt;/code&gt; - 返回所有实例的工具列表和使用说明&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mcp.router.use(instance_name)&lt;/code&gt; - 使用指定的MCP实例&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mcp.router.call(instance_name, tool_name, **kwargs)&lt;/code&gt; - 调用指定实例的指定工具&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;管理工具&lt;/strong&gt; (需启用 &lt;code&gt;allow_instance_management&lt;/code&gt;):&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;管理工具&lt;/strong&gt; (需启用 &lt;code&gt;allow_instance_management&lt;/code&gt;):&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;mcp.router.add(provider_name, config)&lt;/code&gt; - 动态添加新的MCP配置&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mcp.router.remove(instance_name)&lt;/code&gt; - 移除MCP配置&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mcp.router.enable(instance_name)&lt;/code&gt; - 启用MCP实例&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mcp.router.disable(instance_name)&lt;/code&gt; - 禁用MCP实例&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;与 LLM 集成&lt;/h2&gt;
-&lt;h3&gt;Stdio 模式（推荐）&lt;/h3&gt;
-&lt;p&gt;适用于单个LLM客户端（如Claude Desktop、Cursor）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;mcpServers&quot;: {
-    &quot;mcp_router&quot;: {
-      &quot;command&quot;: &quot;uv&quot;,
-      &quot;args&quot;: [
-        &quot;--directory&quot;,
-        &quot;C:/path/to/mcp_router&quot;,
-        &quot;run&quot;,
-        &quot;python&quot;,
-        &quot;main.py&quot;
-      ],
-      &quot;transport&quot;: &quot;stdio&quot;
-    }
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;HTTP 模式&lt;/h3&gt;
-&lt;p&gt;适用于多客户端并发连接（端口 3000）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;mcpServers&quot;: {
-    &quot;mcp_router_http&quot;: {
-      &quot;url&quot;: &quot;http://localhost:3000/mcp&quot;,
-      &quot;transport&quot;: &quot;streamableHttp&quot;
-    }
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;SSE 模式&lt;/h3&gt;
-&lt;p&gt;适用于实时推送场景（端口 3001）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;mcpServers&quot;: {
-    &quot;mcp_router_sse&quot;: {
-      &quot;url&quot;: &quot;http://localhost:3001/sse&quot;,
-      &quot;transport&quot;: &quot;sse&quot;
-    }
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;REST API 端点&lt;/h2&gt;
-&lt;p&gt;当 API 模式启用时，可通过以下端点管理 MCP Router：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;实例管理&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;与 LLM 集成&lt;a href=&quot;#与-llm-集成&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;Stdio 模式（推荐）&lt;a href=&quot;#stdio-模式推荐&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;适用于单个LLM客户端（如Claude Desktop、Cursor）。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;mcpServers&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;mcp_router&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &lt;/span&gt;&lt;span&gt;&quot;command&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;uv&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &lt;/span&gt;&lt;span&gt;&quot;args&quot;&lt;/span&gt;&lt;span&gt;: [&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        &lt;/span&gt;&lt;span&gt;&quot;--directory&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        &lt;/span&gt;&lt;span&gt;&quot;C:/path/to/mcp_router&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        &lt;/span&gt;&lt;span&gt;&quot;run&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        &lt;/span&gt;&lt;span&gt;&quot;python&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;10&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        &lt;/span&gt;&lt;span&gt;&quot;main.py&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;11&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;      &lt;/span&gt;&lt;/span&gt;&lt;span&gt;],&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;12&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &lt;/span&gt;&lt;span&gt;&quot;transport&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;stdio&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;13&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;14&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;15&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;显示更多&lt;/span&gt;&lt;span&gt;显示更少&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;HTTP 模式&lt;a href=&quot;#http-模式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;适用于多客户端并发连接（端口 3000）。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;mcpServers&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;mcp_router_http&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &lt;/span&gt;&lt;span&gt;&quot;url&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;http://localhost:3000/mcp&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &lt;/span&gt;&lt;span&gt;&quot;transport&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;streamableHttp&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;SSE 模式&lt;a href=&quot;#sse-模式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;适用于实时推送场景（端口 3001）。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;客户端配置示例&lt;/strong&gt; (mcp.json):&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &lt;/span&gt;&lt;span&gt;&quot;mcpServers&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;&quot;mcp_router_sse&quot;&lt;/span&gt;&lt;span&gt;: {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &lt;/span&gt;&lt;span&gt;&quot;url&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;http://localhost:3001/sse&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &lt;/span&gt;&lt;span&gt;&quot;transport&quot;&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span&gt;&quot;sse&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;REST API 端点&lt;a href=&quot;#rest-api-端点&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;当 API 模式启用时，可通过以下端点管理 MCP Router：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;实例管理&lt;/strong&gt;:&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;GET /api/instances&lt;/code&gt; - 列出所有实例&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;GET /api/instances/{name}&lt;/code&gt; - 获取实例详情&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;POST /api/instances&lt;/code&gt; - 添加新实例&lt;/li&gt;
@@ -482,88 +136,21 @@ python main.py help
 &lt;li&gt;&lt;code&gt;DELETE /api/instances/{name}&lt;/code&gt; - 删除实例&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;POST /api/instances/{name}/enable&lt;/code&gt; - 启用实例&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;POST /api/instances/{name}/disable&lt;/code&gt; - 禁用实例&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;工具管理&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;工具管理&lt;/strong&gt;:&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;GET /api/tools&lt;/code&gt; - 列出所有工具&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;GET /api/tools/{instance_name}&lt;/code&gt; - 获取实例的工具列表&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;POST /api/call&lt;/code&gt; - 调用工具&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;项目结构&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;mcp_router/
-├── main.py                 # 项目入口
-├── config.json            # 全局配置文件
-├── requirements.txt       # 依赖文件
-├── pyproject.toml         # uv项目配置
-│
-├── src/
-│   ├── core/              # 核心模块
-│   │   ├── logger.py      # 日志系统
-│   │   ├── config.py      # 配置管理器
-│   │   └── exceptions.py  # 自定义异常
-│   │
-│   ├── mcp/               # MCP模块
-│   │   ├── client.py      # MCP客户端管理
-│   │   ├── server.py      # MCP服务端
-│   │   ├── router.py      # 路由核心逻辑
-│   │   └── transport.py   # 传输层
-│   │
-│   ├── api/               # API模块
-│   │   ├── app.py         # FastAPI应用
-│   │   └── routes.py      # API路由处理
-│   │
-│   └── utils/             # 工具模块
-│       ├── validator.py   # 输入验证
-│       ├── watcher.py     # 文件监视器
-│       └── security.py    # 安全工具
-│
-├── data/                  # MCP配置目录
-│   ├── example/
-│   │   └── mcp_settings.json
-│   └── ...
-│
-└── test/                  # 测试文件
-    ├── test_router.py
-    ├── test_api.py
-    └── test_security.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;开发&lt;/h2&gt;
-&lt;h3&gt;代码风格&lt;/h3&gt;
-&lt;p&gt;本项目使用 &lt;a href=&quot;https://github.com/astral-sh/ruff&quot;&gt;Ruff&lt;/a&gt; 进行代码格式化和 linting：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# 格式化代码
-ruff format .
-
-# 检查代码
-ruff check .
-
-# 自动修复
-ruff check --fix .
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;运行测试&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;# 运行所有测试
-pytest
-
-# 运行特定测试
-pytest test/test_router.py
-
-# 带覆盖率
-pytest --cov=src --cov-report=html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;安全性&lt;/h2&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;项目结构&lt;a href=&quot;#项目结构&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;mcp_router/&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── main.py                 # 项目入口&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── config.json            # 全局配置文件&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── requirements.txt       # 依赖文件&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── pyproject.toml         # uv项目配置&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── src/&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   ├── core/              # 核心模块&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   ├── logger.py      # 日志系统&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;10&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   ├── config.py      # 配置管理器&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;11&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   └── exceptions.py  # 自定义异常&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;12&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;13&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   ├── mcp/               # MCP模块&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;14&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   ├── client.py      # MCP客户端管理&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;15&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   ├── server.py      # MCP服务端&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;16&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   ├── router.py      # 路由核心逻辑&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;17&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   └── transport.py   # 传输层&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;18&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;19&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   ├── api/               # API模块&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;20&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   ├── app.py         # FastAPI应用&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;21&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   └── routes.py      # API路由处理&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;22&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;23&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   └── utils/             # 工具模块&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;24&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│       ├── validator.py   # 输入验证&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;25&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│       ├── watcher.py     # 文件监视器&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;26&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│       └── security.py    # 安全工具&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;27&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;28&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├── data/                  # MCP配置目录&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;29&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   ├── example/&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;30&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   │   └── mcp_settings.json&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;31&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│   └── ...&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;32&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;33&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;└── test/                  # 测试文件&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;34&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;span&gt;├── test_router.py&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;35&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;span&gt;├── test_api.py&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;36&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;span&gt;└── test_security.py&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;显示更多&lt;/span&gt;&lt;span&gt;显示更少&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;开发&lt;a href=&quot;#开发&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;代码风格&lt;a href=&quot;#代码风格&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;本项目使用 &lt;a href=&quot;https://github.com/astral-sh/ruff&quot;&gt;Ruff&lt;/a&gt; 进行代码格式化和 linting：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 格式化代码&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;ruff&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;format&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 检查代码&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;ruff&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;check&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 自动修复&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;ruff&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;check&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;--fix&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;运行测试&lt;a href=&quot;#运行测试&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 运行所有测试&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pytest&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 运行特定测试&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pytest&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;test/test_router.py&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 带覆盖率&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pytest&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;--cov=src&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;--cov-report=html&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;安全性&lt;a href=&quot;#安全性&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;输入验证&lt;/strong&gt;: 防止SQL注入、XSS攻击、路径遍历&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Bearer Token&lt;/strong&gt;: 可选的API认证&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;CORS配置&lt;/strong&gt;: 灵活的跨域请求控制&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;文件大小限制&lt;/strong&gt;: 防止DOS攻击&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;HTTP安全头&lt;/strong&gt;: X-Frame-Options, CSP, HSTS等&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;:::github{repo=&quot;ChuranNeko/mcp_router&quot;}&lt;/p&gt;
-</content:encoded></item><item><title>Quick_Napcat_Docker_Compose</title><link>https://blog.crneko.top/posts/quick-napcat-docker-compose/</link><guid isPermaLink="true">https://blog.crneko.top/posts/quick-napcat-docker-compose/</guid><description>使用Docker Compose快速部署NapCat</description><pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;使用Docker Compose快速部署NapCat&lt;/h1&gt;
-&lt;h2&gt;目录&lt;/h2&gt;
-&lt;p&gt;:::tip
-可直接点击文字跳转至对应章节
-:::&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;a href=&quot;https://github.com/ChuranNeko/mcp_router&quot; target=&quot;_blank&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;ChuranNeko&lt;/div&gt;&lt;/div&gt;&lt;div&gt;/&lt;/div&gt;&lt;div&gt;mcp_router&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Waiting for api.github.com...&lt;/div&gt;&lt;div&gt;&lt;div&gt;00K&lt;/div&gt;&lt;div&gt;0K&lt;/div&gt;&lt;div&gt;0K&lt;/div&gt;&lt;span&gt;Waiting...&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>Quick_Napcat_Docker_Compose</title><link>https://blog.crneko.top/posts/quick-napcat-docker-compose/</link><guid isPermaLink="true">https://blog.crneko.top/posts/quick-napcat-docker-compose/</guid><description>使用Docker Compose快速部署NapCat</description><pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;使用Docker Compose快速部署NapCat&lt;a href=&quot;#使用docker-compose快速部署napcat&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;section&gt;&lt;h2&gt;目录&lt;a href=&quot;#目录&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;可直接点击文字跳转至对应章节&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#%E7%AE%80%E4%BB%8B&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E4%BB%80%E4%B9%88%E6%98%AFNapCat&quot;&gt;什么是NapCat?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%BC%80%E5%A7%8B&quot;&gt;开始&lt;/a&gt;
@@ -580,82 +167,15 @@ pytest --cov=src --cov-report=html
 &lt;li&gt;&lt;a href=&quot;#%E9%99%84%E5%8A%A0%E8%AF%B4%E6%98%8E&quot;&gt;附加说明&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E&quot;&gt;免责声明&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E6%95%B0%E6%8D%AE&quot;&gt;数据&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;简介&lt;/h2&gt;
-&lt;p&gt;该文档介绍了如何使用Docker Compose快速部署NapCat。&lt;/p&gt;
-&lt;p&gt;:::tip
-该文章只针对于Linux系统
-:::&lt;/p&gt;
-&lt;h2&gt;什么是NapCat?&lt;/h2&gt;
-&lt;p&gt;基于 TypeScript 构建的 Bot 框架，通过相应的启动器或者框架，主动调用 QQ Node 模块提供给客户端的接口，实现 Bot 的功能。&lt;/p&gt;
-&lt;h2&gt;开始&lt;/h2&gt;
-&lt;h2&gt;安装Docker&lt;/h2&gt;
-&lt;p&gt;运行以下命令安装Docker(如果已经安装Docker可以跳过此步骤)：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -sSL https://linuxmirrors.cn/docker.sh)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;随后根据脚本提示完成Docker的安装。&lt;/p&gt;
-&lt;h3&gt;下载NapCat Docker Compose文件&lt;/h3&gt;
-&lt;p&gt;你可以使用以下命令将 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件下载到你的项目目录中：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cd /path/to/your/project
-curl -o docker-compose.yml https://raw.githubusercontent.com/ChuranNeko/NapCat-Docker-Template/main/docker-compose.yml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;或者使用Github代理：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cd /path/to/your/project
-curl -sSL-o docker-compose.yml https://gh-proxy.org/https://raw.githubusercontent.com/ChuranNeko/NapCat-Docker-Template/main/docker-compose.yml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;此处的 &lt;code&gt;/path/to/your/project&lt;/code&gt; 需要替换为你希望存放 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件的实际路径。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;简介&lt;a href=&quot;#简介&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;该文档介绍了如何使用Docker Compose快速部署NapCat。&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;该文章只针对于Linux系统&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;什么是NapCat?&lt;a href=&quot;#什么是napcat&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;基于 TypeScript 构建的 Bot 框架，通过相应的启动器或者框架，主动调用 QQ Node 模块提供给客户端的接口，实现 Bot 的功能。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;开始&lt;a href=&quot;#开始&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;安装Docker&lt;a href=&quot;#安装docker&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;运行以下命令安装Docker(如果已经安装Docker可以跳过此步骤)：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;bash&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&amp;lt;(&lt;/span&gt;&lt;span&gt;curl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-sSL&lt;/span&gt;&lt;span&gt; https://linuxmirrors.cn/docker.sh)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;随后根据脚本提示完成Docker的安装。&lt;/p&gt;&lt;section&gt;&lt;h3&gt;下载NapCat Docker Compose文件&lt;a href=&quot;#下载napcat-docker-compose文件&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;你可以使用以下命令将 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件下载到你的项目目录中：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;cd&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/path/to/your/project&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;curl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-o&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;docker-compose.yml&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;https://raw.githubusercontent.com/ChuranNeko/NapCat-Docker-Template/main/docker-compose.yml&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;或者使用Github代理：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;cd&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/path/to/your/project&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;curl&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-sSL-o&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;docker-compose.yml&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;https://gh-proxy.org/https://raw.githubusercontent.com/ChuranNeko/NapCat-Docker-Template/main/docker-compose.yml&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;此处的 &lt;code&gt;/path/to/your/project&lt;/code&gt; 需要替换为你希望存放 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件的实际路径。&lt;/p&gt;&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;docker-compose.yml&lt;/code&gt; 只部署NapCat服务，如果你需要其他服务，请替换为相应的模板文件名称。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;该项目已经提供了NapCat单服务、AstrBot+Napcat、等多种模板文件，您可以根据需要选择合适的模板文件进行下载。&lt;/p&gt;
-&lt;h3&gt;启动服务&lt;/h3&gt;
-&lt;p&gt;只需要在包含该仓库下载的 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件的目录下运行以下命令即可启动 NapCat 服务：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker compose up -d
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;查看日志&lt;/h3&gt;
-&lt;p&gt;你可以使用以下命令查看 NapCat 服务的日志以获取Token登录WebUI：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker compose logs napcat
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;停止服务&lt;/h3&gt;
-&lt;p&gt;你可以使用以下命令停止 NapCat 服务：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker compose down
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;重启服务&lt;/h3&gt;
-&lt;p&gt;你可以使用以下命令重启 NapCat 服务：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker compose restart napcat
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;对接&lt;/h2&gt;
-&lt;p&gt;:::tip
-NapCat 支持多种对接方式，您可以参考官方文档进行配置：
-:::&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;该项目已经提供了NapCat单服务、AstrBot+Napcat、等多种模板文件，您可以根据需要选择合适的模板文件进行下载。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;启动服务&lt;a href=&quot;#启动服务&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;只需要在包含该仓库下载的 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件的目录下运行以下命令即可启动 NapCat 服务：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;docker&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;compose&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;up&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;-d&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;查看日志&lt;a href=&quot;#查看日志&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;你可以使用以下命令查看 NapCat 服务的日志以获取Token登录WebUI：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;docker&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;compose&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;logs&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;napcat&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;停止服务&lt;a href=&quot;#停止服务&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;你可以使用以下命令停止 NapCat 服务：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;docker&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;compose&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;down&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;重启服务&lt;a href=&quot;#重启服务&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;你可以使用以下命令重启 NapCat 服务：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;docker&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;compose&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;restart&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;napcat&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;对接&lt;a href=&quot;#对接&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;NapCat 支持多种对接方式，您可以参考官方文档进行配置：&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://napneko.github.io/use/integration&quot;&gt;NapCat 对接文档&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;附加说明&lt;/h2&gt;
-&lt;p&gt;:::tip
-该&lt;a href=&quot;https://github.com/ChuranNeko/NapCat-Docker-Template&quot;&gt;仓库&lt;/a&gt;已经提供了NapCat单服务、AstrBot+Napcat、多种模板文件，您可以根据需要选择合适的模板文件进行下载。
-:::&lt;/p&gt;
-&lt;p&gt;::github{repo=&quot;ChuranNeko/NapCat-Docker-Template&quot;}&lt;/p&gt;
-&lt;h2&gt;免责声明&lt;/h2&gt;
-&lt;p&gt;:::warning
-为了确保 NapCat 服务的安全性,此处已经将 &lt;code&gt;调试端口&lt;/code&gt; 只允许本地访问,如果你需要部署到外网调试您的NapCat，
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;附加说明&lt;a href=&quot;#附加说明&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;该&lt;a href=&quot;https://github.com/ChuranNeko/NapCat-Docker-Template&quot;&gt;仓库&lt;/a&gt;已经提供了NapCat单服务、AstrBot+Napcat、多种模板文件，您可以根据需要选择合适的模板文件进行下载。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;https://github.com/ChuranNeko/NapCat-Docker-Template&quot; target=&quot;_blank&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;ChuranNeko&lt;/div&gt;&lt;/div&gt;&lt;div&gt;/&lt;/div&gt;&lt;div&gt;NapCat-Docker-Template&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Waiting for api.github.com...&lt;/div&gt;&lt;div&gt;&lt;div&gt;00K&lt;/div&gt;&lt;div&gt;0K&lt;/div&gt;&lt;div&gt;0K&lt;/div&gt;&lt;span&gt;Waiting...&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;免责声明&lt;a href=&quot;#免责声明&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Warning&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;为了确保 NapCat 服务的安全性,此处已经将 &lt;code&gt;调试端口&lt;/code&gt; 只允许本地访问,如果你需要部署到外网调试您的NapCat，
 请手动移除 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件中 &lt;code&gt;napcat&lt;/code&gt; 服务的 &lt;code&gt;post&lt;/code&gt; 中的 &lt;code&gt;127.0.0.1&lt;/code&gt;移除，
-如果手动移除后遭到任何安全问题,本仓库及作者概不负责。
-:::&lt;/p&gt;
-&lt;h2&gt;数据&lt;/h2&gt;
-&lt;p&gt;:::tip
-该仓库的模板文件均存储在 &lt;code&gt;./data/*&lt;/code&gt; 目录下， &lt;code&gt;*&lt;/code&gt;为对接框架的名称，您可以根据需要进行修改和定制。
+如果手动移除后遭到任何安全问题,本仓库及作者概不负责。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;数据&lt;a href=&quot;#数据&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;该仓库的模板文件均存储在 &lt;code&gt;./data/*&lt;/code&gt; 目录下， &lt;code&gt;*&lt;/code&gt;为对接框架的名称，您可以根据需要进行修改和定制。
 &lt;code&gt;./data/napcat&lt;/code&gt; 目录存储NapCat服务的数据。
-&lt;code&gt;./data/qq&lt;/code&gt; 目录存储QQ账号的数据。
-:::&lt;/p&gt;
-</content:encoded></item><item><title>Unity-CN-to-International</title><link>https://blog.crneko.top/posts/unity-cn-to-international/</link><guid isPermaLink="true">https://blog.crneko.top/posts/unity-cn-to-international/</guid><description>Unity中国特供转国际版本</description><pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Unity中国特供转国际版本&lt;/h1&gt;
-&lt;h2&gt;目录&lt;/h2&gt;
-&lt;p&gt;:::tip
-可直接点击文字跳转至对应章节
-:::&lt;/p&gt;
-&lt;ul&gt;
+&lt;code&gt;./data/qq&lt;/code&gt; 目录存储QQ账号的数据。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>Unity-CN-to-International</title><link>https://blog.crneko.top/posts/unity-cn-to-international/</link><guid isPermaLink="true">https://blog.crneko.top/posts/unity-cn-to-international/</guid><description>Unity中国特供转国际版本</description><pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;Unity中国特供转国际版本&lt;a href=&quot;#unity中国特供转国际版本&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;section&gt;&lt;h2&gt;目录&lt;a href=&quot;#目录&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Tip&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;可直接点击文字跳转至对应章节&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#%E7%AE%80%E4%BB%8B&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%88%A4%E6%96%AD&quot;&gt;判断&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AE%89%E8%A3%85%E5%9B%BD%E9%99%85%E7%89%88%E6%9C%AC&quot;&gt;为什么要安装国际版本&lt;/a&gt;&lt;/li&gt;
@@ -669,88 +189,17 @@ NapCat 支持多种对接方式，您可以参考官方文档进行配置：
 &lt;li&gt;&lt;a href=&quot;#unity-%E5%88%97%E8%A1%A8&quot;&gt;Unity 列表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E5%BC%95%E7%94%A8&quot;&gt;引用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87&quot;&gt;示例图片&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;简介&lt;/h2&gt;
-&lt;p&gt;此文章说明如何解决安装Unity时为中国特供版本,如何转换为国际版本的帮助。&lt;/p&gt;
-&lt;h2&gt;判断&lt;/h2&gt;
-&lt;p&gt;查看Unity Hub安装的Unity版本后缀是否携带&lt;code&gt;c1&lt;/code&gt;后缀,如果有则为中国特供版本,否则为国际版本。&lt;/p&gt;
-&lt;h2&gt;为什么要安装国际版本&lt;/h2&gt;
-&lt;p&gt;Unity中国特供版存在功能限制，强制用户安装中国特供版本的Unity等。&lt;/p&gt;
-&lt;p&gt;以下内容引用自&lt;a href=&quot;https://zhuanlan.zhihu.com/p/226163910&quot;&gt;Unity中国想钱想疯了&lt;/a&gt;。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;这次事件再次证明了两点
-
-1. Unity官方无论是对于本文中提及的收入问题，还是这次如何计算下载量问题，都属于拍脑袋定的政策，完全没有明确的量化标准。
-2. Unity内部也不统一思想，官网的解释都能互相矛盾。
-这次定价不仅对中小开发者和独立开发者不友好，还是要杀死超休闲游戏的节奏。国内情况我不清楚，但海外如voodoo这种超休闲大厂，很多产品就是Unity做的，推广纯靠买量，一个用户买量成本也就几美分，现在即使按照最便宜的档位算，也几乎成本翻倍了，这谁顶得住？
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;解决方法&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果已经安装了Unity,请先卸载当前版本的Unity,然后再尝试进行以下步骤。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;方法一&lt;/h3&gt;
-&lt;p&gt;也是最简单的方法
-通过官方的Unity Editor官方的发行界面下载Unity Editor,随后将安装好的Unity版本添加至UnityHub(可选)。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://unity.com/releases/editor/archive&quot;&gt;点我跳转至官方的Unity Editor发行界面&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;方法二&lt;/h3&gt;
-&lt;p&gt;使用代理软件来进行安装,市面上有很多代理软件可供选择,例如Shadowsocks、V2Ray、Clash等。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;以下是推荐代理软件的GitHub仓库地址(现依旧在更新的仓库,截至2025.11.26):&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;简介&lt;a href=&quot;#简介&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;此文章说明如何解决安装Unity时为中国特供版本,如何转换为国际版本的帮助。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;判断&lt;a href=&quot;#判断&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;查看Unity Hub安装的Unity版本后缀是否携带&lt;code&gt;c1&lt;/code&gt;后缀,如果有则为中国特供版本,否则为国际版本。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;为什么要安装国际版本&lt;a href=&quot;#为什么要安装国际版本&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Unity中国特供版存在功能限制，强制用户安装中国特供版本的Unity等。&lt;/p&gt;&lt;p&gt;以下内容引用自&lt;a href=&quot;https://zhuanlan.zhihu.com/p/226163910&quot;&gt;Unity中国想钱想疯了&lt;/a&gt;。&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;这次事件再次证明了两点&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;1. Unity官方无论是对于本文中提及的收入问题，还是这次如何计算下载量问题，都属于拍脑袋定的政策，完全没有明确的量化标准。&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;2. Unity内部也不统一思想，官网的解释都能互相矛盾。&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;这次定价不仅对中小开发者和独立开发者不友好，还是要杀死超休闲游戏的节奏。国内情况我不清楚，但海外如voodoo这种超休闲大厂，很多产品就是Unity做的，推广纯靠买量，一个用户买量成本也就几美分，现在即使按照最便宜的档位算，也几乎成本翻倍了，这谁顶得住？&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;解决方法&lt;a href=&quot;#解决方法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;&lt;p&gt;如果已经安装了Unity,请先卸载当前版本的Unity,然后再尝试进行以下步骤。&lt;/p&gt;&lt;/blockquote&gt;&lt;section&gt;&lt;h3&gt;方法一&lt;a href=&quot;#方法一&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;也是最简单的方法
+通过官方的Unity Editor官方的发行界面下载Unity Editor,随后将安装好的Unity版本添加至UnityHub(可选)。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://unity.com/releases/editor/archive&quot;&gt;点我跳转至官方的Unity Editor发行界面&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;方法二&lt;a href=&quot;#方法二&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;使用代理软件来进行安装,市面上有很多代理软件可供选择,例如Shadowsocks、V2Ray、Clash等。&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;以下是推荐代理软件的GitHub仓库地址(现依旧在更新的仓库,截至2025.11.26):&lt;/p&gt;&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/2dust/v2rayN&quot;&gt;v2rayN&lt;/a&gt; - 客户端多平台支持&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/clash-verge-rev/clash-verge-rev&quot;&gt;Clash Verge&lt;/a&gt; - Clash 变体客户端，支持 Windows/Mac/Linux，GUI 友好，兼容 Meta 内核。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;如果你使用的是Shadowsocks/Clash类的代理软件，只需修改浏览器的HTTP/HTTPS代理或者修改规则即可&lt;/p&gt;
-&lt;p&gt;以下是在Windows/MacOS系统的解决方式&lt;/p&gt;
-&lt;p&gt;Windows:&lt;/p&gt;
-&lt;p&gt;将以下文本使用 &lt;code&gt;记事本&lt;/code&gt; 或者其他编辑器保存后,右键重命名为 &lt;code&gt;.bat&lt;/code&gt; 后缀名&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#windows%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E7%9A%84%E7%A4%BA%E4%BE%8B&quot;&gt;点我跳转至示例截图&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;@echo off
-
-# 此处1080为你的代理端口,如果代理端口不在1080,请修改为你的代理端口
-set HTTP_PROXY=http://127.0.0.1:1080
-set http_proxy=http://127.0.0.1:1080
-set HTTPS_PROXY=http://127.0.0.1:1080
-set https_proxy=http://127.0.0.1:1080
-
-# 此处为Unity Hub的默认安装路径,如果你的安装路径不一样请修改为你的安装路径
-start &quot;&quot; &quot;C:\Program Files\Unity Hub\Unity Hub.exe&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;MacOS：
-需要在终端中运行下面脚本，然后把生成的&lt;code&gt;launchUnityHub.command&lt;/code&gt;挪到一个方便的位置（例如桌面）&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;echo &apos;#!/bin/bash
-# 此处1080为你的代理端口,如果代理端口不在1080,请修改为你的代理端口
-export HTTP_PROXY=http://127.0.0.1:1080
-export http_proxy=http://127.0.0.1:1080
-export HTTPS_PROXY=http://127.0.0.1:1080
-export https_proxy=http://127.0.0.1:1080
-nohup &quot;/Applications/Unity Hub.app/Contents/MacOS/Unity Hub&quot; &amp;amp;&amp;gt;/dev/null &amp;amp;&apos; &amp;gt; launchUnityHub.command
-chmod +x launchUnityHub.command
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;双击运行生成的&lt;code&gt;launchUnityHub.command&lt;/code&gt;即可启动Unity Hub。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;方法二&lt;/h2&gt;
-&lt;p&gt;如果你的代理软件支持&lt;code&gt;TUN&lt;/code&gt;模式,可以直接开启&lt;code&gt;TUN&lt;/code&gt;模式+全局代理。&lt;/p&gt;
-&lt;p&gt;如果有已安装的Unity Hub版本，先卸载，为以防万一，卸载之后删除~/AppData/Roaming这个目录下的Unity Hub目录。然后再安装。
-Windows可以运行以下命令以删除Unity Hub的配置文件夹:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rd /s /q &quot; %USERPROFILE%\AppData\Roaming\UnityHub&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;直接开启TUN模式,然后直接下载Unity国际版本。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://public-cdn.cloud.unity3d.com/hub/nuo/unityhubSetup.exe&quot;&gt;点击这里下载Windows版本&lt;/a&gt;
-&lt;a href=&quot;https://public-cdn.cloud.unity3d.com/hub/prod/unityhubSetup.dmg&quot;&gt;点击这里下载MacOS版本&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这里有一些Unity编辑器的软链接 安装版本列表&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#unity-%E5%88%97%E8%A1%A8&quot;&gt;点我跳转至安装版本列表&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Unity 列表&lt;/h2&gt;
-&lt;p&gt;VRChat官方给出的Unity版本是2022.3.22f1&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;点击此处安装VRChat官方推荐的Unity版本&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这里是Unity软连接地址(点击对应版本号会自动唤起本地的Unity Hub应用开始安装对应版本的Unity):&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Tips: 如果你下列没有需要版本你可以以&lt;code&gt;unityhub://&lt;/code&gt;开头然后又添加上 &lt;code&gt;{版本号}&lt;/code&gt; 的格式来安装其他版本的Unity。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;由于版本有点多,我给出了一个版本目录(基于&lt;a href=&quot;https://zhuanlan.zhihu.com/p/106132063&quot;&gt;如何取得Unity Hub内旧版本Unity下载链接&lt;/a&gt;基础上优化显示)方便你更好的找到他们。&lt;/p&gt;
-&lt;h3&gt;版本目录(点击即可跳转)&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;如果你使用的是Shadowsocks/Clash类的代理软件，只需修改浏览器的HTTP/HTTPS代理或者修改规则即可&lt;/p&gt;&lt;p&gt;以下是在Windows/MacOS系统的解决方式&lt;/p&gt;&lt;p&gt;Windows:&lt;/p&gt;&lt;p&gt;将以下文本使用 &lt;code&gt;记事本&lt;/code&gt; 或者其他编辑器保存后,右键重命名为 &lt;code&gt;.bat&lt;/code&gt; 后缀名&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;#windows%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E7%9A%84%E7%A4%BA%E4%BE%8B&quot;&gt;点我跳转至示例截图&lt;/a&gt;&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;@&lt;/span&gt;&lt;span&gt;echo&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;off&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 此处1080为你的代理端口,如果代理端口不在1080,请修改为你的代理端口&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;HTTP_PROXY&lt;/span&gt;&lt;span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;http://127.0.0.1:1080&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;http_proxy&lt;/span&gt;&lt;span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;http://127.0.0.1:1080&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;HTTPS_PROXY&lt;/span&gt;&lt;span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;http://127.0.0.1:1080&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;https_proxy&lt;/span&gt;&lt;span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;http://127.0.0.1:1080&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 此处为Unity Hub的默认安装路径,如果你的安装路径不一样请修改为你的安装路径&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;10&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;start&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;&quot;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;C:\Program Files\Unity Hub\Unity Hub.exe&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;MacOS：
+需要在终端中运行下面脚本，然后把生成的&lt;code&gt;launchUnityHub.command&lt;/code&gt;挪到一个方便的位置（例如桌面）&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;echo&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&apos;#!/bin/bash&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;# 此处1080为你的代理端口,如果代理端口不在1080,请修改为你的代理端口&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;export HTTP_PROXY=http://127.0.0.1:1080&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;export http_proxy=http://127.0.0.1:1080&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;export HTTPS_PROXY=http://127.0.0.1:1080&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;export https_proxy=http://127.0.0.1:1080&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;nohup &quot;/Applications/Unity Hub.app/Contents/MacOS/Unity Hub&quot; &amp;amp;&amp;gt;/dev/null &amp;amp;&apos;&lt;/span&gt;&lt;span&gt; &amp;gt; &lt;/span&gt;&lt;span&gt;launchUnityHub.command&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;chmod&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;+x&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;launchUnityHub.command&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;双击运行生成的&lt;code&gt;launchUnityHub.command&lt;/code&gt;即可启动Unity Hub。&lt;/p&gt;&lt;hr /&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;方法二&lt;a href=&quot;#方法二-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;如果你的代理软件支持&lt;code&gt;TUN&lt;/code&gt;模式,可以直接开启&lt;code&gt;TUN&lt;/code&gt;模式+全局代理。&lt;/p&gt;&lt;p&gt;如果有已安装的Unity Hub版本，先卸载，为以防万一，卸载之后删除~/AppData/Roaming这个目录下的Unity Hub目录。然后再安装。
+Windows可以运行以下命令以删除Unity Hub的配置文件夹:&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;rd&lt;/span&gt;&lt;span&gt; /s /q &lt;/span&gt;&lt;span&gt;&lt;span&gt;&quot; &lt;/span&gt;&lt;span&gt;%&lt;/span&gt;&lt;/span&gt;&lt;span&gt;USERPROFILE&lt;/span&gt;&lt;span&gt;&lt;span&gt;%&lt;/span&gt;&lt;span&gt;\AppData\Roaming\UnityHub&quot;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;直接开启TUN模式,然后直接下载Unity国际版本。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://public-cdn.cloud.unity3d.com/hub/nuo/unityhubSetup.exe&quot;&gt;点击这里下载Windows版本&lt;/a&gt;
+&lt;a href=&quot;https://public-cdn.cloud.unity3d.com/hub/prod/unityhubSetup.dmg&quot;&gt;点击这里下载MacOS版本&lt;/a&gt;&lt;/p&gt;&lt;p&gt;这里有一些Unity编辑器的软链接 安装版本列表&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;#unity-%E5%88%97%E8%A1%A8&quot;&gt;点我跳转至安装版本列表&lt;/a&gt;&lt;/p&gt;&lt;hr /&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;Unity 列表&lt;a href=&quot;#unity-列表&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;VRChat官方给出的Unity版本是2022.3.22f1&lt;/p&gt;&lt;p&gt;&lt;a&gt;点击此处安装VRChat官方推荐的Unity版本&lt;/a&gt;&lt;/p&gt;&lt;p&gt;这里是Unity软连接地址(点击对应版本号会自动唤起本地的Unity Hub应用开始安装对应版本的Unity):&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Tips: 如果你下列没有需要版本你可以以&lt;code&gt;unityhub://&lt;/code&gt;开头然后又添加上 &lt;code&gt;{版本号}&lt;/code&gt; 的格式来安装其他版本的Unity。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;由于版本有点多,我给出了一个版本目录(基于&lt;a href=&quot;https://zhuanlan.zhihu.com/p/106132063&quot;&gt;如何取得Unity Hub内旧版本Unity下载链接&lt;/a&gt;基础上优化显示)方便你更好的找到他们。&lt;/p&gt;&lt;section&gt;&lt;h3&gt;版本目录(点击即可跳转)&lt;a href=&quot;#版本目录点击即可跳转&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#unity-20212&quot;&gt;Unity-2021.2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#unity-20211&quot;&gt;Unity 2021.1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#unity-20203lts&quot;&gt;Unity 2020.3(LTS)&lt;/a&gt;&lt;/li&gt;
@@ -769,146 +218,33 @@ Windows可以运行以下命令以删除Unity Hub的配置文件夹:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&quot;#unity-20172&quot;&gt;Unity 2017.2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#unity-20171&quot;&gt;Unity 2017.1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#unity-5&quot;&gt;Unity 5&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Unity 2021.2&lt;/h3&gt;
-&lt;p&gt;&lt;a&gt;2021.2.0a10/b8c2bb7e8b36&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2021.1&lt;/h3&gt;
-&lt;p&gt;&lt;a&gt;2021.1.0f1/61a549675243&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2020.3(LTS)&lt;/h3&gt;
-&lt;p&gt;&lt;a&gt;2020.3.2f1/8fd9074bf66c&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.3.1f1/77a89f25062f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.3.0f1/c7b5465681fb&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2020.2&lt;/h3&gt;
-&lt;p&gt;&lt;a&gt;2020.2.7f1/c53830e277f1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.2.6f1/8a2143876886&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.2.5f1/e2c53f129de5&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.2.4f1/becced5a802b&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.2.3f1/8ff31bc5bf5b&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.2.2f1/068178b99f32&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.2.1f1/270dd8c3da1c&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.2.0f1/3721df5a8b28&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2020.1&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2021.2&lt;a href=&quot;#unity-20212&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a&gt;2021.2.0a10/b8c2bb7e8b36&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2021.1&lt;a href=&quot;#unity-20211&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a&gt;2021.1.0f1/61a549675243&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2020.3(LTS)&lt;a href=&quot;#unity-20203lts&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a&gt;2020.3.2f1/8fd9074bf66c&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.3.1f1/77a89f25062f&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.3.0f1/c7b5465681fb&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2020.2&lt;a href=&quot;#unity-20202&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a&gt;2020.2.7f1/c53830e277f1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.2.6f1/8a2143876886&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.2.5f1/e2c53f129de5&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.2.4f1/becced5a802b&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.2.3f1/8ff31bc5bf5b&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.2.2f1/068178b99f32&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.2.1f1/270dd8c3da1c&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.2.0f1/3721df5a8b28&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2020.1&lt;a href=&quot;#unity-20201&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2020.1.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2020.1.17f1/9957aee8edc2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.16f1/f483ad6465d6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.15f1/97d0ae02d19d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.14f1/d81f64f5201d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.13f1/5e24f28bfbc0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.12f1/55b56f0a86e3&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.11f1/698c1113cef0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.10f1/974a9d56f159&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2020.1.17f1/9957aee8edc2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.16f1/f483ad6465d6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.15f1/97d0ae02d19d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.14f1/d81f64f5201d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.13f1/5e24f28bfbc0&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.12f1/55b56f0a86e3&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.11f1/698c1113cef0&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.10f1/974a9d56f159&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2020.1.xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2020.1.9f1/145f5172610f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.8f1/22e8c0b0c3ec&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.7f1/064ffcdb64ad&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.6f1/fc477ca6df10&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.5f1/e025938fdedc&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.4f1/fa717bb873ec&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.3f1/cf5c4788e1d8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.2f1/7b32bc54ba47&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.1f1/2285c3239188&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2020.1.0f1/2ab9c4179772&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2019.4(LTS)&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2020.1.9f1/145f5172610f&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.8f1/22e8c0b0c3ec&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.7f1/064ffcdb64ad&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.6f1/fc477ca6df10&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.5f1/e025938fdedc&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.4f1/fa717bb873ec&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.3f1/cf5c4788e1d8&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.2f1/7b32bc54ba47&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.1f1/2285c3239188&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2020.1.0f1/2ab9c4179772&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2019.4(LTS)&lt;a href=&quot;#unity-20194lts&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2019.4.2xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.4.20f1/6dd1c08eedfa&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.4.20f1/6dd1c08eedfa&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2019.4.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.4.19f1/ca5b14067cec&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.18f1/3310a4d4f880&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.17f1/667c8606c536&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.16f1/e05b6e02d63e&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.15f1/fbf367ac14e9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.14f1/4037e52648cd&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.13f1/518737b1de84&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.12f1/225e826a680e&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.11f1/2d9804dddde&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.10f1/5311b3af6f69&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.4.19f1/ca5b14067cec&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.18f1/3310a4d4f880&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.17f1/667c8606c536&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.16f1/e05b6e02d63e&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.15f1/fbf367ac14e9&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.14f1/4037e52648cd&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.13f1/518737b1de84&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.12f1/225e826a680e&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.11f1/2d9804dddde&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.10f1/5311b3af6f69&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2019.4.xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.4.9f1/50fe8a171dd9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.8f1/60781d942082&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.7f1/e992b1a16e65&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.6f1/a7aea80e3716&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.5f1/81610f64359c&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.4f1/1f1dac67805b&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.3f1/f880dceab6fe&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.2f1/20b4642a3455&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.1f1/e6c045e14e4e&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.4.0f1/0af376155913&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2019.3&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.4.9f1/50fe8a171dd9&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.8f1/60781d942082&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.7f1/e992b1a16e65&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.6f1/a7aea80e3716&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.5f1/81610f64359c&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.4f1/1f1dac67805b&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.3f1/f880dceab6fe&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.2f1/20b4642a3455&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.1f1/e6c045e14e4e&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.4.0f1/0af376155913&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2019.3&lt;a href=&quot;#unity-20193&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2019.3.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.3.15f1/59ff3e03856d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.14f1/2b330bf6d2d8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.13f1/d4ddf0d95db9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.12f1/84b23722532d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.11f1/ceef2d848e70&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.10f1/5968d7f82152&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.3.15f1/59ff3e03856d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.14f1/2b330bf6d2d8&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.13f1/d4ddf0d95db9&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.12f1/84b23722532d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.11f1/ceef2d848e70&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.10f1/5968d7f82152&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2019.3.xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.3.9f1/e6e740a1c473&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.8f1/4ba98e9386ed&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.8f1/4ba98e9386ed&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.7f1/6437fd74d35d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.6f1/5c3fb0a11183&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.5f1/d691e07d38ef&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.4f1/4f139db2fdbd&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.3f1/7ceaae5f7503&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.2f1/c46a3a38511e&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.1f1/89d6087839c2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.3.0f6/27ab2135bccf&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2019.2&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.3.9f1/e6e740a1c473&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.8f1/4ba98e9386ed&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.8f1/4ba98e9386ed&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.7f1/6437fd74d35d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.6f1/5c3fb0a11183&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.5f1/d691e07d38ef&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.4f1/4f139db2fdbd&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.3f1/7ceaae5f7503&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.2f1/c46a3a38511e&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.1f1/89d6087839c2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.3.0f6/27ab2135bccf&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2019.2&lt;a href=&quot;#unity-20192&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2019.2.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.2.21f1/9d528d026557&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.20f1/c67d00285037&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.19f1/929ab4d01772&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.18f1/bbf64de26e34&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.17f1/8e603399ca02&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.16f1/b9898e2d04a4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.15f1/dcb72c2e9334&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.14f1/49dd4e9fa428&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.13f1/e20f6c7e5017&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.12f1/b1a7e1fb4fa5&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.11f1/5f859a4cfee5&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.10f1/923acd2d43aa&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.2.21f1/9d528d026557&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.20f1/c67d00285037&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.19f1/929ab4d01772&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.18f1/bbf64de26e34&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.17f1/8e603399ca02&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.16f1/b9898e2d04a4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.15f1/dcb72c2e9334&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.14f1/49dd4e9fa428&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.13f1/e20f6c7e5017&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.12f1/b1a7e1fb4fa5&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.11f1/5f859a4cfee5&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.10f1/923acd2d43aa&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2019.2.xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.2.9f1/ebce4d76e6e8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.8f1/ff5b465c8d13&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.7f2/c96f78eb5904&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.7f2/c96f78eb5904&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.5f1/9dace1eed4cc&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.4f1/c63b2af89a85&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.3f1/8e55c27a4621&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.2f1/ab112815d860&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.1f1/ca4d5af0be6f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2019.2.0f1/20c1667945cf&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2019.1&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.2.9f1/ebce4d76e6e8&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.8f1/ff5b465c8d13&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.7f2/c96f78eb5904&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.7f2/c96f78eb5904&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.5f1/9dace1eed4cc&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.4f1/c63b2af89a85&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.3f1/8e55c27a4621&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.2f1/ab112815d860&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.1f1/ca4d5af0be6f&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2019.2.0f1/20c1667945cf&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2019.1&lt;a href=&quot;#unity-20191&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2019.1.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.1.14f1/148b5891095a&lt;/a&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.1.14f1/148b5891095a&lt;/a&gt;
 &lt;a&gt;2019.1.13f1/b5956c0a61e7&lt;/a&gt;
 &lt;a&gt;2019.1.12f1/f04f5427219e&lt;/a&gt;
 &lt;a&gt;2019.1.11f1/9b001d489a54&lt;/a&gt;
-&lt;a&gt;2019.1.10f1/f007ed779b7a&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;a&gt;2019.1.10f1/f007ed779b7a&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2019.1.xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2019.1.9f1/d5f1b37da199&lt;/a&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2019.1.9f1/d5f1b37da199&lt;/a&gt;
 &lt;a&gt;2019.1.8f1/7938dd008a75&lt;/a&gt;
 &lt;a&gt;2019.1.7f1/f3c4928e5742&lt;/a&gt;
 &lt;a&gt;2019.1.6f1/f2970305fe1c&lt;/a&gt;
@@ -917,203 +253,28 @@ Windows可以运行以下命令以删除Unity Hub的配置文件夹:&lt;/p&gt;
 &lt;a&gt;2019.1.3f1/dc414eb9ed43&lt;/a&gt;
 &lt;a&gt;2019.1.2f1/3e18427e571f&lt;/a&gt;
 &lt;a&gt;2019.1.1f1/fef62e97e63b&lt;/a&gt;
-&lt;a&gt;2019.1.0f2/292b93d75a2c&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2018.4(LTS)&lt;/h3&gt;
-&lt;ul&gt;
+&lt;a&gt;2019.1.0f2/292b93d75a2c&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2018.4(LTS)&lt;a href=&quot;#unity-20184lts&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2018.4.32f1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2018.4.32f1/fba45da84107&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.31f1/212ea663d844&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.30f1/c698a062d8e6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.29f1/50cce2edf27f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.28f1/a2d4f71491a4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.27f1/4e283b7d3f88&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.26f1/a7ac1c6396db&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.25f1/b07bfa0a8827&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.24f1/3071911a89e9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.23f1/c9cf1a90e812&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.22f1/3362ffbb7aa1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.21f1/fd3915227633&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.20f1/008688490035&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2018.4.32f1/fba45da84107&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.31f1/212ea663d844&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.30f1/c698a062d8e6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.29f1/50cce2edf27f&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.28f1/a2d4f71491a4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.27f1/4e283b7d3f88&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.26f1/a7ac1c6396db&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.25f1/b07bfa0a8827&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.24f1/3071911a89e9&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.23f1/c9cf1a90e812&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.22f1/3362ffbb7aa1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.21f1/fd3915227633&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.20f1/008688490035&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2018.4.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2018.4.19f1/459f70f82ea4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.18f1/61fce66342ad&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.17f1/b830f56f42f0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.16f1/e6e9ca02b32a&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.15f1/13f5a1bf9ca1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.14f1/05119b33d0b7&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.13f1/497f083a43af&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.12f1/59ddc4c59b4f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.11f1/7098af2f11ea&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.10f1/a0470569e97b&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.9f1/ca372476eaba&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.8f1/9bc9d983d803&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.7f1/b9a993fd1334&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.6f1/cde1bbcc9f0d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.5f1/7b38f8ac282e&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.4f1/5440768ff61c&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.3f1/8a9509a5aff9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.2f1/d6fb3630ea75&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.1f1/b7c424a951c0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.4.0f1/b6ffa8986c8d&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2018.3&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2018.4.19f1/459f70f82ea4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.18f1/61fce66342ad&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.17f1/b830f56f42f0&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.16f1/e6e9ca02b32a&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.15f1/13f5a1bf9ca1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.14f1/05119b33d0b7&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.13f1/497f083a43af&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.12f1/59ddc4c59b4f&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.11f1/7098af2f11ea&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.10f1/a0470569e97b&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.9f1/ca372476eaba&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.8f1/9bc9d983d803&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.7f1/b9a993fd1334&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.6f1/cde1bbcc9f0d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.5f1/7b38f8ac282e&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.4f1/5440768ff61c&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.3f1/8a9509a5aff9&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.2f1/d6fb3630ea75&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.1f1/b7c424a951c0&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.4.0f1/b6ffa8986c8d&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2018.3&lt;a href=&quot;#unity-20183&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2018.3.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2018.3.14f1/d0e9f15437b1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.13f1/06548a9e9582&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.12f1/8afd630d1f5b&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.11f1/5063218e4ab8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.10f1/f88de2c96e63&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.9f1/947e1ea5aa8d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.8f1/fc0fe30d6d91&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.7f1/9e14d22a41bb&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.6f1/a220877bc173&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.5f1/76b3e37670a4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.4f1/1d952368ca3a&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.3f1/393bae82dbb8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.2f1/b3c100a4b73a&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.1f1/bb579dc42f1d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.3.0f2/6e9a27477296&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2018.2&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2018.3.14f1/d0e9f15437b1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.13f1/06548a9e9582&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.12f1/8afd630d1f5b&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.11f1/5063218e4ab8&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.10f1/f88de2c96e63&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.9f1/947e1ea5aa8d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.8f1/fc0fe30d6d91&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.7f1/9e14d22a41bb&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.6f1/a220877bc173&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.5f1/76b3e37670a4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.4f1/1d952368ca3a&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.3f1/393bae82dbb8&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.2f1/b3c100a4b73a&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.1f1/bb579dc42f1d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.3.0f2/6e9a27477296&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2018.2&lt;a href=&quot;#unity-20182&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2018.2.2xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2018.2.21f1/a122f5dc316d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.20f1/cef3e6c0c622&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2018.2.21f1/a122f5dc316d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.20f1/cef3e6c0c622&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2018.2.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2018.2.19f1/06990f28ba00&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.18f1/4550892b6062&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.17f1/88933597c842&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.16f1/39a4ac3d51f6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.15f1/65e0713a5949&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.14f1/3262fb3b0716&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.13f1/83fbdcd35118&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.12f1/0a46ddfcfad4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.11f1/38bd7dec5000&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.10f1/674aa5a67ed5&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2018.2.19f1/06990f28ba00&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.18f1/4550892b6062&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.17f1/88933597c842&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.16f1/39a4ac3d51f6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.15f1/65e0713a5949&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.14f1/3262fb3b0716&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.13f1/83fbdcd35118&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.12f1/0a46ddfcfad4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.11f1/38bd7dec5000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.10f1/674aa5a67ed5&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2018.2.xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2018.2.9f1/2207421190e9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.8f1/ae1180820377&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.7f1/4ebd28dd9664&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.6f1/c591d9a97a0b&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.5f1/3071d1717b71&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.4f1/cb262d9ddeaf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.3f1/1431a7d2ced7&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.2f1/c18cef34cbcd&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.1f1/1a9968d9f99c&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.2.0f2/787658998520&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2018.1&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2018.2.9f1/2207421190e9&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.8f1/ae1180820377&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.7f1/4ebd28dd9664&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.6f1/c591d9a97a0b&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.5f1/3071d1717b71&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.4f1/cb262d9ddeaf&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.3f1/1431a7d2ced7&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.2f1/c18cef34cbcd&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.1f1/1a9968d9f99c&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.2.0f2/787658998520&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2018.1&lt;a href=&quot;#unity-20181&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2018.1.xf2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2018.1.9f2/a6cc294b73ee&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.8f1/26051d4de9e9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.7f1/4cb482063d12&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.6f1/57cc34175ccf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.5f1/732dbf75922d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.4f1/1a308f4ebef1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.3f1/a53ad04f7c7f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.2f1/a46d718d282d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.1f1/b8cbb5de9840&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2018.1.0f2/d4d99f31acba&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2017.4(LTS)&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2018.1.9f2/a6cc294b73ee&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.8f1/26051d4de9e9&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.7f1/4cb482063d12&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.6f1/57cc34175ccf&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.5f1/732dbf75922d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.4f1/1a308f4ebef1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.3f1/a53ad04f7c7f&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.2f1/a46d718d282d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.1f1/b8cbb5de9840&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2018.1.0f2/d4d99f31acba&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2017.4(LTS)&lt;a href=&quot;#unity-20174lts&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;2017.4.4xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2017.4.40f1/6e14067f8a9a&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2017.4.40f1/6e14067f8a9a&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2017.4.3xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2017.4.39f1/947131c5be7e&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.38f1/82ac2fb100ce&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.37f1/78b69503ebc4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.36f1/c663def8414c&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.35f1/e57a7bcbbf0b&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.34f1/121f18246307&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.33f1/a8557a619e24&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.32f1/4da3ed968770&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.31f1/9c8dbc3421cb&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.30f1/c6fa43736cae&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2017.4.39f1/947131c5be7e&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.38f1/82ac2fb100ce&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.37f1/78b69503ebc4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.36f1/c663def8414c&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.35f1/e57a7bcbbf0b&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.34f1/121f18246307&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.33f1/a8557a619e24&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.32f1/4da3ed968770&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.31f1/9c8dbc3421cb&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.30f1/c6fa43736cae&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2017.4.2xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2017.4.29f1/06508aa14ca1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.28f1/e3a0f7dd2097&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.27f1/0c4b856e4c6e&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.26f1/3b349d10f010&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.25f1/9cba1c3a94f1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.24f1/786769fc3439&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.23f1/f80c8a98b1b5&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.22f1/eb4bc6fa7f1d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.21f1/de35fe252486&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.20f2/413dbd19b6dc&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2017.4.29f1/06508aa14ca1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.28f1/e3a0f7dd2097&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.27f1/0c4b856e4c6e&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.26f1/3b349d10f010&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.25f1/9cba1c3a94f1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.24f1/786769fc3439&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.23f1/f80c8a98b1b5&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.22f1/eb4bc6fa7f1d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.21f1/de35fe252486&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.20f2/413dbd19b6dc&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2017.4.1xf1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2017.4.19f1/47cd37c28be8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.18f1/a9236f402e28&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.17f1/05307cddbb71&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.16f1/7f7bdd1ef02b&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.15f1/5d485b4897a7&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.14f1/b28150134d55&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.13f1/6902ad48015d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.12f1/b582b87345b1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.11f1/8c6b8ef6d111&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.10f1/f2cce2a5991f&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2017.4.19f1/47cd37c28be8&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.18f1/a9236f402e28&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.17f1/05307cddbb71&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.16f1/7f7bdd1ef02b&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.15f1/5d485b4897a7&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.14f1/b28150134d55&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.13f1/6902ad48015d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.12f1/b582b87345b1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.11f1/8c6b8ef6d111&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.10f1/f2cce2a5991f&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;2017.4.10f1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a&gt;2017.4.9f1/6d84dfc57ccf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.8f1/5ab7f4878ef1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.7f1/de9eb5ca33c5&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.6f1/c24f30193bac&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.5f1/89d1db9cb682&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.4f1/645c9050ba4d&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.3f1/21ae32b5a9cb&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.2f2/52d9cb89b362&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.4.1f1/9231f953d9d3&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2017.3&lt;/h3&gt;
-&lt;p&gt;&lt;a&gt;2017.3.1f1/fc1d3344e6ea&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.3.0f3/a9f86dcd79df&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2017.2&lt;/h3&gt;
-&lt;p&gt;&lt;a&gt;2017.2.5f1/588dc79c95ed&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.2.4f1/f1557d1f61fd&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.2.3f1/372229934efd&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.2.2f1/1f4e0f9b6a50&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.2.1f1/94bf3f9e6b5e&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.2.0f3/46dda1414e51&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 2017.1&lt;/h3&gt;
-&lt;p&gt;&lt;a&gt;2017.1.5f1/9758a36cfaa6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.1.4f1/9fd71167a288&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.1.3f1/574eeb502d14&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.1.2f1/cc85bf6a8a04&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.1.1f1/5d30cf096e79&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;2017.1.0f3/472613c02cf7&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Unity 5&lt;/h3&gt;
-&lt;p&gt;&lt;a&gt;5.6.7f1/e80cc3114ac1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;5.6.6f2/6bac21139588&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;5.6.5f1/2cac56bf7bb6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;5.6.4f1/ac7086b8d112&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;5.6.3f1/d3101c3b8468&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;5.6.2f1/a2913c821e27&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;5.6.1f1/2860b30f0b54&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;5.6.0f3/497a0f351392&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Unity5.6以下版本不支持从Unity Hub中部署，故无法提供链接&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;引用&lt;/h2&gt;
-&lt;p&gt;文章引用了大部分文章并总结,原文地址如下:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.logiconsole.com/fuck-unity-cn&quot;&gt;如何逃离Unity中国特供版&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/226163910&quot;&gt;Unity中国想钱想疯了&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/106132063&quot;&gt;如何取得Unity Hub内旧版本Unity下载链接&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;示例图片&lt;/h2&gt;
-&lt;h3&gt;Windows显示文件扩展名的示例&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;image-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content:encoded></item></channel></rss>
+&lt;/ul&gt;&lt;p&gt;&lt;a&gt;2017.4.9f1/6d84dfc57ccf&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.8f1/5ab7f4878ef1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.7f1/de9eb5ca33c5&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.6f1/c24f30193bac&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.5f1/89d1db9cb682&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.4f1/645c9050ba4d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.3f1/21ae32b5a9cb&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.2f2/52d9cb89b362&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.4.1f1/9231f953d9d3&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2017.3&lt;a href=&quot;#unity-20173&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a&gt;2017.3.1f1/fc1d3344e6ea&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.3.0f3/a9f86dcd79df&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2017.2&lt;a href=&quot;#unity-20172&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a&gt;2017.2.5f1/588dc79c95ed&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.2.4f1/f1557d1f61fd&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.2.3f1/372229934efd&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.2.2f1/1f4e0f9b6a50&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.2.1f1/94bf3f9e6b5e&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.2.0f3/46dda1414e51&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 2017.1&lt;a href=&quot;#unity-20171&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a&gt;2017.1.5f1/9758a36cfaa6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.1.4f1/9fd71167a288&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.1.3f1/574eeb502d14&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.1.2f1/cc85bf6a8a04&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.1.1f1/5d30cf096e79&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;2017.1.0f3/472613c02cf7&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;Unity 5&lt;a href=&quot;#unity-5&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a&gt;5.6.7f1/e80cc3114ac1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;5.6.6f2/6bac21139588&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;5.6.5f1/2cac56bf7bb6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;5.6.4f1/ac7086b8d112&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;5.6.3f1/d3101c3b8468&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;5.6.2f1/a2913c821e27&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;5.6.1f1/2860b30f0b54&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;5.6.0f3/497a0f351392&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Unity5.6以下版本不支持从Unity Hub中部署，故无法提供链接&lt;/p&gt;&lt;/blockquote&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;引用&lt;a href=&quot;#引用&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;文章引用了大部分文章并总结,原文地址如下:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.logiconsole.com/fuck-unity-cn&quot;&gt;如何逃离Unity中国特供版&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/226163910&quot;&gt;Unity中国想钱想疯了&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/106132063&quot;&gt;如何取得Unity Hub内旧版本Unity下载链接&lt;/a&gt;&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;示例图片&lt;a href=&quot;#示例图片&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;Windows显示文件扩展名的示例&lt;a href=&quot;#windows显示文件扩展名的示例&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img loading=&quot;lazy&quot; width=&quot;1125&quot; height=&quot;634&quot; src=&quot;/_astro/image-1.MXLtoUmK_Z1RKnX5.webp&quot; /&gt;&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item></channel></rss>

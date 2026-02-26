@@ -1,0 +1,51 @@
+name: Build and Deploy
+
+on:
+  # 每次推送到 `main` 分支时触发这个"工作流程"
+  # 如果你使用了别的分支名，请按需将 `main` 替换成你的分支名
+  push:
+    branches: [ main ]
+  # 允许你在 GitHub 上的 Actions 标签中手动触发此"工作流程"
+  workflow_dispatch:
+
+# 需要写入权限来推送到 gh-pages 分支
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.21.1'
+          
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.14.4
+          run_install: false
+          
+      - name: Install Dependencies
+        run: pnpm install
+      
+      - name: Build
+        run: pnpm build
+
+      - name: Copy CNAME file
+        run: cp CNAME dist/
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # 部署到 gh-pages 分支
+          folder: dist # Astro 默认构建输出目录
+          clean: true # 自动清理目标分支中的旧文件
+          clean-exclude: | # 排除某些文件不删除
+            .nojekyll
+            CNAME
+          commit-message: "🚀 Deploy: ${{ github.event.head_commit.message }}"

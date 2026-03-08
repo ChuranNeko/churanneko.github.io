@@ -1,5 +1,5 @@
 ---
-title: AMap-Weather-MCP
+title: 基于高德地图API的MCP天气服务器
 published: 2025-12-03
 description: 基于高德地图API的MCP天气服务器
 tags: [Tags, Python, MCP, Weather]

@@ -1,5 +1,5 @@
 ---
-title: Docker-Compose-Mirror-Setup
+title: 配置 Docker Compose镜像源
 published: 2025-12-26
 description: 配置 Docker Compose镜像源
 tags: [Tags, Docker]
@@ -16,18 +16,20 @@ lang: zh_CN
 
 ## 目录
 
-- [简介](#简介)
-- [安装 Docker](#安装-docker)
-  - [使用 LinuxMirror 脚本安装](#使用-linuxmirror-脚本安装)
-  - [使用官方脚本安装](#使用官方脚本安装)
-  - [指定镜像源安装](#指定镜像源安装)
-- [配置 Docker](#配置-docker)
-  - [使用脚本修改](#使用脚本修改)
-  - [自行修改](#自行修改)
-    - [编辑配置文件](#编辑配置文件)
-    - [文件示例](#文件示例)
-    - [重载服务](#重载服务)
-- [Docker 镜像源列表](#docker-镜像源列表)
+- [配置Docker Compose源](#配置docker-compose源)
+  - [目录](#目录)
+  - [简介](#简介)
+  - [安装 Docker](#安装-docker)
+    - [使用 LinuxMirror 脚本安装](#使用-linuxmirror-脚本安装)
+    - [使用官方脚本安装](#使用官方脚本安装)
+    - [指定镜像源安装](#指定镜像源安装)
+  - [配置 Docker](#配置-docker)
+    - [使用脚本修改](#使用脚本修改)
+    - [自行修改](#自行修改)
+      - [编辑配置文件](#编辑配置文件)
+      - [文件示例](#文件示例)
+      - [重载服务](#重载服务)
+  - [Docker镜像源列表](#docker镜像源列表)
 
 ## 简介
 

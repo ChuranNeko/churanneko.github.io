@@ -1,5 +1,5 @@
 ---
-title: Quick_Napcat_Docker_Compose
+title: 使用Docker Compose快速部署NapCat
 published: 2025-11-27
 description: 使用Docker Compose快速部署NapCat
 tags: [Tags, Docker]
@@ -16,19 +16,21 @@ lang: zh_CN
 可直接点击文字跳转至对应章节
 :::
 
-- [简介](#简介)
-- [什么是NapCat?](#什么是NapCat)
-- [开始](#开始)
-  - [安装Docker](#安装Docker)
-  - [下载NapCat Docker Compose文件](#下载napcat-docker-compose文件)
-  - [启动服务](#启动服务)
-  - [查看日志](#查看日志)
-  - [停止服务](#停止服务)
-  - [重启服务](#重启服务)
-- [对接](#对接)
-- [附加说明](#附加说明)
-- [免责声明](#免责声明)
-- [数据](#数据)
+- [使用Docker Compose快速部署NapCat](#使用docker-compose快速部署napcat)
+  - [目录](#目录)
+  - [简介](#简介)
+  - [什么是NapCat?](#什么是napcat)
+  - [开始](#开始)
+  - [安装Docker](#安装docker)
+    - [下载NapCat Docker Compose文件](#下载napcat-docker-compose文件)
+    - [启动服务](#启动服务)
+    - [查看日志](#查看日志)
+    - [停止服务](#停止服务)
+    - [重启服务](#重启服务)
+  - [对接](#对接)
+  - [附加说明](#附加说明)
+  - [免责声明](#免责声明)
+  - [数据](#数据)
 
 ## 简介
 

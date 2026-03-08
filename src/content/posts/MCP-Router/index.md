@@ -1,5 +1,5 @@
 ---
-title: MCP-Router
+title: MCP路由
 published: 2025-12-03
 description: 一个模型上下文协议（MCP）路由/代理系统
 tags: [Tags, Python, MCP]

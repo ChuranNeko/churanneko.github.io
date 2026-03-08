@@ -1,5 +1,5 @@
 ---
-title: Unity-CN-to-International
+title: Unity中国特供转国际版本
 published: 2025-11-26
 description: Unity中国特供转国际版本
 tags: [Tags, Unity]
@@ -147,24 +147,38 @@ VRChat官方给出的Unity版本是2022.3.22f1
 
 ### 版本目录(点击即可跳转)
 
-- [Unity-2021.2](#unity-20212)
-- [Unity 2021.1](#unity-20211)
-- [Unity 2020.3(LTS)](#unity-20203lts)
-- [Unity 2020.2](#unity-20202)
-- [Unity 2020.1](#unity-20201)
-- [Unity 2019.4(LTS)](#unity-20194lts)
-- [Unity 2019.3](#unity-20193)
-- [Unity 2019.2](#unity-20192)
-- [Unity 2019.1](#unity-20191)
-- [Unity 2018.4(LTS)](#unity-20184lts)
-- [Unity 2018.3](#unity-20183)
-- [Unity 2018.2](#unity-20182)
-- [Unity 2018.1](#unity-20181)
-- [Unity 2017.4(LTS)](#unity-20174lts)
-- [Unity 2017.3](#unity-20173)
-- [Unity 2017.2](#unity-20172)
-- [Unity 2017.1](#unity-20171)
-- [Unity 5](#unity-5)
+- [Unity中国特供转国际版本](#unity中国特供转国际版本)
+  - [目录](#目录)
+  - [简介](#简介)
+  - [判断](#判断)
+  - [为什么要安装国际版本](#为什么要安装国际版本)
+  - [解决方法](#解决方法)
+    - [方法一](#方法一)
+    - [方法二](#方法二)
+  - [方法二](#方法二-1)
+  - [Unity 列表](#unity-列表)
+    - [版本目录(点击即可跳转)](#版本目录点击即可跳转)
+    - [Unity 2021.2](#unity-20212)
+    - [Unity 2021.1](#unity-20211)
+    - [Unity 2020.3(LTS)](#unity-20203lts)
+    - [Unity 2020.2](#unity-20202)
+    - [Unity 2020.1](#unity-20201)
+    - [Unity 2019.4(LTS)](#unity-20194lts)
+    - [Unity 2019.3](#unity-20193)
+    - [Unity 2019.2](#unity-20192)
+    - [Unity 2019.1](#unity-20191)
+    - [Unity 2018.4(LTS)](#unity-20184lts)
+    - [Unity 2018.3](#unity-20183)
+    - [Unity 2018.2](#unity-20182)
+    - [Unity 2018.1](#unity-20181)
+    - [Unity 2017.4(LTS)](#unity-20174lts)
+    - [Unity 2017.3](#unity-20173)
+    - [Unity 2017.2](#unity-20172)
+    - [Unity 2017.1](#unity-20171)
+    - [Unity 5](#unity-5)
+  - [引用](#引用)
+  - [示例图片](#示例图片)
+    - [Windows显示文件扩展名的示例](#windows显示文件扩展名的示例)
 
 ### Unity 2021.2
 

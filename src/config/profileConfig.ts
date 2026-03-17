@@ -12,7 +12,7 @@ export const profileConfig: ProfileConfig = {
 	name: "初然",
 
 	// 个人签名
-	bio: "什么都想学一点，但又什么都不精通。",
+	bio: "一切都是因为好奇，所以想要知道那些未曾知晓的事物。",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons

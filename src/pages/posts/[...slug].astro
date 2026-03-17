@@ -467,7 +467,7 @@ const jsonLd = {
             // 第二步：获取统计数据
             const currentTimestamp = Date.now();
             const postUrl = getPostUrlBySlug(slug);
-            const statsUrl = `${umamiConfig.baseUrl}/analytics/us/api/websites/${websiteId}/stats?startAt=0&endAt=${currentTimestamp}&unit=hour&timezone=${encodeURIComponent(umamiConfig.timezone)}&path=eq.${encodeURIComponent(postUrl)}&compare=false`;
+            const statsUrl = `${umamiConfig.baseUrl}/analytics/us/api/websites/${websiteId}/stats?startAt=0&endAt=${currentTimestamp}&unit=hour&timezone=${encodeURIComponent(umamiConfig.timezone)}&path=eq.${encodeURIComponent(postUrl)}&compare=prev`;
             
             const statsResponse = await fetch(statsUrl, {
                 headers: {

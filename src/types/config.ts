@@ -104,6 +104,22 @@ export type SiteConfig = {
 		microsoftClarityId?: string; // Microsoft Clarity ID
 	};
 
+	// Umami 统计配置
+	umami?: {
+		enable: boolean;
+		baseUrl: string;
+		shareId: string;
+		timezone: string;
+	};
+
+	// 统计文案配置
+	stats?: {
+		viewsText?: string;
+		visitsText?: string;
+		loadingText?: string;
+		unavailableText?: string;
+	};
+
 	// 图片优化配置
 	imageOptimization?: {
 		/**

@@ -104,11 +104,19 @@ const stats = [
 		? [
 				{
 					icon: "material-symbols:visibility-outline",
-					label: "全站访问",
+					label: "累计访问",
 					value: 0, // 将由客户端更新
 					suffix: "",
 					dynamic: true,
-					id: "umami-stats",
+					id: "umami-pageviews",
+				},
+				{
+					icon: "material-symbols:group-outline-rounded",
+					label: "累计访客",
+					value: 0, // 将由客户端更新
+					suffix: "",
+					dynamic: true,
+					id: "umami-visitors",
 				},
 			]
 		: []),
@@ -128,11 +136,17 @@ const stats = [
           </span>
         </div>
         <div class="flex items-center">
-          <span 
-            class="text-base font-bold text-neutral-900 dark:text-neutral-100"
-            data-stat-id={stat.id}
-          >
-            {stat.formatted ? formatNumber(stat.value) : stat.value}
+		  <span 
+			class="text-base font-bold text-neutral-900 dark:text-neutral-100"
+			data-stat-id={stat.id}
+			data-umami-stats={stat.id?.startsWith("umami-") ? "site" : undefined}
+			data-umami-metric={stat.id === "umami-visitors" ? "visitors" : stat.id === "umami-pageviews" ? "pageviews" : undefined}
+		  >
+			{stat.id?.startsWith("umami-")
+			  ? siteConfig.stats?.loadingText || "统计加载中..."
+			  : stat.formatted
+				? formatNumber(stat.value)
+                : stat.value}
           </span>
           {stat.suffix && (
             <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">
@@ -190,65 +204,3 @@ const stats = [
     setTimeout(updateDynamicStats, 100);
   });
 </script>
-
-<!-- Umami 统计加载 -->
-{siteConfig.umami?.enable && (
-<>
-  <script is:inline type="module" src="/js/umami-share.js"></script>
-  
-  <script define:vars={{ umamiConfig: siteConfig.umami, unavailableText: siteConfig.stats?.unavailableText, viewsText: siteConfig.stats?.viewsText, visitsText: siteConfig.stats?.visitsText }}>
-      // 客户端统计文案生成函数
-      function generateUmamiStatsText(pageViews, visits) {
-          return `${pageViews.toLocaleString()} · ${visitsText} ${visits.toLocaleString()}`;
-      }
-      
-      async function loadUmamiStats() {
-          if (!umamiConfig.enable) {
-              return;
-          }
-          
-          try {
-              // 调用全局工具获取 Umami 分享数据
-              const { websiteId, token } = await getUmamiShareData(umamiConfig.baseUrl, umamiConfig.shareId);
-              
-              // 第二步：获取全站统计数据
-              const currentTimestamp = Date.now();
-              const statsUrl = `${umamiConfig.baseUrl}/analytics/us/api/websites/${websiteId}/stats?startAt=0&endAt=${currentTimestamp}&unit=hour&timezone=${encodeURIComponent(umamiConfig.timezone)}&compare=prev`;
-              
-              const statsResponse = await fetch(statsUrl, {
-                   headers: {
-                       'x-umami-share-token': token
-                   }
-               });
-              
-              if (statsResponse.status === 401) {
-                  clearUmamiShareCache();
-                  return await loadUmamiStats();
-              }
-              
-              if (!statsResponse.ok) {
-                  throw new Error('获取统计数据失败');
-              }
-              
-              const statsData = await statsResponse.json();
-              const pageviews = statsData.pageviews || 0;
-              const visitors = statsData.visitors || 0;
-              
-              const statsElement = document.querySelector('[data-stat-id="umami-stats"]');
-              if (statsElement) {
-                  statsElement.textContent = generateUmamiStatsText(pageviews, visitors);
-              }
-          } catch (error) {
-              console.error('获取全站统计失败:', error);
-              const statsElement = document.querySelector('[data-stat-id="umami-stats"]');
-              if (statsElement) {
-                  statsElement.textContent = unavailableText || "统计不可用";
-              }
-          }
-      }
-  
-      // 页面加载完成后获取统计数据
-      document.addEventListener('DOMContentLoaded', loadUmamiStats);
-  </script>
-</>
-)}

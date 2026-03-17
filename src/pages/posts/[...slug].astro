@@ -197,8 +197,11 @@ const jsonLd = {
           >
             <Icon name="material-symbols:visibility-outline" />
           </div>
-          <div class="text-sm">
-            <span id="page-views-post">{siteConfig.stats?.loadingText || "统计加载中..."}</span>
+        <div class="text-sm">
+            <span
+              data-umami-stats="page"
+              data-umami-path={Astro.url.pathname}
+            >{siteConfig.stats?.loadingText || "统计加载中..."}</span>
           </div>
         </div>
         )}
@@ -441,69 +444,3 @@ const jsonLd = {
   <!-- 评论 -->
   {entry.data.comment && <Comment post={entry} />}
 </MainGridLayout>
-
-<!-- 引入 umami-share.js -->
-{siteConfig.umami?.enable && (
-<script is:inline type="module" src="/js/umami-share.js"></script>
-)}
-
-{siteConfig.umami?.enable && (
-<script define:vars={{ entry, umamiConfig: siteConfig.umami, unavailableText: siteConfig.stats?.unavailableText, viewsText: siteConfig.stats?.viewsText, visitsText: siteConfig.stats?.visitsText, getPostUrlBySlug }}>
-    // 客户端统计文案生成函数
-    function generateStatsText(pageViews, visits) {
-        return `${viewsText} ${pageViews} · ${visitsText} ${visits}`;
-    }
-    
-    // 获取文章详情页浏览量统计
-    async function fetchPostViews(slug) {
-        if (!umamiConfig.enable) {
-            return;
-        }
-        
-        try {
-            // 调用全局工具获取 Umami 分享数据
-            const { websiteId, token } = await getUmamiShareData(umamiConfig.baseUrl, umamiConfig.shareId);
-            
-            // 第二步：获取统计数据
-            const currentTimestamp = Date.now();
-            const postUrl = getPostUrlBySlug(slug);
-            const statsUrl = `${umamiConfig.baseUrl}/analytics/us/api/websites/${websiteId}/stats?startAt=0&endAt=${currentTimestamp}&unit=hour&timezone=${encodeURIComponent(umamiConfig.timezone)}&path=eq.${encodeURIComponent(postUrl)}&compare=prev`;
-            
-            const statsResponse = await fetch(statsUrl, {
-                headers: {
-                    'x-umami-share-token': token
-                }
-            });
-            
-            if (statsResponse.status === 401) {
-                clearUmamiShareCache();
-                return await fetchPostViews(slug);
-            }
-            
-            if (!statsResponse.ok) {
-                throw new Error('获取统计数据失败');
-            }
-            
-            const statsData = await statsResponse.json();
-            const pageViews = statsData.pageviews || 0;
-            const visits = statsData.visitors || 0;
-            
-            const displayElement = document.getElementById('page-views-post');
-             if (displayElement) {
-                 displayElement.textContent = generateStatsText(pageViews, visits);
-             }
-        } catch (error) {
-            console.error('Error fetching page views for post:', error);
-            const displayElement = document.getElementById('page-views-post');
-            if (displayElement) {
-                displayElement.textContent = unavailableText;
-            }
-        }
-    }
-
-    // 页面加载完成后获取统计数据
-    document.addEventListener('DOMContentLoaded', () => {
-        fetchPostViews(entry.id);
-    });
-</script>
-)}

@@ -1,0 +1,134 @@
+---
+import { siteConfig } from "@/config";
+
+const umamiConfig = siteConfig.umami;
+const unavailableText = siteConfig.stats?.unavailableText || "统计不可用";
+const viewsText = siteConfig.stats?.viewsText || "浏览";
+const visitsText = siteConfig.stats?.visitsText || "访客";
+---
+
+{umamiConfig?.enable && (
+	<>
+		<script is:inline type="module" src="/js/umami-share.js"></script>
+		<script
+			define:vars={{
+				umamiConfig,
+				unavailableText,
+				viewsText,
+				visitsText,
+			}}
+		>
+			const UMAMI_ATTR = "data-umami-stats";
+
+			function getMetricText(metric, pageviews, visitors) {
+				if (metric === "visitors") {
+					return visitors.toLocaleString();
+				}
+
+				return pageviews.toLocaleString();
+			}
+
+			function setElementsText(elements, text) {
+				elements.forEach((element) => {
+					element.textContent = text;
+				});
+			}
+
+			async function fetchUmamiStats(path) {
+				const { websiteId, token } = await getUmamiShareData(
+					umamiConfig.baseUrl,
+					umamiConfig.shareId,
+				);
+
+				const currentTimestamp = Date.now();
+				const params = new URLSearchParams({
+					startAt: "0",
+					endAt: String(currentTimestamp),
+					unit: "hour",
+					timezone: umamiConfig.timezone,
+					compare: "prev",
+				});
+
+				if (path) {
+					params.set("path", `eq.${path}`);
+				}
+
+				const statsResponse = await fetch(
+					`${umamiConfig.baseUrl}/analytics/us/api/websites/${websiteId}/stats?${params.toString()}`,
+					{
+						headers: {
+							"x-umami-share-token": token,
+						},
+					},
+				);
+
+				if (statsResponse.status === 401) {
+					clearUmamiShareCache();
+					return fetchUmamiStats(path);
+				}
+
+				if (!statsResponse.ok) {
+					throw new Error("获取统计数据失败");
+				}
+
+				return statsResponse.json();
+			}
+
+			async function loadUmamiStats() {
+				if (!umamiConfig.enable) {
+					return;
+				}
+
+				const elements = Array.from(document.querySelectorAll(`[${UMAMI_ATTR}]`));
+				if (elements.length === 0) {
+					return;
+				}
+
+				const groupedElements = new Map();
+
+					elements.forEach((element) => {
+						const kind = element.getAttribute(UMAMI_ATTR) || "page";
+						const path = element.getAttribute("data-umami-path") || "";
+						const metric = element.getAttribute("data-umami-metric") || "combined";
+						const key = `${kind}::${path}`;
+
+						if (!groupedElements.has(key)) {
+							groupedElements.set(key, { kind, path, elements: [] });
+						}
+
+						groupedElements.get(key).elements.push({ element, metric });
+					});
+
+					await Promise.all(
+						Array.from(groupedElements.values()).map(async ({ kind, path, elements }) => {
+						try {
+							const statsData = await fetchUmamiStats(path || undefined);
+							const pageviews = statsData.pageviews || 0;
+							const visitors = statsData.visitors || 0;
+
+							elements.forEach(({ element, metric }) => {
+								if (kind === "site" && metric !== "combined") {
+									element.textContent = getMetricText(metric, pageviews, visitors);
+									return;
+								}
+
+								element.textContent = `${viewsText} ${pageviews} · ${visitsText} ${visitors}`;
+							});
+						} catch (error) {
+							console.error("获取 Umami 统计失败:", error);
+							setElementsText(
+								elements.map(({ element }) => element),
+								unavailableText,
+							);
+						}
+					}),
+				);
+			}
+
+			document.addEventListener("DOMContentLoaded", loadUmamiStats);
+			document.addEventListener("swup:contentReplaced", () => {
+				setTimeout(loadUmamiStats, 100);
+			});
+		</script>
+	</>
+)}

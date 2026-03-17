@@ -3,7 +3,7 @@ import { render } from "astro:content";
 import { getContainerRenderer as getMDXRenderer } from "@astrojs/mdx";
 import rss, { type RSSFeedItem } from "@astrojs/rss";
 import { getSortedPosts } from "@utils/content-utils";
-import { formatDateI18nWithTime } from "@utils/date-utils";
+// import { formatDateI18nWithTime } from "@utils/date-utils";
 import { url } from "@utils/url-utils";
 import type { APIContext } from "astro";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
@@ -40,7 +40,8 @@ export async function GET(context: APIContext) {
 	}
 	return rss({
 		title: siteConfig.title,
-		description: siteConfig.description || siteConfig.subtitle || "No description",
+		description:
+			siteConfig.description || siteConfig.subtitle || "No description",
 		site: context.site ?? "https://fuwari.vercel.app",
 		customData: `<templateTheme>Firefly</templateTheme>
 		<templateThemeVersion>${pkg.version}</templateThemeVersion>

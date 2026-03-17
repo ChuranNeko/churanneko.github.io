@@ -59,9 +59,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 主页横幅主标题字体大小
 			titleSize: "3.8rem",
 			// 主页横幅副标题
-			subtitle: [
-				"A Heart Reaching For The Horizon, Day By Day.",
-			],
+			subtitle: ["A Heart Reaching For The Horizon, Day By Day."],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
 			typewriter: {

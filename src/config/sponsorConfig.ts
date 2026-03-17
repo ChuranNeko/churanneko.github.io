@@ -8,8 +8,7 @@ export const sponsorConfig: SponsorConfig = {
 	description: "",
 
 	// 赞助用途说明
-	usage:
-		"所有赞助将用于网站维护、服务器费用以及内容创作。",
+	usage: "所有赞助将用于网站维护、服务器费用以及内容创作。",
 
 	// 是否显示赞助者列表
 	showSponsorsList: true,
@@ -36,14 +35,14 @@ export const sponsorConfig: SponsorConfig = {
 			description: "使用 微信 扫码赞助",
 			enabled: true,
 		},
-	{
-		name: "ko-fi",
-		icon: "simple-icons:kofi",
-		qrCode: "",
-		link: "https://ko-fi.com/churanneko",
-		description: "Buy me a coffee",
-		enabled: true,
-	},
+		{
+			name: "ko-fi",
+			icon: "simple-icons:kofi",
+			qrCode: "",
+			link: "https://ko-fi.com/churanneko",
+			description: "Buy me a coffee",
+			enabled: true,
+		},
 		{
 			name: "爱发电",
 			icon: "simple-icons:afdian",

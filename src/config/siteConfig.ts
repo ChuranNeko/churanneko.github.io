@@ -16,8 +16,7 @@ export const siteConfig: SiteConfig = {
 	site_url: "https://blog.crneko.top",
 
 	// 站点描述
-	description:
-		"初然Neko的博客~",
+	description: "初然Neko的博客~",
 
 	// 站点关键词
 	keywords: [

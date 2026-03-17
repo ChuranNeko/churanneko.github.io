@@ -8,7 +8,7 @@
 
 该博客基于 [Firefly](https://github.com/CuteLeaf/Firefly) 主题模板进行构建，Firefly 是基于 [Fuwari](https://github.com/saicaca/fuwari) 的二次开发。
 
-::github{repo="ChuranNeko/Blog"}
+::github{repo="ChuranNeko/churanneko.github.io"}
 
 ## 感谢
 
@@ -28,4 +28,4 @@
 
 ## 友情链接
 
-如果想要申请友情链接的话，请在这里提 [issue](https://github.com/ChuranNeko/Blog/issues) 吧~
+如果想要申请友情链接的话，请在这里提 [issue](https://github.com/ChuranNeko/churanneko.github.io/issues) 吧~

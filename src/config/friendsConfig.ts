@@ -37,6 +37,15 @@ export const friendsConfig: FriendLink[] = [
 		weight: 8,
 		enabled: true,
 	},
+	{
+		title: "YingXinche的小站",
+		imgurl: "https://r2.anran.xyz/avatar.jpg",
+		desc: "像Minecraft的存档一样失去了很久...",
+		siteurl: "https://www.anran.xyz",
+		tags: ["Blog"],
+		weight: 7,
+		enabled: true,
+	},
 ];
 
 // 获取启用的友链并按权重排序

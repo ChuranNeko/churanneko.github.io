@@ -11,6 +11,15 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
+		title: "南亭",
+		imgurl: "https://www.nantingya.top/img/avatar_hu_8bc19b16d6eaf6d2.png",
+		desc: "一只在南方的猪咪 喜欢在亭子里呆着",
+		siteurl: "https://www.nantingya.top",
+		tags: ["Blog"],
+		weight: 11,
+		enabled: true,
+	},
+	{
 		title: "占位站点",
 		imgurl: "https://api.iowen.cn/favicon/blog.crneko.top.png",
 		desc: "Ciallo～(∠・ω< )⌒☆",

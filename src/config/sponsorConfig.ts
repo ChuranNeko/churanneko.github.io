@@ -55,11 +55,23 @@ export const sponsorConfig: SponsorConfig = {
 
 	// 赞助者列表（可选）
 	sponsors: [
-		// 示例：已实名赞助者
 		{
-			name: "名字",
-			amount: "0 CNY",
-			date: "2025.1.1",
+			name: "Acheron",
+			amount: "30 CNY",
+			date: "2026.5.31",
+			message: "我祝Acheron星辰璀璨",
+		},
+		{
+			name: "无痕",
+			amount: "30 CNY",
+			date: "2026.5.31",
+			message: "我祝无痕星辰璀璨",
+		},
+		{
+			name: "公羊戾",
+			amount: "5 CNY",
+			date: "2026.5.31",
+			message: "我祝公羊戾星辰璀璨",
 		},
 	],
 };

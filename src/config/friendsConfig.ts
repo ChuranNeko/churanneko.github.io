@@ -2,6 +2,12 @@ import type { FriendLink, FriendsPageConfig } from "../types/config";
 
 // 可以在src/content/spec/friends.md中编写友链页面下方的自定义内容
 
+// 如果要添加友链，这里是友链信息：
+// name: 初然的博客
+// profile: 什么都想学一点，但什么都不精通
+// imgurl: https://blog.crneko.top/avatar.png
+// url: https://blog.crneko.top/avatar.png
+
 // 友链页面配置
 export const friendsPageConfig: FriendsPageConfig = {
 	// 显示列数：2列或3列
@@ -53,6 +59,15 @@ export const friendsConfig: FriendLink[] = [
 		siteurl: "https://www.anran.xyz",
 		tags: ["Blog"],
 		weight: 7,
+		enabled: true,
+	},
+	{
+		title: "恬炘的小屋",
+		imgurl: "https://github.com/ChaceQC.png",
+		desc: "静谧的小屋，分享写作与生活点滴",
+		siteurl: "https://blog.chacewebsite.cn/",
+		tags: ["Blog"],
+		weight: 6,
 		enabled: true,
 	},
 ];

@@ -90,6 +90,12 @@ export const sponsorConfig: SponsorConfig = {
 			amount: "50 CNY",
 			date: "2026.6.3",
 			message: "我祝你星辰璀璨",
+		},
+		{
+			name: "吴彦祖",
+			amount: "30 CNY",
+			date: "2026.6.3",
+			message: "我祝你星辰璀璨",
 		}
 	],
 };

@@ -96,6 +96,6 @@ export const sponsorConfig: SponsorConfig = {
 			amount: "30 CNY",
 			date: "2026.6.3",
 			message: "我祝你星辰璀璨",
-		}
+		},
 	],
 };

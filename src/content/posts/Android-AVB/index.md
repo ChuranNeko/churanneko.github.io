@@ -4,7 +4,6 @@ published: 2026-04-08
 description: AVB、vbmeta、dm-verity、回滚保护、BL 带锁与解锁……把 Android 启动校验机制理一遍
 tags: [Android, AVB, vbmeta, Root]
 category: Android
-image: "background.png"
 lang: zh_CN
 ---
 

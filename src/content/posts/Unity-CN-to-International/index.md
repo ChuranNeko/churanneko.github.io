@@ -5,7 +5,6 @@ description: Unity中国特供转国际版本
 tags: [Tags, Unity]
 category: Unity
 draft: false
-image: "background.png"
 lang: zh_CN
 ---
 

@@ -4,7 +4,6 @@ published: 2025-12-26
 description: 配置 Docker 镜像加速源，提升国内拉取速度和稳定性
 tags: [Tags, Docker]
 category: Docker
-image: "background.png"
 lang: zh_CN
 ---
 

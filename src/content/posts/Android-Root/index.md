@@ -4,7 +4,6 @@ published: 2026-04-08
 description: Root、su、Magisk、KernelSU、APatch、定制 ROM、GApps、国行与 EU 差异……把这块内容理一遍
 tags: [Android, Root, Magisk, KernelSU]
 category: Android
-image: "background.png"
 lang: zh_CN
 ---
 

@@ -4,7 +4,6 @@ published: 2025-11-27
 description: 使用Docker Compose快速部署NapCat
 tags: [Tags, Docker]
 category: Docker
-image: "background.png"
 lang: zh_CN
 ---
 

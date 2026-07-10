@@ -4,7 +4,6 @@ published: 2026-04-08
 description: AOSP、Bootloader、fastboot、Recovery、Root、SU、卡刷、线刷、侧载、定制 ROM……一篇文章理清所有概念
 tags: [Android, Root, 刷机, 概念]
 category: Android
-image: "background.png"
 lang: zh_CN
 ---
 

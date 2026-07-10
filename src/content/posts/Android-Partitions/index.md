@@ -4,7 +4,6 @@ published: 2026-04-08
 description: boot、init_boot、vendor_boot、vbmeta、super、userdata、A/B、VAB、动态分区……把 Android 分区系统理一遍
 tags: [Android, 分区, 刷机, A/B]
 category: Android
-image: "background.png"
 lang: zh_CN
 ---
 

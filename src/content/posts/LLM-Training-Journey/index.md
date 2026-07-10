@@ -4,7 +4,6 @@ published: 2026-02-27
 description: 从零开始训练中文 LLM 的实践心得，数据清洗、GPU 租赁和训练技巧全记录
 tags: [Tags, LLM, AI, 深度学习]
 category: AI
-image: "background.png"
 lang: zh_CN
 ---
 

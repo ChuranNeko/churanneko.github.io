@@ -14,7 +14,7 @@
 
 ## 友情链接
 
-如果想要申请友情连接的话,请在这里提[issue](https://github.com/CoreRing/corering.github.io/issue)吧~
+如果想要申请友情连接的话,请在这里提[issue](https://github.com/KaguyaRing/kaguyaring.github.io/issue)吧~
 
 ## 许可
 

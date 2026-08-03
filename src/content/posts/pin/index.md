@@ -16,4 +16,4 @@ lang: zh_CN
 
 ## 📬 联系方式
 
-- 📫 邮箱：[CoreRing@qq.com](mailto:CoreRing@qq.com)
+- 📫 邮箱：[KaguyaRing@qq.com](mailto:KaguyaRing@qq.com)

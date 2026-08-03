@@ -367,7 +367,7 @@ async def translate(self, text: str, ...) -> str:
 
 ### 安装
 
-1. 从 [Releases](https://github.com/CoreRing/VRC-GoTrans/releases) 下载安装包
+1. 从 [Releases](https://github.com/KaguyaRing/VRC-GoTrans/releases) 下载安装包
 2. 运行安装程序
 3. 首次启动会自动安装 Python 环境（约 1-2 分钟）
 
@@ -445,7 +445,7 @@ async def translate(self, text: str, ...) -> str:
 - 对 AI 桌面应用开发感兴趣的人
 
 **项目地址：**
-https://github.com/CoreRing/VRC-GoTrans
+https://github.com/KaguyaRing/VRC-GoTrans
 
 如果你也在玩 VRChat，可以试试这个工具。有问题欢迎提 Issue，也欢迎加 QQ 群交流：[初然的猫猫头窝](https://qm.qq.com/q/MS6J5wEOOY)
 
@@ -455,7 +455,7 @@ https://github.com/CoreRing/VRC-GoTrans
 
 ## 参考资料
 
-- [VRC-GoTrans 项目](https://github.com/CoreRing/VRC-GoTrans)
+- [VRC-GoTrans 项目](https://github.com/KaguyaRing/VRC-GoTrans)
 - [VRCT 项目](https://github.com/Sharrnah/VRCTranslator)
 - [Tauri 官方文档](https://tauri.app/)
 - [VRChat OSC 文档](https://docs.vrchat.com/docs/osc-overview)

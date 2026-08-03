@@ -61,14 +61,14 @@ bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
 
 ```bash
 cd /path/to/your/project
-curl -o docker-compose.yml https://raw.githubusercontent.com/ChuranNeko/NapCat-Docker-Template/main/docker-compose.yml
+curl -o docker-compose.yml https://raw.githubusercontent.com/CoreRing/NapCat-Docker-Template/main/docker-compose.yml
 ```
 
 或者使用Github代理：
 
 ```bash
 cd /path/to/your/project
-curl -sSL-o docker-compose.yml https://gh-proxy.org/https://raw.githubusercontent.com/ChuranNeko/NapCat-Docker-Template/main/docker-compose.yml
+curl -sSL-o docker-compose.yml https://gh-proxy.org/https://raw.githubusercontent.com/CoreRing/NapCat-Docker-Template/main/docker-compose.yml
 ```
 
 > 此处的 `/path/to/your/project` 需要替换为你希望存放 `docker-compose.yml` 文件的实际路径。
@@ -120,10 +120,10 @@ NapCat 支持多种对接方式，您可以参考官方文档进行配置：
 ## 附加说明
 
 :::tip
-该[仓库](https://github.com/ChuranNeko/NapCat-Docker-Template)已经提供了NapCat单服务、AstrBot+Napcat、多种模板文件，您可以根据需要选择合适的模板文件进行下载。
+该[仓库](https://github.com/CoreRing/NapCat-Docker-Template)已经提供了NapCat单服务、AstrBot+Napcat、多种模板文件，您可以根据需要选择合适的模板文件进行下载。
 :::
 
-::github{repo="ChuranNeko/NapCat-Docker-Template"}
+::github{repo="CoreRing/NapCat-Docker-Template"}
 
 ## 免责声明
 

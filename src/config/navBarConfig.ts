@@ -63,7 +63,7 @@ const links: (NavBarLink | LinkPreset)[] = [
 			},
 			{
 				name: "GitHub",
-				url: "https://github.com/ChuranNeko",
+				url: "https://github.com/CoreRing",
 				external: true,
 				icon: "fa7-brands:github",
 			},

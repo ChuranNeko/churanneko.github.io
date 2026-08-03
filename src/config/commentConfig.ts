@@ -7,7 +7,7 @@ export const commentConfig: CommentConfig = {
 	//giscus 评论系统配置
 	giscus: {
 		// 设置 Giscus 评论系统仓库
-		repo: "ChuranNeko/churanneko.github.io",
+		repo: "CoreRing/corering.github.io",
 		// 设置 Giscus 评论系统仓库 ID
 		repoId: "R_kgDOPsGxcg",
 		// 设置 Giscus 评论系统分类

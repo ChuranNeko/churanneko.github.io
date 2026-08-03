@@ -171,7 +171,7 @@ target/linux/mediatek/filogic/base-files/etc/uci-defaults/99-gl-mt3600be-default
 ### 构建流程
 
 ```bash
-git clone https://github.com/ChuranNeko/openwrt-custom-gl-mt3600be
+git clone https://github.com/CoreRing/openwrt-custom-gl-mt3600be
 cd openwrt-custom-gl-mt3600be
 ./scripts/feeds update -a
 ./scripts/feeds install -a
@@ -292,7 +292,7 @@ sysupgrade -n openwrt-*.bin
 - 想折腾路由器但不想从零开始的人
 
 **项目地址：**
-https://github.com/ChuranNeko/openwrt-custom-gl-mt3600be
+https://github.com/CoreRing/openwrt-custom-gl-mt3600be
 
 如果你也有 GL-MT3600BE，可以试试这个固件。有问题欢迎提 Issue。
 

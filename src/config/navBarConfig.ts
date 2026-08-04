@@ -45,7 +45,7 @@ const links: (NavBarLink | LinkPreset)[] = [
 			},
 			{
 				name: "状态",
-				url: "https://status.crneko.top/",
+				url: "https://status.kaguyaring.top/",
 				external: true,
 				icon: "material-symbols:check-circle",
 			},

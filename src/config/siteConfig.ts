@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "辉夜铃Ring",
 
 	// 站点 URL
-	site_url: "https://blog.crneko.top",
+	site_url: "https://blog.kaguyaring.top",
 
 	// 站点描述
 	description: "辉夜铃Ring的博客~",

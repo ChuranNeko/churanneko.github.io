@@ -3,10 +3,10 @@ import type { FriendLink, FriendsPageConfig } from "../types/config";
 // 可以在src/content/spec/friends.md中编写友链页面下方的自定义内容
 
 // 如果要添加友链，这里是友链信息：
-// name: 初然的博客
+// name: 辉夜铃Ring的博客
 // profile: 什么都想学一点，但什么都不精通
-// imgurl: https://blog.crneko.top/avatar.png
-// url: https://blog.crneko.top/avatar.png
+// imgurl: https://blog.kaguyaring.top/avatar.png
+// url: https://blog.kaguyaring.top/avatar.png
 
 // 友链页面配置
 export const friendsPageConfig: FriendsPageConfig = {
@@ -27,9 +27,9 @@ export const friendsConfig: FriendLink[] = [
 	},
 	{
 		title: "占位站点",
-		imgurl: "https://api.iowen.cn/favicon/blog.crneko.top.png",
+		imgurl: "https://api.iowen.cn/favicon/blog.kaguyaring.top.png",
 		desc: "Ciallo～(∠・ω< )⌒☆",
-		siteurl: "https://blog.crneko.top",
+		siteurl: "https://blog.kaguyaring.top",
 		tags: ["Blog"],
 		weight: 10, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用

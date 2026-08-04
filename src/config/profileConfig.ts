@@ -9,7 +9,7 @@ export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png",
 
 	// 名字
-	name: "初然",
+	name: "辉夜铃Ring",
 
 	// 个人签名
 	bio: "一切都是因为好奇，所以想要知道那些未曾知晓的事物。",

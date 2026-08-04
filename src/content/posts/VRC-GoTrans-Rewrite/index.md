@@ -447,7 +447,7 @@ async def translate(self, text: str, ...) -> str:
 **项目地址：**
 https://github.com/KaguyaRing/VRC-GoTrans
 
-如果你也在玩 VRChat，可以试试这个工具。有问题欢迎提 Issue，也欢迎加 QQ 群交流：[初然的猫猫头窝](https://qm.qq.com/q/MS6J5wEOOY)
+如果你也在玩 VRChat，可以试试这个工具。有问题欢迎提 Issue，也欢迎加 QQ 群交流：[辉夜铃Ring的猫猫头窝](https://qm.qq.com/q/MS6J5wEOOY)
 
 ---
 

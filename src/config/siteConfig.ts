@@ -7,16 +7,16 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "初然の博客",
+	title: "辉夜铃Ringの博客",
 
 	// 站点副标题
-	subtitle: "初然",
+	subtitle: "辉夜铃Ring",
 
 	// 站点 URL
 	site_url: "https://blog.crneko.top",
 
 	// 站点描述
-	description: "初然的博客~",
+	description: "辉夜铃Ring的博客~",
 
 	// 站点关键词
 	keywords: [
@@ -60,8 +60,8 @@ export const siteConfig: SiteConfig = {
 
 	// 多线路配置（可选）
 	officialSites: [
-		{ url: "https://blog.crneko.top", alias: "主站 (GitHub Page)" },
-		{ url: "https://blog-vercel.crneko.top", alias: "Vercel" },
+		{ url: "https://blog.kaguyaring.top", alias: "主站 (GitHub Page)" },
+		{ url: "https://blog-vercel.kaguyaring.top", alias: "Vercel" },
 	],
 
 	// 导航栏配置
@@ -78,7 +78,7 @@ export const siteConfig: SiteConfig = {
 			alt: "主页",
 		},
 		// 导航栏标题
-		title: "初然の博客",
+		title: "辉夜铃Ringの博客",
 		// 全宽导航栏，导航栏是否占满屏幕宽度，true：占满，false：不占满
 		widthFull: false,
 		// 导航栏图标和标题是否跟随主题色

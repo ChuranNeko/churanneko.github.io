@@ -109,6 +109,7 @@ export type SiteConfig = {
 		enable: boolean;
 		baseUrl: string;
 		shareId: string;
+		websiteId: string;
 		timezone: string;
 	};
 

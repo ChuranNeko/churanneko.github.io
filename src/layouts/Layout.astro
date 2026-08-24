@@ -417,6 +417,18 @@ const siteLang = lang.replace("_", "-");
 
     <!-- Font Manager -->
     <FontManager />
+
+    <!-- Umami 追踪脚本 - 采集访问数据 -->
+    {
+      siteConfig.umami?.enable && siteConfig.umami?.websiteId && (
+        <script
+          is:inline
+          defer
+          src={`${siteConfig.umami.baseUrl}/script.js`}
+          data-website-id={siteConfig.umami.websiteId}
+        />
+      )
+    }
   </head>
   <body
     class="min-h-screen"

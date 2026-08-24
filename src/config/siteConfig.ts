@@ -162,6 +162,9 @@ export const siteConfig: SiteConfig = {
 	umami: {
 		enable: true,
 		baseUrl: "https://cloud.umami.is",
+		// 站点追踪 ID（用于加载追踪脚本采集访问数据）
+		websiteId: "fb5e3c6e-e56a-4082-a231-5dd736010208",
+		// 公开分享 ID（用于只读展示统计数据）
 		shareId: "rjAmkgZnqnW6Ixb4",
 		timezone: "Asia/Shanghai",
 	},
